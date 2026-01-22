@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="CSE481-fish1"
-run/main_scene="uid://c8bns7745jl8d"
+run/main_scene="uid://dpd32ndl1y6bv"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
