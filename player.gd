@@ -24,7 +24,7 @@ func _physics_process(delta):
 	move_and_slide()
 
 func _move_state():
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("ui_fish"):
 		_start_fishing()
 		return
 	
@@ -47,7 +47,7 @@ func _move_state():
 func _fishing_state():
 	velocity = Vector2.ZERO
 	
-	if Input.is_action_just_pressed("ui_accept") && fishBitten:
+	if Input.is_action_just_pressed("ui_fish") && fishBitten:
 		_stop_fishing()
 	
 	if waitForFish: _wait_for_fish()
