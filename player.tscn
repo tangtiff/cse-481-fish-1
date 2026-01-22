@@ -1,8 +1,9 @@
-[gd_scene load_steps=18 format=3 uid="uid://bwvm04qeof5e1"]
+[gd_scene load_steps=20 format=3 uid="uid://bwvm04qeof5e1"]
 
 [ext_resource type="Script" uid="uid://cuijuxrney7b4" path="res://player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://cqieyi0qacr5x" path="res://assests/fishing_free/global_free_recoloured.png" id="2_i3pqv"]
 [ext_resource type="Texture2D" uid="uid://b5uadxqs0x0cv" path="res://assests/fishing_free/global.png" id="3_hqtel"]
+[ext_resource type="Texture2D" uid="uid://qmmyue26mmep" path="res://assests/player sprites/fisherman_idle.png" id="4_sweqy"]
 [ext_resource type="Texture2D" uid="uid://cqjbfar64as3n" path="res://assests/player sprites/fisherman_forward.png" id="5_sweqy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2hs0m"]
@@ -13,9 +14,13 @@ region = Rect2(48, 16, 16, 16)
 atlas = ExtResource("3_hqtel")
 region = Rect2(48, 16, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_hqtel"]
-atlas = ExtResource("5_sweqy")
+[sub_resource type="AtlasTexture" id="AtlasTexture_dw050"]
+atlas = ExtResource("4_sweqy")
 region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b26j0"]
+atlas = ExtResource("4_sweqy")
+region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n7ghd"]
 atlas = ExtResource("5_sweqy")
@@ -57,11 +62,14 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_hqtel")
+"texture": SubResource("AtlasTexture_dw050")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b26j0")
 }],
 "loop": true,
 "name": &"idle",
-"speed": 5.0
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 1.0,
