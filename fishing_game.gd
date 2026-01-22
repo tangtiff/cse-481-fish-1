@@ -7,7 +7,7 @@ var catchSpeed := 0.3
 var catchingValue := 0.0
 
 func _physics_process(delta: float) -> void:
-	if onCatch: catchingValue == catchSpeed
+	if onCatch: catchingValue = catchSpeed
 	else: catchingValue -= catchSpeed
 	
 	if catchingValue < 0.0: catchingValue = 0
