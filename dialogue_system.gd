@@ -6,7 +6,7 @@ extends Node2D
 @onready var speaker_sprite: Sprite2D = $HBoxContainer/SpeakerParent/Sprite2D
 
 var dialogue_lines: Array[String] = [
-	"Hello, traveler. Press SPACE to advance the text.",
+	"Hello, traveler. Press E twice on the pier to fish. After, press SPACE to advance the text.",
 	"Gary: If you're going to eat me, I should mention I'm a venomous stone fish.
 	Relax, I'm not going to sting you, people always expect a scene.",
 	"Honestly, you can just put me back and catch someone more exciting. We'll both be fine",

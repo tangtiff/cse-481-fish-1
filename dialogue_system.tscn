@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://cjroyptlex6xf"]
+[gd_scene load_steps=6 format=3 uid="uid://cjroyptlex6xf"]
 
 [ext_resource type="Script" uid="uid://h2e1dgyk5ddx" path="res://dialogue_system.gd" id="1_r12a2"]
+[ext_resource type="Texture2D" uid="uid://b5uadxqs0x0cv" path="res://assests/fishing_free/global.png" id="2_m0h81"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vob78"]
 bg_color = Color(0, 0, 0, 1)
@@ -13,6 +14,21 @@ expand_margin_left = 4.0
 expand_margin_top = 4.0
 expand_margin_right = 4.0
 expand_margin_bottom = 4.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7d2kg"]
+atlas = ExtResource("2_m0h81")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qmr60"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7d2kg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="dialogueSystem" type="Node2D"]
 z_index = 4096
@@ -52,3 +68,10 @@ visible_characters_behavior = 1
 [node name="buttonContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer"]
 visible = false
 layout_mode = 2
+
+[node name="gary" type="CharacterBody2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="gary"]
+position = Vector2(-177, 53.000004)
+scale = Vector2(3.3671892, 3.1250005)
+sprite_frames = SubResource("SpriteFrames_qmr60")

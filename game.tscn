@@ -1,9 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://dxf2e05pbk30j"]
+[gd_scene load_steps=8 format=4 uid="uid://dxf2e05pbk30j"]
 
 [ext_resource type="PackedScene" uid="uid://bwvm04qeof5e1" path="res://player.tscn" id="1_80nbo"]
 [ext_resource type="Texture2D" uid="uid://byehbdxm683wb" path="res://assests/Sunnyside_World_ASSET_PACK_V2.1/Sunnyside_World_Assets/Tileset/spr_tileset_sunnysideworld_16px.png" id="1_e2o6t"]
 [ext_resource type="PackedScene" uid="uid://cjroyptlex6xf" path="res://dialogue_system.tscn" id="3_feb5d"]
-[ext_resource type="PackedScene" uid="uid://rs5nk5cllku7" path="res://character_body_2d.tscn" id="4_fc0e3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e2o6t"]
 texture = ExtResource("1_e2o6t")
@@ -3567,3 +3566,6 @@ z_index = 2
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(8, 8)
 zoom = Vector2(1.5, 1.5)
+
+[node name="dialogueSystem" parent="." instance=ExtResource("3_feb5d")]
+position = Vector2(29.5, 113)
