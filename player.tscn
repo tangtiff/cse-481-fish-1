@@ -1,9 +1,9 @@
 [gd_scene load_steps=18 format=3 uid="uid://bwvm04qeof5e1"]
 
-[ext_resource type="Texture2D" uid="uid://iva5d1pq6kmr" path="res://assests/char free/global.png" id="1_4flbx"]
 [ext_resource type="Script" uid="uid://cuijuxrney7b4" path="res://player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://cqieyi0qacr5x" path="res://assests/fishing_free/global_free_recoloured.png" id="2_i3pqv"]
 [ext_resource type="Texture2D" uid="uid://b5uadxqs0x0cv" path="res://assests/fishing_free/global.png" id="3_hqtel"]
+[ext_resource type="Texture2D" uid="uid://cqjbfar64as3n" path="res://assests/player sprites/fisherman_forward.png" id="5_sweqy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2hs0m"]
 atlas = ExtResource("2_i3pqv")
@@ -13,29 +13,29 @@ region = Rect2(48, 16, 16, 16)
 atlas = ExtResource("3_hqtel")
 region = Rect2(48, 16, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_dw050"]
-atlas = ExtResource("1_4flbx")
-region = Rect2(0, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_b26j0"]
-atlas = ExtResource("1_4flbx")
-region = Rect2(128, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_onrkg"]
-atlas = ExtResource("1_4flbx")
-region = Rect2(0, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_i3pqv"]
-atlas = ExtResource("1_4flbx")
-region = Rect2(32, 0, 32, 34)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_hqtel"]
-atlas = ExtResource("1_4flbx")
-region = Rect2(64, 0, 32, 34)
+atlas = ExtResource("5_sweqy")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_sweqy"]
-atlas = ExtResource("1_4flbx")
-region = Rect2(96, 0, 32, 34)
+[sub_resource type="AtlasTexture" id="AtlasTexture_n7ghd"]
+atlas = ExtResource("5_sweqy")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nvl01"]
+atlas = ExtResource("5_sweqy")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ivps1"]
+atlas = ExtResource("5_sweqy")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_urp6f"]
+atlas = ExtResource("5_sweqy")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bwjto"]
+atlas = ExtResource("5_sweqy")
+region = Rect2(128, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2hs0m"]
 animations = [{
@@ -57,10 +57,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_dw050")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_b26j0")
+"texture": SubResource("AtlasTexture_hqtel")
 }],
 "loop": true,
 "name": &"idle",
@@ -68,24 +65,36 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_onrkg")
+"texture": SubResource("AtlasTexture_n7ghd")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_i3pqv")
+"texture": SubResource("AtlasTexture_nvl01")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_hqtel")
+"texture": SubResource("AtlasTexture_ivps1")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_sweqy")
+"texture": SubResource("AtlasTexture_nvl01")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n7ghd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_urp6f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bwjto")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_urp6f")
 }],
 "loop": true,
-"name": &"walk",
-"speed": 5.0
+"name": &"walk_forward",
+"speed": 8.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_1jxqw"]
-radius = 6.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sweqy"]
+size = Vector2(14, 23)
 
 [sub_resource type="Animation" id="Animation_i3pqv"]
 length = 0.001
@@ -152,23 +161,22 @@ _data = {
 script = ExtResource("1_onrkg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -15)
+position = Vector2(0, -13)
 sprite_frames = SubResource("SpriteFrames_2hs0m")
 animation = &"idle"
-autoplay = "walk"
+autoplay = "idle"
 
 [node name="TileMarker" type="Marker2D" parent="AnimatedSprite2D"]
-position = Vector2(10, 7)
+position = Vector2(12, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -9)
-shape = SubResource("CircleShape2D_1jxqw")
+position = Vector2(0, -11.5)
+shape = SubResource("RectangleShape2D_sweqy")
 
 [node name="Waiting" type="Sprite2D" parent="."]
-position = Vector2(0, -11)
-texture = ExtResource("1_4flbx")
-hframes = 8
-vframes = 9
+position = Vector2(0, -13)
+texture = ExtResource("5_sweqy")
+hframes = 5
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

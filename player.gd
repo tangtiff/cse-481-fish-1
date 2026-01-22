@@ -41,7 +41,7 @@ func _move_state():
 	if velocity.x < 0: animated_sprite_2d.scale.x = -1
 	elif velocity.x >0: animated_sprite_2d.scale.x = 1
 	
-	if velocity: animated_sprite_2d.play("walk")
+	if velocity: animated_sprite_2d.play("walk_forward")
 	else: animated_sprite_2d.play("idle")
 
 func _fishing_state():
