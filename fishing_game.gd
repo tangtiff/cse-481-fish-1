@@ -7,7 +7,7 @@ var catchSpeed := 0.3
 var catchingValue := 0.0
 
 func _physics_process(delta: float) -> void:
-	if onCatch: catchingValue = catchSpeed
+	if onCatch: catchingValue += catchSpeed
 	else: catchingValue -= catchSpeed
 	
 	if catchingValue < 0.0: catchingValue = 0
@@ -20,7 +20,7 @@ func _game_end() -> void:
 	var tween = get_tree().create_tween()
 	
 	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
-	tween.tween_property(self, "global_position", global_position + Vector2(0, 700), 0.5)
+	tween.tween_property(self, "global_position", global_position + Vector2(0, 0), 0.5)
 	
 	await tween.finished
 	
