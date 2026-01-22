@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://bxa641b5e8br1"]
+
+[ext_resource type="Script" uid="uid://cgo4t0533d01c" path="res://fish.gd" id="1_hgn23"]
+[ext_resource type="Texture2D" uid="uid://cqieyi0qacr5x" path="res://assests/fishing_free/global_free_recoloured.png" id="2_6ik3a"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oovoc"]
+atlas = ExtResource("2_6ik3a")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8vtik"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oovoc")
+}],
+"loop": true,
+"name": &"move",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_10mov"]
+radius = 15.0
+
+[node name="Fish" type="CharacterBody2D"]
+script = ExtResource("1_hgn23")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_8vtik")
+animation = &"move"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_10mov")
