@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://caaabcwpbsaep"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wv47p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nsd07"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7mnm1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q4nkq"]
+
+[node name="DialogueButton" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_focus_color = Color(0.17254902, 0.5647059, 0.4745098, 1)
+theme_override_colors/font_pressed_color = Color(0.17254902, 0.5647059, 0.4745098, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.17203912, 0.5659577, 0.47439796, 1)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wv47p")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_nsd07")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_7mnm1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_q4nkq")
