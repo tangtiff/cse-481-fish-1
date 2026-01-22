@@ -21,10 +21,8 @@ func _set_target_position() -> void:
 	
 func _set_new_target_position() -> void:
 	var boxSize := aquaContainer.get_global_rect()
-	var x_pos := randi_range(
-		boxSize.position.x + borderDistance, boxSize.position.x + boxSize.size.x - borderDistance)
-	var y_pos := randi_range(
-		boxSize.position.y + borderDistance, boxSize.position.y + boxSize.size.y - borderDistance)
+	var x_pos := randi_range(boxSize.position.x + borderDistance, boxSize.position.x + boxSize.size.x - borderDistance)
+	var y_pos := randi_range(boxSize.position.y + borderDistance, boxSize.position.y + boxSize.size.y - borderDistance)
 	
 	targetPosition = Vector2(x_pos, y_pos)
 

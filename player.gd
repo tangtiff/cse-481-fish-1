@@ -37,13 +37,19 @@ func _move_state():
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.y = move_toward(velocity.y, 0, SPEED)
+	
+	if velocity.x < 0: animated_sprite_2d.scale.x = -1
+	elif velocity.x >0: animated_sprite_2d.scale.x = 1
+	
+	if velocity: animated_sprite_2d.play("walk")
+	else: animated_sprite_2d.play("idle")
 
 func _fishing_state():
 	velocity = Vector2.ZERO
 	
 	if Input.is_action_just_pressed("ui_accept") && fishBitten:
 		_stop_fishing()
-		
+	
 	if waitForFish: _wait_for_fish()
 	if fishBitten: _fish_bitten_animation()
 
@@ -76,10 +82,10 @@ func _fish_bitten_animation():
 	waiting.offset = Vector2(forceX, forceY)
 
 func _get_tile_data():
-	var tileMap = get_parent().find_child("TileMap")
+	var tileMap = get_parent().find_child("Ocean")
 	var searchPosition = tileMap.local_to_map(tile_marker.global_position)
-	var data = tileMap.get_cell_tile_data(0,searchPosition)
-
+	var data = tileMap.get_cell_tile_data(searchPosition)
+	
 	if data: return data.get_custom_data("type")
 
 func _on_animated_sprite_2d_animation_finished():
@@ -99,5 +105,5 @@ func _start_mini_game():
 func _on_waiting_timer_timeout() -> void:
 	waiting_timer.stop()
 	animation_player.stop()
-	fishBitten = false
+	fishBitten = true
 	waitForFish = false

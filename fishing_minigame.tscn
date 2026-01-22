@@ -38,9 +38,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -150.0
-offset_top = -150.0
+offset_top = -150.5
 offset_right = 150.0
-offset_bottom = 150.0
+offset_bottom = 150.5
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
@@ -83,11 +83,11 @@ size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_b8yci")
 
 [node name="Fish" parent="FishingGame" node_paths=PackedStringArray("aquaContainer") instance=ExtResource("4_ew5m6")]
-position = Vector2(156, 154)
+position = Vector2(149, 150)
 aquaContainer = NodePath("../PanelContainer/MarginContainer/VBoxContainer/AquaContainer")
 
 [node name="Target" parent="FishingGame" instance=ExtResource("6_p2j5e")]
-position = Vector2(155.66113, 147.19006)
+position = Vector2(150, 150)
 
 [connection signal="target_entered" from="FishingGame/Target" to="FishingGame" method="_on_target_target_entered"]
 [connection signal="target_exited" from="FishingGame/Target" to="FishingGame" method="_on_target_target_exited"]
