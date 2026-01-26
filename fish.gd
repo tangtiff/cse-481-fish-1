@@ -7,7 +7,7 @@ extends CharacterBody2D
 const SPEED =100
 
 var targetPosition: Vector2
-var borderDistance := 10
+var borderDistance := 10.0
 
 
 func _ready() -> void:
@@ -27,7 +27,7 @@ func _set_new_target_position() -> void:
 	targetPosition = Vector2(x_pos, y_pos)
 
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta):
 	var direction:= (targetPosition - global_position).normalized()
 	
 	if direction:
