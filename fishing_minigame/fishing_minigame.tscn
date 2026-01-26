@@ -1,20 +1,20 @@
 [gd_scene load_steps=11 format=3 uid="uid://wibdq4g25tn8"]
 
-[ext_resource type="Texture2D" uid="uid://crusqroyikri6" path="res://assests/Sunnyside_World_ASSET_PACK_V2.1/Sunnyside_World_Assets/UI/9slice_box_white/Box_Orange_Square.png" id="1_edgh5"]
-[ext_resource type="Script" uid="uid://bvy016e15ws5e" path="res://fishing_game.gd" id="1_l1kbx"]
-[ext_resource type="Texture2D" uid="uid://i2endiv488ol" path="res://assests/Sunnyside_World_ASSET_PACK_V2.1/Sunnyside_World_Assets/UI/9slice_box_white/SlimSlider_Background.png" id="2_ew5m6"]
-[ext_resource type="Texture2D" uid="uid://dkldd0rx6s7hu" path="res://assests/Sunnyside_World_ASSET_PACK_V2.1/Sunnyside_World_Assets/UI/9slice_box_white/SlimSlider_Base.png" id="3_xd8tf"]
-[ext_resource type="PackedScene" uid="uid://bxa641b5e8br1" path="res://fish.tscn" id="4_ew5m6"]
-[ext_resource type="PackedScene" uid="uid://cojq34nns7kuw" path="res://target.tscn" id="6_p2j5e"]
+[ext_resource type="Script" uid="uid://bvy016e15ws5e" path="res://fishing_minigame/fishing_game.gd" id="1_myvk3"]
+[ext_resource type="Texture2D" uid="uid://crusqroyikri6" path="res://assests/Sunnyside_World_ASSET_PACK_V2.1/Sunnyside_World_Assets/UI/9slice_box_white/Box_Orange_Square.png" id="2_k55qs"]
+[ext_resource type="Texture2D" uid="uid://i2endiv488ol" path="res://assests/Sunnyside_World_ASSET_PACK_V2.1/Sunnyside_World_Assets/UI/9slice_box_white/SlimSlider_Background.png" id="3_a0olb"]
+[ext_resource type="Texture2D" uid="uid://dkldd0rx6s7hu" path="res://assests/Sunnyside_World_ASSET_PACK_V2.1/Sunnyside_World_Assets/UI/9slice_box_white/SlimSlider_Base.png" id="4_wblku"]
+[ext_resource type="PackedScene" uid="uid://bxa641b5e8br1" path="res://fishing_minigame/fish.tscn" id="5_l1rca"]
+[ext_resource type="PackedScene" uid="uid://cojq34nns7kuw" path="res://fishing_minigame/target.tscn" id="6_lc7oe"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l1kbx"]
-texture = ExtResource("1_edgh5")
+texture = ExtResource("2_k55qs")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p2j5e"]
-texture = ExtResource("2_ew5m6")
+texture = ExtResource("3_a0olb")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e3jrk"]
-texture = ExtResource("3_xd8tf")
+texture = ExtResource("4_wblku")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b8yci"]
 bg_color = Color(0.20437372, 0.3734865, 0.8621187, 1)
@@ -45,7 +45,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-script = ExtResource("1_l1kbx")
+script = ExtResource("1_myvk3")
 
 [node name="PanelContainer" type="PanelContainer" parent="FishingGame"]
 layout_mode = 1
@@ -82,11 +82,11 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_b8yci")
 
-[node name="Fish" parent="FishingGame" node_paths=PackedStringArray("aquaContainer") instance=ExtResource("4_ew5m6")]
+[node name="Fish" parent="FishingGame" node_paths=PackedStringArray("aquaContainer") instance=ExtResource("5_l1rca")]
 position = Vector2(149, 150)
 aquaContainer = NodePath("../PanelContainer/MarginContainer/VBoxContainer/AquaContainer")
 
-[node name="Target" parent="FishingGame" instance=ExtResource("6_p2j5e")]
+[node name="Target" parent="FishingGame" instance=ExtResource("6_lc7oe")]
 position = Vector2(150, 150)
 
 [connection signal="target_entered" from="FishingGame/Target" to="FishingGame" method="_on_target_target_entered"]

@@ -99,7 +99,7 @@ func _start_mini_game():
 	get_tree().paused = true
 	PhysicsServer2D.set_active(true)
 	
-	var fishingGame = preload("res://fishing_minigame.tscn").instantiate()
+	var fishingGame = preload("res://fishing_minigame/fishing_minigame.tscn").instantiate()
 	get_tree().current_scene.add_child(fishingGame)
 
 func _on_waiting_timer_timeout() -> void:

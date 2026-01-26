@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bxa641b5e8br1"]
 
-[ext_resource type="Script" uid="uid://cgo4t0533d01c" path="res://fish.gd" id="1_hgn23"]
+[ext_resource type="Script" uid="uid://cgo4t0533d01c" path="res://fishing_minigame/fish.gd" id="1_hgn23"]
 [ext_resource type="Texture2D" uid="uid://cqieyi0qacr5x" path="res://assests/fishing_free/global_free_recoloured.png" id="2_6ik3a"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oovoc"]
