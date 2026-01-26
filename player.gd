@@ -6,7 +6,7 @@ extends CharacterBody2D
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var waiting_timer: Timer = $WaitingTimer
 
-const SPEED = 130.0
+const SPEED = 70.0
 
 var rng = RandomNumberGenerator.new()
 var startFishing = false
@@ -17,7 +17,7 @@ var maxWaitingTime = 4
 func _ready() -> void:
 	waiting.visible = false
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if startFishing: _fishing_state()
 	else: _move_state()
 	
@@ -85,7 +85,7 @@ func _get_tile_data():
 	var tileMap = get_parent().find_child("Ocean")
 	var searchPosition = tileMap.local_to_map(tile_marker.global_position)
 	var data = tileMap.get_cell_tile_data(searchPosition)
-	
+	print(searchPosition)
 	if data: return data.get_custom_data("type")
 
 func _on_animated_sprite_2d_animation_finished():
