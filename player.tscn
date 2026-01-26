@@ -102,7 +102,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sweqy"]
-size = Vector2(14, 23)
+size = Vector2(10, 15)
 
 [sub_resource type="Animation" id="Animation_i3pqv"]
 length = 0.001
@@ -175,11 +175,11 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="TileMarker" type="Marker2D" parent="AnimatedSprite2D"]
-position = Vector2(6, 6)
+position = Vector2(10, 6)
 gizmo_extents = 5.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -11.5)
+position = Vector2(0, -7.5)
 shape = SubResource("RectangleShape2D_sweqy")
 
 [node name="Waiting" type="Sprite2D" parent="."]
