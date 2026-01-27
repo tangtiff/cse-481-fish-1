@@ -70,6 +70,7 @@ func _stop_fishing():
 
 func _wait_for_fish():
 	animated_sprite_2d.visible = false
+	waiting.scale = animated_sprite_2d.scale
 	animation_player.play("waiting")
 	
 	if waiting_timer.time_left == 0:
