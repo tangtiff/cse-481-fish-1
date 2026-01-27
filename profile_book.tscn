@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cssc200m7i1ts"]
+[gd_scene load_steps=3 format=3 uid="uid://cssc200m7i1ts"]
 
-[ext_resource type="Texture2D" path="res://assests/Drawings/pixil-frame-0.png" id="1_pocup"]
+[ext_resource type="Texture2D" uid="uid://dwhsg2ullvc1o" path="res://assests/Drawings/fishBook.png" id="1_pocup"]
+[ext_resource type="Script" uid="uid://dkov654wy4gxx" path="res://profileBook.gd" id="2_x8pju"]
 
 [node name="ProfileBook" type="Node2D"]
 
@@ -8,3 +9,4 @@
 position = Vector2(8.5, 6.5)
 scale = Vector2(1.53125, 1.40625)
 texture = ExtResource("1_pocup")
+script = ExtResource("2_x8pju")
