@@ -1,0 +1,19 @@
+~ start
+Gary: Whoa, watch the hook! You almost tore my jacket, and that cost me 67 pearls. 
+Gary: I’ll forgive you if you can get me a discount, though. So, I saw the ad on your fishing line that you’re a matchmaker? 
+Gary: I hope this isn’t a scam so you can get an easy catch and dinner. I’m poisonous anyway if you were looking to grill me. 
+- Not a scam, I’m the ocean’s cupid!
+- I can get you a date quicker than a sailfish can swim!
+Gary: Good, most fish see me, realize I’m a stone fish, and suddenly remember an appointment somewhere else. 
+Gary: It’s not easy finding love when you’re the most venomous fish in the world.
+Gary: Relax, I’m not going to sting you. People always expect a scene.
+- Tell me more about yourself
+- What do you look for in a partner?
+Gary: Truth is, most fish hear ‘venomous’ and assume I’d be difficult to date. Toxic, dramatic, emotionally hazardous… 
+Gary: It’s simply not true, and it gets a little lonely sometimes, I guess. I’m just lookin’ for my forever partner. 
+Gary: Someone to ride the waves of life with—fin to fin. I believe in currents pulling the right fish together, but maybe I’ve been waiting for long enough. 
+Gary: Here, I’ll leave my information with you. Find a nice date for me! Sea you later!
+- Start again => start
+- End the conversation => END
+Nathan: For more information see the online documentation.
+=> END

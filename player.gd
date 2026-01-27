@@ -48,6 +48,7 @@ func _fishing_state():
 	velocity = Vector2.ZERO
 	
 	if Input.is_action_just_pressed("ui_fish") && fishBitten:
+		_start_mini_game()
 		_stop_fishing()
 	
 	if waitForFish: _wait_for_fish()
@@ -93,14 +94,44 @@ func _on_animated_sprite_2d_animation_finished():
 		waitForFish = true
 	elif animated_sprite_2d.animation == "fishing_end":
 		startFishing = false
-		_start_mini_game()
+		
+
+var fishingGameScene = preload("res://fishing_minigame/fishing_minigame.tscn")
+var fishingGame: Node = null  # reference to the instantiated minigame
 
 func _start_mini_game():
+	# 1️⃣ Pause the main game while the minigame is active
 	get_tree().paused = true
 	PhysicsServer2D.set_active(true)
 	
-	var fishingGame = preload("res://fishing_minigame/fishing_minigame.tscn").instantiate()
+	# 2️⃣ Instance the minigame scene
+	fishingGame = fishingGameScene.instantiate()
 	get_tree().current_scene.add_child(fishingGame)
+
+	# 3️⃣ Connect the fish_caught signal from the child node that has fishing_game.gd
+	fishingGame.get_node("FishingGame").fish_caught.connect(_on_fish_caught)
+
+func _on_fish_caught():
+	# 1️⃣ Remove the minigame from the scene
+	if is_instance_valid(fishingGame):
+		fishingGame.queue_free()
+		fishingGame = null
+
+	# 2️⃣ Unpause the main game
+	get_tree().paused = false
+
+	# 3️⃣ Play player's "fishing_end" animation
+	animated_sprite_2d.play("fishing_end")
+
+	# 4️⃣ Start dialogue using DialogueManager
+	var dialogueRes: DialogueResource = preload("res://dialogue/dialogueFile.dialogue")
+	var balloon_scene = preload("res://dialogue/balloon.tscn").instantiate()
+	
+	# Use DialogueManager helper to start the balloon
+	DialogueManager._start_balloon(balloon_scene, dialogueRes, "start", [])
+
+
+
 
 func _on_waiting_timer_timeout() -> void:
 	waiting_timer.stop()
