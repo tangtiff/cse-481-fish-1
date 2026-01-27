@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dor71l8q6fpg"]
+[gd_scene load_steps=14 format=3 uid="uid://dor71l8q6fpg"]
 
 [ext_resource type="Script" uid="uid://dfi2t38vy5www" path="res://dialogue/balloon.gd" id="1_36de5"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
@@ -101,6 +101,14 @@ _data = {
 }
 
 [sub_resource type="Theme" id="Theme_fud8g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3fodd"]
+bg_color = Color(0.91764706, 0.84705883, 0.69411767, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.22745098, 0.42745098, 0.54901963, 1)
 
 [node name="ExampleBalloon" type="CanvasLayer"]
 layer = 100
@@ -207,6 +215,8 @@ response_template = NodePath("ResponseExample")
 
 [node name="ResponseExample" type="Button" parent="Balloon/ResponsesMenu"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3fodd")
 text = "Response example"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

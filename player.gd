@@ -109,7 +109,7 @@ func _start_mini_game():
 	get_tree().current_scene.add_child(fishingGame)
 
 	# 3️⃣ Connect the fish_caught signal from the child node that has fishing_game.gd
-	fishingGame.get_node("FishingGame").fish_caught.connect(_on_fish_caught)
+	GameEvents.fish_caught.connect(_on_fish_caught)
 
 func _on_fish_caught():
 	# 1️⃣ Remove the minigame from the scene
