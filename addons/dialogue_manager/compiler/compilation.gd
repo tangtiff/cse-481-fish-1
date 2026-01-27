@@ -109,7 +109,7 @@ func find_imported_titles(text: String, path: String) -> void:
 				add_error(id, 0, DMConstants.ERR_ERRORS_IN_IMPORTED_FILE)
 				continue
 
-			var uid: String = ResourceUID.id_to_text(ResourceLoader.get_resource_uid(import_data.path)).replace("uid://", "")
+			var uid: String = ResourceUID.path_to_uid(import_data.path).replace("uid://", "")
 			for title_key: String in imported_resource.titles:
 				# Ignore any titles that are already a reference
 				if "/" in title_key: continue
@@ -190,7 +190,7 @@ func build_line_tree(raw_lines: PackedStringArray) -> DMTreeLine:
 			if title == "":
 				add_error(i, 2, DMConstants.ERR_EMPTY_TITLE)
 			elif titles.has(title):
-				add_error(i + 1, 2, DMConstants.ERR_DUPLICATE_TITLE)
+				add_error(i, 2, DMConstants.ERR_DUPLICATE_TITLE)
 			else:
 				titles[title] = tree_line.id
 				if first_title == "":
@@ -736,7 +736,7 @@ func parse_character_and_dialogue(tree_line: DMTreeLine, line: DMCompiledLine, s
 	if ": " in text:
 		# If a character was given then split it out.
 		var bits = Array(text.strip_edges().split(": "))
-		line.character = bits.pop_front().strip_edges().replace("!ESCAPED_COLON!", ":")
+		line.character = bits.pop_front().strip_edges()
 		if not line.character in character_names:
 			character_names.append(line["character"])
 		# Character names can have expressions in them.

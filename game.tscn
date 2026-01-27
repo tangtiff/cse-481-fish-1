@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=4 uid="uid://dlm8y4wsto1u1"]
+[gd_scene load_steps=6 format=4 uid="uid://dlm8y4wsto1u1"]
 
 [ext_resource type="PackedScene" uid="uid://bwvm04qeof5e1" path="res://player.tscn" id="1_80nbo"]
 [ext_resource type="TileSet" uid="uid://uujoxkx0gdhm" path="res://tileset.tres" id="1_feb5d"]
-[ext_resource type="PackedScene" uid="uid://cjroyptlex6xf" path="res://dialogue_system.tscn" id="3_feb5d"]
+[ext_resource type="PackedScene" uid="uid://cjroyptlex6xf" path="res://dialogue/instructions.tscn" id="3_feb5d"]
 [ext_resource type="PackedScene" uid="uid://cssc200m7i1ts" path="res://profile_book.tscn" id="4_fc0e3"]
+[ext_resource type="PackedScene" uid="uid://dor71l8q6fpg" path="res://dialogue/balloon.tscn" id="5_7jktm"]
 
 [node name="Game" type="Node2D"]
 
@@ -32,4 +33,6 @@ position = Vector2(12, 132)
 scale = Vector2(0.5, 0.5)
 
 [node name="ProfileBook" parent="." instance=ExtResource("4_fc0e3")]
-position = Vector2(169, -83)
+position = Vector2(181, -84)
+
+[node name="ExampleBalloon" parent="." instance=ExtResource("5_7jktm")]

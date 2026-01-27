@@ -6,6 +6,8 @@ var onCatch := false
 var catchSpeed := 0.3
 var catchingValue := 0.0
 
+signal fish_caught
+
 func _physics_process(_delta):
 	if onCatch: catchingValue += catchSpeed
 	else: catchingValue -= catchSpeed
@@ -17,13 +19,7 @@ func _physics_process(_delta):
 	
 
 func _game_end() -> void:
-	var tween = get_tree().create_tween()
-	
-	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
-	tween.tween_property(self, "global_position", global_position + Vector2(0, 0), 0.5)
-	
-	await tween.finished
-	
+	fish_caught.emit()
 	get_tree().paused = false
 	queue_free()
 
