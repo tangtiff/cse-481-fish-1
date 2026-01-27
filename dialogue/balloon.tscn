@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dor71l8q6fpg"]
+[gd_scene load_steps=13 format=3 uid="uid://dor71l8q6fpg"]
 
 [ext_resource type="Script" uid="uid://dfi2t38vy5www" path="res://dialogue/balloon.gd" id="1_36de5"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
@@ -41,7 +41,7 @@ corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qkmqt"]
-bg_color = Color(0, 0, 0, 1)
+bg_color = Color(0.91764706, 0.84705883, 0.69411767, 1)
 border_width_left = 3
 border_width_top = 3
 border_width_right = 3
@@ -100,6 +100,8 @@ _data = {
 &"progress": SubResource("Animation_qkmqt")
 }
 
+[sub_resource type="Theme" id="Theme_fud8g"]
+
 [node name="ExampleBalloon" type="CanvasLayer"]
 layer = 100
 script = ExtResource("1_36de5")
@@ -110,10 +112,10 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -54.0
-offset_top = -360.0
-offset_right = -840.0
-offset_bottom = -608.0
+offset_left = 15.0
+offset_top = -40.0
+offset_right = -834.0
+offset_bottom = -355.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_qq3yp")
@@ -154,6 +156,7 @@ unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.501961)
 layout_mode = 2
 mouse_filter = 1
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
 text = "Character"
 fit_content = true
@@ -163,6 +166,7 @@ scroll_active = false
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "Dialogue..."
 
 [node name="Control" type="Control" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer"]
@@ -195,6 +199,7 @@ offset_bottom = 35.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 8
+theme = SubResource("Theme_fud8g")
 theme_override_constants/separation = 2
 alignment = 1
 script = ExtResource("3_72ixx")
