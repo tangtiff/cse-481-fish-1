@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://u0ko33cvr8ii"]
+
+[ext_resource type="Script" uid="uid://bw3upegui6utq" path="res://movement_tutorial.gd" id="1_02t7f"]
+[ext_resource type="Texture2D" uid="uid://hoi6j5o0mbwc" path="res://assests/Drawings/w_tutorial_button.png" id="1_ryt6v"]
+[ext_resource type="Texture2D" uid="uid://deewk832q0m5u" path="res://assests/Drawings/a_tutorial_button.png" id="2_02t7f"]
+[ext_resource type="Texture2D" uid="uid://bk8r64va45o2s" path="res://assests/Drawings/s_tutorial_button.png" id="3_n0qen"]
+[ext_resource type="Texture2D" uid="uid://c4k4jih23v7f" path="res://assests/Drawings/d_tutorial_button.png" id="4_x3ty5"]
+
+[node name="Movement Tutorial" type="Node2D"]
+script = ExtResource("1_02t7f")
+
+[node name="W" type="Sprite2D" parent="."]
+position = Vector2(56, 16)
+texture = ExtResource("1_ryt6v")
+
+[node name="A" type="Sprite2D" parent="."]
+position = Vector2(16, 56)
+texture = ExtResource("2_02t7f")
+
+[node name="S" type="Sprite2D" parent="."]
+position = Vector2(56, 56)
+texture = ExtResource("3_n0qen")
+
+[node name="D" type="Sprite2D" parent="."]
+position = Vector2(96, 56)
+texture = ExtResource("4_x3ty5")
+
+[node name="W Timer" type="Timer" parent="."]
+
+[node name="A Timer" type="Timer" parent="."]
+
+[node name="S Timer" type="Timer" parent="."]
+
+[node name="D Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="W Timer" to="." method="_on_w_timer_timeout"]
+[connection signal="timeout" from="A Timer" to="." method="_on_a_timer_timeout"]
+[connection signal="timeout" from="S Timer" to="." method="_on_s_timer_timeout"]
+[connection signal="timeout" from="D Timer" to="." method="_on_d_timer_timeout"]
