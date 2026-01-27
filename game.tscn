@@ -39,7 +39,7 @@ scale = Vector2(0.5, 0.5)
 [node name="ExampleBalloon" parent="." instance=ExtResource("5_7jktm")]
 
 [node name="ProfileBook" parent="." instance=ExtResource("4_fc0e3")]
-position = Vector2(182, -57)
+position = Vector2(291, -154)
 script = ExtResource("6_ryrav")
 
 [node name="InsideBook" parent="." instance=ExtResource("7_eow3j")]

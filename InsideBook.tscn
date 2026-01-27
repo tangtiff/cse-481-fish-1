@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cs0kljr87jqpq"]
+[gd_scene load_steps=7 format=3 uid="uid://cs0kljr87jqpq"]
 
 [ext_resource type="Texture2D" uid="uid://m70b7cbs4gaj" path="res://assests/Drawings/portrait.png" id="1_8xuce"]
+[ext_resource type="Script" uid="uid://cn260c0xleg6q" path="res://inside_book.gd" id="1_oj0dl"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y32ns"]
 bg_color = Color(0.91764706, 0.84705883, 0.69411767, 1)
@@ -29,7 +30,7 @@ border_width_bottom = 4
 border_color = Color(0.9490196, 0.68235296, 0.38039216, 1)
 
 [node name="InsideBook" type="Node2D"]
-visible = false
+script = ExtResource("1_oj0dl")
 
 [node name="Panel" type="Panel" parent="."]
 custom_minimum_size = Vector2(100, 30)
