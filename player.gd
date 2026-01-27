@@ -39,7 +39,7 @@ func _move_state():
 		velocity.y = move_toward(velocity.y, 0, SPEED)
 	
 	if velocity.x < 0: animated_sprite_2d.scale.x = -1
-	elif velocity.x >0: animated_sprite_2d.scale.x = 1
+	elif velocity.x > 0: animated_sprite_2d.scale.x = 1
 	
 	if velocity: animated_sprite_2d.play("walk_forward")
 	else: animated_sprite_2d.play("idle")
