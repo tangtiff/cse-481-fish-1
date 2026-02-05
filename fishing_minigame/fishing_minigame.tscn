@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://wibdq4g25tn8"]
+[gd_scene load_steps=15 format=3 uid="uid://wibdq4g25tn8"]
 
 [ext_resource type="Script" uid="uid://bvy016e15ws5e" path="res://fishing_minigame/fishing_game.gd" id="1_myvk3"]
 [ext_resource type="Texture2D" uid="uid://crusqroyikri6" path="res://assests/Sunnyside_World_ASSET_PACK_V2.1/Sunnyside_World_Assets/UI/9slice_box_white/Box_Orange_Square.png" id="2_k55qs"]
@@ -6,6 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://dkldd0rx6s7hu" path="res://assests/Sunnyside_World_ASSET_PACK_V2.1/Sunnyside_World_Assets/UI/9slice_box_white/SlimSlider_Base.png" id="4_wblku"]
 [ext_resource type="PackedScene" uid="uid://bxa641b5e8br1" path="res://fishing_minigame/fish.tscn" id="5_l1rca"]
 [ext_resource type="PackedScene" uid="uid://cojq34nns7kuw" path="res://fishing_minigame/target.tscn" id="6_lc7oe"]
+[ext_resource type="Texture2D" uid="uid://hoi6j5o0mbwc" path="res://assests/Drawings/w_tutorial_button.png" id="7_l1rca"]
+[ext_resource type="Texture2D" uid="uid://deewk832q0m5u" path="res://assests/Drawings/a_tutorial_button.png" id="8_lc7oe"]
+[ext_resource type="Texture2D" uid="uid://bk8r64va45o2s" path="res://assests/Drawings/s_tutorial_button.png" id="9_w4tvi"]
+[ext_resource type="Texture2D" uid="uid://c4k4jih23v7f" path="res://assests/Drawings/d_tutorial_button.png" id="10_l3b0t"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l1kbx"]
 texture = ExtResource("2_k55qs")
@@ -88,6 +92,26 @@ aquaContainer = NodePath("../PanelContainer/MarginContainer/VBoxContainer/AquaCo
 
 [node name="Target" parent="FishingGame" instance=ExtResource("6_lc7oe")]
 position = Vector2(150, 150)
+
+[node name="Node2D" type="Node2D" parent="FishingGame"]
+position = Vector2(150, 386.5)
+scale = Vector2(2, 2)
+
+[node name="W" type="Sprite2D" parent="FishingGame/Node2D"]
+position = Vector2(0, -20)
+texture = ExtResource("7_l1rca")
+
+[node name="A" type="Sprite2D" parent="FishingGame/Node2D"]
+position = Vector2(-40, 0)
+texture = ExtResource("8_lc7oe")
+
+[node name="S" type="Sprite2D" parent="FishingGame/Node2D"]
+position = Vector2(0, 20)
+texture = ExtResource("9_w4tvi")
+
+[node name="D" type="Sprite2D" parent="FishingGame/Node2D"]
+position = Vector2(40, 0)
+texture = ExtResource("10_l3b0t")
 
 [connection signal="target_entered" from="FishingGame/Target" to="FishingGame" method="_on_target_target_entered"]
 [connection signal="target_exited" from="FishingGame/Target" to="FishingGame" method="_on_target_target_exited"]

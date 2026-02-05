@@ -397,7 +397,9 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="TileMarker" type="Marker2D" parent="AnimatedSprite2D"]
-position = Vector2(10, 6)
+z_index = 1
+z_as_relative = false
+position = Vector2(29, 5)
 gizmo_extents = 5.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -84,7 +84,7 @@ func _fish_bitten_animation():
 	waiting.offset = Vector2(forceX, forceY)
 
 func _get_tile_data():
-	var tileMap = get_parent().find_child("Ocean")
+	var tileMap = get_parent().find_child("Fishing Spots")
 	var searchPosition = tileMap.local_to_map(tile_marker.global_position)
 	var data = tileMap.get_cell_tile_data(searchPosition)
 	print(searchPosition)
