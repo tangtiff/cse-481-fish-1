@@ -63,6 +63,14 @@ size_flags_vertical = 0
 [node name="Movement Tutorial" parent="player/UI" instance=ExtResource("8_vef74")]
 position = Vector2(-36, -116)
 
+[node name="Control" parent="player/UI" instance=ExtResource("4_fc0e3")]
+layout_mode = 0
+offset_left = 251.99997
+offset_top = -155.99998
+offset_right = 277.84613
+offset_bottom = -122.15381
+scale = Vector2(2.6, 2.5999975)
+
 [node name="Camera2D" type="Camera2D" parent="player"]
 zoom = Vector2(3, 3)
 
@@ -73,13 +81,3 @@ scale = Vector2(0.5, 0.5)
 
 [node name="ExampleBalloon" parent="." instance=ExtResource("5_7jktm")]
 visible = false
-
-[node name="Movement Tutorial" parent="." instance=ExtResource("8_vef74")]
-position = Vector2(-48, -136)
-
-[node name="Control" parent="." instance=ExtResource("4_fc0e3")]
-offset_left = 233.00002
-offset_top = -173.0
-offset_right = 265.0
-offset_bottom = -134.0
-scale = Vector2(2.6, 2.5999975)
