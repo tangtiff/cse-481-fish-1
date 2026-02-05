@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cssc200m7i1ts"]
+
+[ext_resource type="Texture2D" uid="uid://dwhsg2ullvc1o" path="res://assests/Drawings/fishBook.png" id="1_pocup"]
+[ext_resource type="Script" uid="uid://dkov654wy4gxx" path="res://journal/profileBook.gd" id="2_x8pju"]
+[ext_resource type="PackedScene" uid="uid://cs0kljr87jqpq" path="res://journal/InsideBook.tscn" id="3_jywmf"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("1_pocup")
+script = ExtResource("2_x8pju")
+inside_book_scene = ExtResource("3_jywmf")

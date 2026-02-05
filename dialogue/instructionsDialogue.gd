@@ -7,7 +7,6 @@ extends Node2D
 
 var dialogue_lines: Array[String] = [
 	"Hello! Use WASD to move. Press E on the pier to fish. Wait for a bite and press E again to reel fish in! Continue to use WASD while fishing. After, press SPACE to advance this text.",
-	
 ]
 
 var current_line: int = 0
