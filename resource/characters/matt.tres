@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="CharacterEntry" load_steps=3 format=3 uid="uid://dplj4qqp1m6j1"]
+
+[ext_resource type="Script" uid="uid://djvidkrgsu05j" path="res://resource/character_entries.gd" id="1_7ijvk"]
+[ext_resource type="Texture2D" uid="uid://cqieyi0qacr5x" path="res://assests/fishing_free/global_free_recoloured.png" id="1_7knij"]
+
+[resource]
+script = ExtResource("1_7ijvk")
+id = "Matt"
+display_name = "Matt"
+portrait = ExtResource("1_7knij")
+full_bio = "Bio:
+What if I told you that I know where I want to eat
+
+Preferences:
+Someone who can camoflauge
+
+Icks:
+Underwater walkers"
+metadata/_custom_type_script = "uid://djvidkrgsu05j"

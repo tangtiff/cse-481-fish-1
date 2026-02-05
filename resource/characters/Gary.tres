@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="CharacterEntry" load_steps=3 format=3 uid="uid://bfj6mcl7s1yi5"]
+
+[ext_resource type="Script" uid="uid://djvidkrgsu05j" path="res://resource/character_entries.gd" id="1_1fe1o"]
+[ext_resource type="Texture2D" uid="uid://m70b7cbs4gaj" path="res://assests/Drawings/portrait.png" id="1_30a84"]
+
+[resource]
+script = ExtResource("1_1fe1o")
+id = "Gary"
+display_name = "Gary"
+portrait = ExtResource("1_30a84")
+full_bio = "Bio:
+Together we could do the NYT wordle
+
+Preferences: 
+Venomous fish
+
+Icks: 
+Flashy fins"
+metadata/_custom_type_script = "uid://djvidkrgsu05j"
