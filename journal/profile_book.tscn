@@ -12,8 +12,11 @@ offset_bottom = 40.0
 
 [node name="TextureButton" type="TextureButton" parent="."]
 layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
 offset_right = 40.0
 offset_bottom = 40.0
+scale = Vector2(0.75, 0.75)
 texture_normal = ExtResource("1_pocup")
 script = ExtResource("2_x8pju")
 inside_book_scene = ExtResource("3_jywmf")
