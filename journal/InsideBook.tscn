@@ -4,7 +4,6 @@
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8xuce"]
 bg_color = Color(0.91764706, 0.84705883, 0.69411767, 1)
-border_width_top = 4
 border_color = Color(0.22352941, 0.42745098, 0.54901963, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f6g7a"]
@@ -17,33 +16,51 @@ bg_color = Color(0.8697165, 0.46338415, 0.4559896, 1)
 
 [node name="BookUI" type="Control"]
 layout_mode = 3
-anchors_preset = 0
-offset_left = -7.0
-offset_top = 3.0
-offset_right = -7.0
-offset_bottom = 3.0
-scale = Vector2(0.8399994, 0.5200006)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 339.0
+offset_top = 244.00006
+offset_right = 991.31396
+offset_bottom = 1497.2739
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.79390717, 0.19579288)
+size_flags_horizontal = 4
+size_flags_vertical = 4
 script = ExtResource("1_oj0dl")
 
 [node name="Background" type="Panel" parent="."]
 layout_mode = 1
-offset_left = -352.3812
-offset_top = -351.92264
-offset_right = 334.67416
-offset_bottom = 247.08676
-scale = Vector2(1.09523, 1.2350922)
+anchors_preset = -1
+anchor_top = -0.045
+anchor_right = 0.78200006
+anchor_bottom = 1.0
+offset_left = -0.8125305
+offset_top = 56.128708
+offset_right = 236.31354
+offset_bottom = -797.8115
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.91286093, 3.127696)
 theme_override_styles/panel = SubResource("StyleBoxFlat_8xuce")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Background"]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = -1
+anchor_top = 0.082
+anchor_right = 0.9990001
 anchor_bottom = 1.0
-offset_left = -13.269989
-offset_right = -96.59686
+offset_left = -5.50498
+offset_top = -37.284008
+offset_right = -10.822876
+offset_bottom = 161.71704
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(1.1600004, 1)
+rotation = -0.00033729145
+scale = Vector2(1.009138, 0.788276)
 theme_override_constants/separation = 0
 
 [node name="CharacterList" type="ItemList" parent="Background/HBoxContainer"]
@@ -56,7 +73,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_f6g7a")
 layout_mode = 2
 size_flags_horizontal = 3
 theme = SubResource("Theme_160wc")
-theme_override_constants/separation = 10
+theme_override_constants/separation = 15
 
 [node name="Name" type="Label" parent="Background/HBoxContainer/EntryPanel"]
 custom_minimum_size = Vector2(100, 75)
@@ -83,12 +100,23 @@ theme_override_font_sizes/normal_font_size = 25
 
 [node name="ExitButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 264.28592
-offset_top = -317.30734
-offset_right = 359.874
-offset_bottom = -219.23056
+offset_left = 591.8042
+offset_top = 17.517735
+offset_right = 660.02747
+offset_bottom = 94.29605
+scale = Vector2(1.150863, 1.6183902)
 theme_override_font_sizes/font_size = 40
 text = "X"
+
+[node name="MatchButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 302.30222
+offset_top = 1460.7272
+offset_right = 359.30222
+offset_bottom = 1503.8258
+scale = Vector2(6.771087, 7.387674)
+theme_override_font_sizes/font_size = 16
+text = "Match"
 
 [connection signal="item_selected" from="Background/HBoxContainer/CharacterList" to="." method="_on_character_list_item_selected"]
 [connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]

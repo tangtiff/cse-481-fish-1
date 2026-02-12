@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cojq34nns7kuw"]
 
 [ext_resource type="Script" uid="uid://c0efvtwe3m8my" path="res://fishing_minigame/target.gd" id="1_e1yvt"]
-[ext_resource type="Texture2D" uid="uid://cvf7fvn77gvuy" path="res://assests/crosshair026.png" id="2_5ebp1"]
+[ext_resource type="Texture2D" uid="uid://cvf7fvn77gvuy" path="res://assets/crosshair026.png" id="2_5ebp1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uqips"]
 size = Vector2(45, 45)

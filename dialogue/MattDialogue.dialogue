@@ -1,0 +1,14 @@
+~ start
+Matt: Hi, I saw on your flyer that you're able to find fish "reel love."
+Matt: Well, I'm looking to get out there more this year. I'm happy to meet with anyone as long as they're not stinky...My ex had fish breath.
+- All our clients smell of fresh sea breeze, don’t worry
+	Matt: Thank Poseidon.
+- You can’t date just anyone, tell me what you’re looking for
+Matt: I want someone who can understand that beneath the spikes, I’m just a chill guy. I can cook up a mean squid ink pasta, and I know all the best restaurants in this part of the reef. 
+Matt: One day I hope to visit the Titanic and dine on their deck, the view is amazing I heard. 
+- That sounds like an excellent date idea
+- I can work with this
+Matt: Thanks, I filled out my dating profile, so let me know if you find a match for me. I can’t wait for my blind date. Catch you later!
+- Start again => start
+- End the conversation => END
+=> END

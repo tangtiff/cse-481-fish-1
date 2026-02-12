@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="CharacterEntry" load_steps=3 format=3 uid="uid://dplj4qqp1m6j1"]
 
-[ext_resource type="Script" uid="uid://djvidkrgsu05j" path="res://resource/character_entries.gd" id="1_7ijvk"]
-[ext_resource type="Texture2D" uid="uid://cqieyi0qacr5x" path="res://assests/fishing_free/global_free_recoloured.png" id="1_7knij"]
+[ext_resource type="Texture2D" uid="uid://cpljw66wmvj4s" path="res://assets/Drawings/Matt.png" id="1_y0k1r"]
+[ext_resource type="Script" uid="uid://djvidkrgsu05j" path="res://resource/character_entries.gd" id="2_gf170"]
 
 [resource]
-script = ExtResource("1_7ijvk")
+script = ExtResource("2_gf170")
 id = "Matt"
 display_name = "Matt"
-portrait = ExtResource("1_7knij")
+portrait = ExtResource("1_y0k1r")
 full_bio = "Bio:
 What if I told you that I know where I want to eat
 

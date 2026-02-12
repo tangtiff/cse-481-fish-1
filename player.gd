@@ -13,9 +13,35 @@ var startFishing = false
 var waitForFish = false
 var fishBitten = false
 var maxWaitingTime = 4
+var catchFishCount: int = 0;
+
+var fish_pool = [
+	{"id": "Gary", "weight": 50},
+	{"id": "Matt", "weight": 30},
+	{"id": "Finn", "weight": 15},
+	{"id": "Coral", "weight": 5}
+]
 
 func _ready() -> void:
 	waiting.visible = false
+	randomize()
+	
+func get_weighted_random_fish() -> String:
+	var total_weight := 0
+	
+	for fish in fish_pool:
+		total_weight += fish.weight
+
+	var roll := randi() % total_weight
+	var cumulative := 0
+
+	for fish in fish_pool:
+		cumulative += fish.weight
+		if roll < cumulative:
+			return fish.id
+
+	return fish_pool[0].id
+
 
 func _physics_process(_delta):
 	if startFishing: _fishing_state()
@@ -101,38 +127,53 @@ var fishingGameScene = preload("res://fishing_minigame/fishing_minigame.tscn")
 var fishingGame: Node = null  # reference to the instantiated minigame
 
 func _start_mini_game():
-	# 1️⃣ Pause the main game while the minigame is active
+	# Pause the main game while the minigame is active
 	get_tree().paused = true
 	PhysicsServer2D.set_active(true)
 	
-	# 2️⃣ Instance the minigame scene
+	# Instance the minigame scene
 	fishingGame = fishingGameScene.instantiate()
 	get_tree().current_scene.add_child(fishingGame)
 
-	# 3️⃣ Connect the fish_caught signal from the child node that has fishing_game.gd
+	# Connect the fish_caught signal from the child node that has fishing_game.gd
 	GameEvents.fish_caught.connect(_on_fish_caught)
-
+	
 func _on_fish_caught():
-	# 1️⃣ Remove the minigame from the scene
 	if is_instance_valid(fishingGame):
 		fishingGame.queue_free()
 		fishingGame = null
 
-	# 2️⃣ Unpause the main game
 	get_tree().paused = false
-
-	# 3️⃣ Play player's "fishing_end" animation
 	animated_sprite_2d.play("fishing_end")
 
-	# 4️⃣ Start dialogue using DialogueManager
-	var dialogueRes: DialogueResource = preload("res://dialogue/dialogueFile.dialogue")
-	var balloon_scene = preload("res://dialogue/balloon.tscn").instantiate()
+	catchFishCount += 1
+
+	var caught_fish_id: String
+
+	if catchFishCount == 1:
+		caught_fish_id = "Gary"
+	elif catchFishCount == 2:
+		caught_fish_id = "Matt"
+	else:
+		caught_fish_id = get_weighted_random_fish()
+
+	start_fish_dialogue(caught_fish_id)
+
 	
-	# Use DialogueManager helper to start the balloon
+func start_fish_dialogue(fish_id: String):
+	var balloon_scene = preload("res://dialogue/balloon.tscn").instantiate()
+	var dialogueRes: DialogueResource
+
+	match fish_id:
+		"Gary":
+			dialogueRes = preload("res://dialogue/GaryDialogue.dialogue")
+		"Matt":
+			dialogueRes = preload("res://dialogue/MattDialogue.dialogue")
+		_:
+			dialogueRes = preload("res://dialogue/GaryDialogue.dialogue")
+
 	DialogueManager._start_balloon(balloon_scene, dialogueRes, "start", [])
-
-
-
+	
 
 func _on_waiting_timer_timeout() -> void:
 	waiting_timer.stop()

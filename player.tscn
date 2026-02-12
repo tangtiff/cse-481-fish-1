@@ -1,10 +1,10 @@
 [gd_scene load_steps=53 format=3 uid="uid://bwvm04qeof5e1"]
 
 [ext_resource type="Script" uid="uid://cuijuxrney7b4" path="res://player.gd" id="1_onrkg"]
-[ext_resource type="Texture2D" uid="uid://cumewgq0g1hki" path="res://assests/Sunnyside_World_ASSET_PACK_V2.1/Sunnyside_World_Assets/Characters/Human/CAUGHT/base_caught_strip10.png" id="2_2hs0m"]
-[ext_resource type="Texture2D" uid="uid://i0qwjv5khien" path="res://assests/Sunnyside_World_ASSET_PACK_V2.1/Sunnyside_World_Assets/Characters/Human/CASTING/base_casting_strip15.png" id="3_2hs0m"]
-[ext_resource type="Texture2D" uid="uid://biivhak3o4iou" path="res://assests/Sunnyside_World_ASSET_PACK_V2.1/Sunnyside_World_Assets/Characters/Human/IDLE/base_idle_strip9.png" id="4_sweqy"]
-[ext_resource type="Texture2D" uid="uid://s5iiifyy8mn" path="res://assests/Sunnyside_World_ASSET_PACK_V2.1/Sunnyside_World_Assets/Characters/Human/WALKING/base_walk_strip8.png" id="5_2hs0m"]
+[ext_resource type="Texture2D" uid="uid://cumewgq0g1hki" path="res://assets/Sunnyside_World_ASSET_PACK_V2.1/Sunnyside_World_Assets/Characters/Human/CAUGHT/base_caught_strip10.png" id="2_2hs0m"]
+[ext_resource type="Texture2D" uid="uid://i0qwjv5khien" path="res://assets/Sunnyside_World_ASSET_PACK_V2.1/Sunnyside_World_Assets/Characters/Human/CASTING/base_casting_strip15.png" id="3_2hs0m"]
+[ext_resource type="Texture2D" uid="uid://biivhak3o4iou" path="res://assets/Sunnyside_World_ASSET_PACK_V2.1/Sunnyside_World_Assets/Characters/Human/IDLE/base_idle_strip9.png" id="4_sweqy"]
+[ext_resource type="Texture2D" uid="uid://s5iiifyy8mn" path="res://assets/Sunnyside_World_ASSET_PACK_V2.1/Sunnyside_World_Assets/Characters/Human/WALKING/base_walk_strip8.png" id="5_2hs0m"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pgbbb"]
 atlas = ExtResource("2_2hs0m")

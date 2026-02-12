@@ -5,7 +5,6 @@
 ## A RichTextLabel specifically for use with [b]Dialogue Manager[/b] dialogue.
 class_name DialogueLabel extends RichTextLabel
 
-
 ## Emitted for each letter typed out.
 signal spoke(letter: String, letter_index: int, speed: float)
 

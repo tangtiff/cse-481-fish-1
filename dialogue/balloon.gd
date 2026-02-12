@@ -57,6 +57,11 @@ var mutation_cooldown: Timer = Timer.new()
 #image of speaking character
 @onready var portrait: TextureRect = $Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/Portrait
 
+var portraits = {
+	"Gary": preload("res://assets/Drawings/Gary.png"),
+	"Matt": preload("res://assets/Drawings/Matt.png"),
+}
+
 ## The label showing the name of the currently speaking character
 @onready var character_label: RichTextLabel = %CharacterLabel
 
@@ -94,9 +99,7 @@ func _process(delta: float) -> void:
 
 
 func _unhandled_input(_event: InputEvent) -> void:
-	# Only the balloon is allowed to handle input while it's showing
 	get_viewport().set_input_as_handled()
-
 
 func _notification(what: int) -> void:
 	## Detect a change of locale and update the current dialogue line to show the new language
@@ -133,12 +136,11 @@ func apply_dialogue_line() -> void:
 	character_label.text = tr(dialogue_line.character, "dialogue")
 	
 	if is_instance_valid(portrait):
-		var portrait_path: String = "res://assests/Drawings/portrait.png" % dialogue_line.character
-		if ResourceLoader.exists(portrait_path):
-				portrait.texture = load(portrait_path)
+		var speaker_name := dialogue_line.character
+		if portraits.has(speaker_name):
+			portrait.texture = portraits[speaker_name]
 		else:
 			portrait.texture = null
-
 
 	dialogue_label.hide()
 	dialogue_label.dialogue_line = dialogue_line

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cqsa0f5mtwh1b"
+path="res://.godot/imported/MattDialogue.dialogue-35ccdf3bdac9ecf6ad1cef2e34ea47b8.tres"
+
+[deps]
+
+source_file="res://dialogue/MattDialogue.dialogue"
+dest_files=["res://.godot/imported/MattDialogue.dialogue-35ccdf3bdac9ecf6ad1cef2e34ea47b8.tres"]
+
+[params]
+
+defaults=true

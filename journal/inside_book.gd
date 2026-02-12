@@ -24,11 +24,14 @@ var entries = []
 func _ready():
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	visible = false
+	
+func _input(event):
+	if event is InputEventMouseButton and event.pressed:
+		print("Book received click")
 
-
-func open_book():
-	refresh_book()
-	visible = true
+func open_book(): 
+	refresh_book() 
+	visible = true 
 	#get_tree().paused = true
 
 func close_book():
