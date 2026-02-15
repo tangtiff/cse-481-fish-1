@@ -19,7 +19,7 @@ var fish_pool = [
 	{"id": "Gary", "weight": 50},
 	{"id": "Matt", "weight": 30},
 	{"id": "Finn", "weight": 15},
-	{"id": "Coral", "weight": 5}
+	{"id": "Leona", "weight": 5}
 ]
 
 func _ready() -> void:
@@ -169,6 +169,8 @@ func start_fish_dialogue(fish_id: String):
 			dialogueRes = preload("res://dialogue/GaryDialogue.dialogue")
 		"Matt":
 			dialogueRes = preload("res://dialogue/MattDialogue.dialogue")
+		"Leona":
+			dialogueRes = preload("res://dialogue/LeonaDialogue.dialogue")
 		_:
 			dialogueRes = preload("res://dialogue/GaryDialogue.dialogue")
 

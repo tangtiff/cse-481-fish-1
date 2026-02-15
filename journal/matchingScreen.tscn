@@ -1,0 +1,96 @@
+[gd_scene load_steps=4 format=3 uid="uid://ce7li7e5i1hqd"]
+
+[ext_resource type="Script" uid="uid://b7an4120lqllg" path="res://journal/matching.gd" id="1_pjnc6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_225r2"]
+bg_color = Color(0.91764706, 0.84705883, 0.69411767, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hg0s5"]
+bg_color = Color(0.22352941, 0.42745098, 0.54901963, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -926.0
+offset_top = -497.0
+offset_right = -904.80005
+offset_bottom = -470.6001
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.9600003, 0.91999936)
+script = ExtResource("1_pjnc6")
+game_scene_path = "uid://c8bns7745jl8d"
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -41.400024
+offset_top = -39.80005
+offset_right = 1949.4
+offset_bottom = 1112.8
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_225r2")
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 0
+offset_left = -5.0
+offset_right = 898.0
+offset_bottom = 1077.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_hg0s5")
+
+[node name="LeftItemList" type="ItemList" parent="Panel2"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 0
+offset_left = 39.0
+offset_top = 148.0
+offset_right = 838.0
+offset_bottom = 918.0
+theme_override_font_sizes/font_size = 25
+
+[node name="Panel3" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 1029.0
+offset_top = -5.0
+offset_right = 1926.0
+offset_bottom = 1079.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_hg0s5")
+
+[node name="RightItemList" type="ItemList" parent="Panel3"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 0
+offset_left = 46.0
+offset_top = 148.0
+offset_right = 855.0
+offset_bottom = 917.0
+theme_override_font_sizes/font_size = 25
+
+[node name="Date" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 538.0
+offset_top = 938.0
+offset_right = 860.0
+offset_bottom = 1065.0
+theme_override_font_sizes/font_size = 26
+text = "Date!"
+
+[node name="Exit" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 694.0
+offset_top = 12.0
+offset_right = 854.0
+offset_bottom = 125.0
+theme_override_font_sizes/font_size = 25
+text = "X"
+
+[connection signal="item_selected" from="Panel2/LeftItemList" to="." method="_on_item_list_item_selected"]
+[connection signal="item_selected" from="Panel3/RightItemList" to="." method="_on_item_list_2_item_selected"]
+[connection signal="pressed" from="Panel3/Date" to="." method="_on_date_pressed"]
+[connection signal="pressed" from="Panel3/Exit" to="." method="_on_exit_pressed"]

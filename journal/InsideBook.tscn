@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cs0kljr87jqpq"]
+[gd_scene load_steps=7 format=3 uid="uid://cs0kljr87jqpq"]
 
 [ext_resource type="Script" uid="uid://cn260c0xleg6q" path="res://journal/inside_book.gd" id="1_oj0dl"]
+[ext_resource type="PackedScene" uid="uid://ce7li7e5i1hqd" path="res://journal/matchingScreen.tscn" id="2_ka0r8"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8xuce"]
 bg_color = Color(0.91764706, 0.84705883, 0.69411767, 1)
@@ -21,16 +22,17 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 339.0
-offset_top = 244.00006
-offset_right = 991.31396
-offset_bottom = 1497.2739
+offset_left = 318.0
+offset_top = 122.0
+offset_right = 970.31396
+offset_bottom = 1375.2739
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.79390717, 0.19579288)
+scale = Vector2(0.5396562, 0.16175696)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 script = ExtResource("1_oj0dl")
+matching_scene = ExtResource("2_ka0r8")
 
 [node name="Background" type="Panel" parent="."]
 layout_mode = 1
@@ -100,23 +102,24 @@ theme_override_font_sizes/normal_font_size = 25
 
 [node name="ExitButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 591.8042
-offset_top = 17.517735
-offset_right = 660.02747
-offset_bottom = 94.29605
+offset_left = 629.7966
+offset_top = 25.537075
+offset_right = 665.91437
+offset_bottom = 102.3154
 scale = Vector2(1.150863, 1.6183902)
 theme_override_font_sizes/font_size = 40
 text = "X"
 
 [node name="MatchButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 302.30222
-offset_top = 1460.7272
-offset_right = 359.30222
-offset_bottom = 1503.8258
-scale = Vector2(6.771087, 7.387674)
+offset_left = 409.36777
+offset_top = 1506.6941
+offset_right = 524.3678
+offset_bottom = 1549.7927
+scale = Vector2(2.3877034, 7.387674)
 theme_override_font_sizes/font_size = 16
-text = "Match"
+text = "Match Couple"
 
 [connection signal="item_selected" from="Background/HBoxContainer/CharacterList" to="." method="_on_character_list_item_selected"]
 [connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="MatchButton" to="." method="_on_match_button_pressed"]

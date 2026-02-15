@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="CharacterEntry" load_steps=3 format=3 uid="uid://cigxa1lcsjclx"]
+
+[ext_resource type="Texture2D" uid="uid://c30xx0ef6icr6" path="res://assets/Drawings/Leona.png" id="1_gmrua"]
+[ext_resource type="Script" uid="uid://djvidkrgsu05j" path="res://resource/character_entries.gd" id="1_lpf0k"]
+
+[resource]
+script = ExtResource("1_lpf0k")
+id = "Leona"
+display_name = "Leona"
+portrait = ExtResource("1_gmrua")
+full_bio = "Bio: 
+We're the same type of weird if you enjoy the smell of sea foam
+
+Preferences:
+Shiny scales
+
+Icks:
+Invasive species"
+metadata/_custom_type_script = "uid://djvidkrgsu05j"

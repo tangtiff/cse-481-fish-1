@@ -1,0 +1,10 @@
+~ start
+Leona: Well hey there, darlin'. How can someone like me find a nice date for tonight?
+Leona: Get me someone sweet, a nice strong man who can build all my Ikea furniture. 
+- First one
+	Leona: You picked the first one.
+- Second one
+	Leona: You picked the second one.
+- Start again => start
+- End the conversation => END
+=> END

@@ -1,5 +1,7 @@
 extends Control
 
+@export var matching_scene: PackedScene
+
 @onready var character_list = $Background/HBoxContainer/CharacterList
 @onready var portrait = $Background/HBoxContainer/EntryPanel/Portrait
 @onready var name_label = $Background/HBoxContainer/EntryPanel/Name
@@ -7,27 +9,13 @@ extends Control
 
 var entries = []
 
-#func _ready():
-	#visible = false
-	#process_mode = Node.PROCESS_MODE_ALWAYS
-	#GameEvents.fish_unlocked.connect(_on_fish_unlocked)
-	
-#func _ready():
-	#process_mode = Node.PROCESS_MODE_ALWAYS
-	#visible = false
-	
-#func _ready():
-	#process_mode = Node.PROCESS_MODE_ALWAYS
-	#print("InsideBook loaded")
-	#refresh_book()
-
 func _ready():
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	visible = false
 	
-func _input(event):
-	if event is InputEventMouseButton and event.pressed:
-		print("Book received click")
+#func _input(event):
+	#if event is InputEventMouseButton and event.pressed:
+		#print("Book received click")
 
 func open_book(): 
 	refresh_book() 
@@ -66,3 +54,7 @@ func display_entry(entry):
 func _on_exit_button_pressed() -> void:
 	close_book()
 	close_book()
+
+func _on_match_button_pressed() -> void:
+	if matching_scene:
+		get_tree().change_scene_to_packed(matching_scene)
