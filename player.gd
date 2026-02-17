@@ -176,6 +176,8 @@ func _on_fish_caught():
 		caught_fish_id = "Gary"
 	elif catchFishCount == 2:
 		caught_fish_id = "Matt"
+	elif catchFishCount == 3:
+		caught_fish_id == "Leona"
 	else:
 		caught_fish_id = get_weighted_random_fish()
 
@@ -194,7 +196,7 @@ func start_fish_dialogue(fish_id: String):
 		"Leona":
 			dialogueRes = preload("res://dialogue/LeonaDialogue.dialogue")
 		_:
-			dialogueRes = preload("res://dialogue/GaryDialogue.dialogue")
+			dialogueRes = preload("res://dialogue/LeonaDialogue.dialogue")
 
 	DialogueManager._start_balloon(balloon_scene, dialogueRes, "start", [])
 	
