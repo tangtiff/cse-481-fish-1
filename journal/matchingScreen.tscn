@@ -10,20 +10,15 @@ bg_color = Color(0.22352941, 0.42745098, 0.54901963, 1)
 
 [node name="Control" type="Control"]
 layout_mode = 3
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -926.0
-offset_top = -497.0
-offset_right = -904.80005
-offset_bottom = -470.6001
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -33.096558
+offset_bottom = 203.75037
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.9600003, 0.91999936)
+scale = Vector2(0.84000057, 0.7999997)
 script = ExtResource("1_pjnc6")
-game_scene_path = "uid://c8bns7745jl8d"
 
 [node name="Panel" type="Panel" parent="."]
 custom_minimum_size = Vector2(100, 0)
@@ -31,66 +26,99 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -41.400024
-offset_top = -39.80005
-offset_right = 1949.4
-offset_bottom = 1112.8
+offset_top = -5.0000014
+offset_right = 40.279297
+offset_bottom = -0.088134766
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1.0421249, 1.0179335)
 theme_override_styles/panel = SubResource("StyleBoxFlat_225r2")
 
 [node name="Panel2" type="Panel" parent="."]
-layout_mode = 0
-offset_left = -5.0
-offset_right = 898.0
-offset_bottom = 1077.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2.3809507
+offset_top = -3.750001
+offset_right = 131.18896
+offset_bottom = 63.750366
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_hg0s5")
 
 [node name="LeftItemList" type="ItemList" parent="Panel2"]
 custom_minimum_size = Vector2(50, 0)
-layout_mode = 0
-offset_left = 39.0
-offset_top = 148.0
-offset_right = 838.0
-offset_bottom = 918.0
-theme_override_font_sizes/font_size = 25
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 85.714226
+offset_top = 175.00009
+offset_right = 823.80896
+offset_bottom = -325.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
 
-[node name="Panel3" type="Panel" parent="."]
-layout_mode = 0
-offset_left = 1029.0
-offset_top = -5.0
-offset_right = 1926.0
-offset_bottom = 1079.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_hg0s5")
-
-[node name="RightItemList" type="ItemList" parent="Panel3"]
+[node name="RightItemList" type="ItemList" parent="Panel2"]
 custom_minimum_size = Vector2(50, 0)
-layout_mode = 0
-offset_left = 46.0
-offset_top = 148.0
-offset_right = 855.0
-offset_bottom = 917.0
-theme_override_font_sizes/font_size = 25
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -804.99805
+offset_top = 172.50006
+offset_right = -132.14282
+offset_bottom = -330.00043
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+auto_width = true
+auto_height = true
 
-[node name="Date" type="Button" parent="Panel3"]
-layout_mode = 0
-offset_left = 538.0
-offset_top = 938.0
-offset_right = 860.0
-offset_bottom = 1065.0
+[node name="Date" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -222.61853
+offset_top = -140.0
+offset_right = -30.618408
+offset_bottom = -50.921143
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(1.1904731, 1.5750171)
 theme_override_font_sizes/font_size = 26
 text = "Date!"
 
-[node name="Exit" type="Button" parent="Panel3"]
-layout_mode = 0
-offset_left = 694.0
-offset_top = 12.0
-offset_right = 854.0
-offset_bottom = 125.0
+[node name="Exit" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -119.523926
+offset_bottom = 96.749985
+grow_horizontal = 0
 theme_override_font_sizes/font_size = 25
 text = "X"
 
+[node name="Panel3" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 192.85701
+offset_top = 1663.7506
+offset_right = 192.85693
+offset_bottom = 1663.7507
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_hg0s5")
+
 [connection signal="item_selected" from="Panel2/LeftItemList" to="." method="_on_item_list_item_selected"]
-[connection signal="item_selected" from="Panel3/RightItemList" to="." method="_on_item_list_2_item_selected"]
-[connection signal="pressed" from="Panel3/Date" to="." method="_on_date_pressed"]
-[connection signal="pressed" from="Panel3/Exit" to="." method="_on_exit_pressed"]
+[connection signal="item_selected" from="Panel2/RightItemList" to="." method="_on_item_list_2_item_selected"]
+[connection signal="pressed" from="Panel2/Date" to="." method="_on_date_pressed"]
+[connection signal="pressed" from="Panel2/Exit" to="." method="_on_exit_pressed"]
