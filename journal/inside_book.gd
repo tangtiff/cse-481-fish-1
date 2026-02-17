@@ -5,6 +5,7 @@ extends Control
 @onready var portrait = $Background/HBoxContainer/EntryPanel/Portrait
 @onready var name_label = $Background/HBoxContainer/EntryPanel/Name
 @onready var bio_text = $Background/HBoxContainer/EntryPanel/BioScroll/BioText
+@onready var satisfaction_bar = $Background/HBoxContainer/EntryPanel/Portrait/Satisfaction
 
 var entries = []
 var matching_screen_instance = null  # Track the matching screen
@@ -50,6 +51,7 @@ func display_entry(entry):
 	portrait.texture = entry.portrait
 	name_label.text = entry.display_name
 	bio_text.text = entry.full_bio
+	satisfaction_bar.value = entry.satisfaction
 
 func _on_exit_button_pressed() -> void:
 	close_book()
