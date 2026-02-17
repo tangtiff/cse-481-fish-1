@@ -14,5 +14,6 @@ func _on_first_unlock(_id):
 func _pressed():
 	if inside_book_scene:
 		var book = inside_book_scene.instantiate()
-		get_tree().current_scene.add_child(book)
+		# Add to root instead of current_scene
+		get_tree().root.add_child(book)
 		book.open_book()

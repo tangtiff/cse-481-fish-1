@@ -1,0 +1,21 @@
+~ start
+Matt and Gary meet at a local restaurant. 
+Matt: Hey, are you Gary? I’m Matt from Reel Love.
+Gary: I am! Nice to meet you. Honestly, I can’t believe you’re real, I just thought the match maker was a little shady given they’re on an abandoned island, no reviews, and got us matched so quickly.
+Matt: Me too! I thought they were going to set me up with sea slug and run away with my pearls. I’m so glad I was wrong
+Gary: I'm definitely not a sea slug, just a stone fish. That doesn't bother you?
+Matt: Not at all. Spikey poisonous fish like us get a bad rep. I know what it's like to be judged before I can even get a greeting in, although it has gotten a lot better.
+Matt: I know it’s difficult, especially for stone fish—sorry, it must have been hard in the dating pool.
+Gary: Thank you for understanding, I’m just glad someone gets it. How are you liking your food?
+Matt: It's good! The noodles are bouncy and the sauce compliments the sea prunes well. It’s rich without being heavy, bright without being sharp. 
+Matt: Every note lands cleanly, salt, acid, sweetness—none overpowering. 
+Gary: Wow, you must be a food critic! I would just describe it as “tasty.” 
+Matt: I’m a chef at a nearby restaurant, Panda Guppy Express. 
+Gary: I love that place! I ordered off the menu by a waiter's recommendation and it was a delicious sea grass stir fry. I never tasted anything like it.
+Matt: I invented that recipe! I’m still tweaking it a little, but I’m glad you like it! Give me your critiques and I can cook a better version for you. 
+Gary: I would love that, thank you!
+
+- Start again => start
+- End the conversation => END
+
+=> END

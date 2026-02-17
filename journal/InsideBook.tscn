@@ -17,18 +17,16 @@ bg_color = Color(0.8697165, 0.46338415, 0.4559896, 1)
 
 [node name="BookUI" type="Control"]
 layout_mode = 3
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 318.0
-offset_top = 122.0
-offset_right = 970.31396
-offset_bottom = 1375.2739
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 344.0
+offset_top = 247.0
+offset_right = 14.418213
+offset_bottom = 1248.7126
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.5396562, 0.16175696)
+scale = Vector2(0.30056542, 0.122003384)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 script = ExtResource("1_oj0dl")
@@ -36,14 +34,13 @@ matching_scene = ExtResource("2_ka0r8")
 
 [node name="Background" type="Panel" parent="."]
 layout_mode = 1
-anchors_preset = -1
-anchor_top = -0.045
-anchor_right = 0.78200006
+anchors_preset = 15
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -0.8125305
-offset_top = 56.128708
-offset_right = 236.31354
-offset_bottom = -797.8115
+offset_left = 1.5276552
+offset_top = -34.69521
+offset_right = -205.37598
+offset_bottom = -1478.9874
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.91286093, 3.127696)
@@ -55,10 +52,10 @@ anchors_preset = -1
 anchor_top = 0.082
 anchor_right = 0.9990001
 anchor_bottom = 1.0
-offset_left = -5.50498
-offset_top = -37.284008
-offset_right = -10.822876
-offset_bottom = 161.71704
+offset_left = -3.2263737
+offset_top = -54.67353
+offset_right = -10.807983
+offset_bottom = 174.65936
 grow_horizontal = 2
 grow_vertical = 2
 rotation = -0.00033729145
@@ -100,26 +97,27 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/normal_font_size = 25
 
-[node name="ExitButton" type="Button" parent="."]
+[node name="ExitButton" type="Button" parent="Background"]
 layout_mode = 0
-offset_left = 629.7966
-offset_top = 25.537075
-offset_right = 665.91437
-offset_bottom = 102.3154
+offset_left = 1268.4983
+offset_top = 9.508198
+offset_right = 1345.5659
+offset_bottom = 72.508194
 scale = Vector2(1.150863, 1.6183902)
 theme_override_font_sizes/font_size = 40
 text = "X"
 
-[node name="MatchButton" type="Button" parent="."]
+[node name="MatchButton" type="Button" parent="Background"]
 layout_mode = 0
-offset_left = 409.36777
-offset_top = 1506.6941
-offset_right = 524.3678
-offset_bottom = 1549.7927
-scale = Vector2(2.3877034, 7.387674)
+offset_left = 850.3595
+offset_top = 591.32086
+offset_right = 993.1628
+offset_bottom = 622.32086
+scale = Vector2(3.7693644, 7.387674)
 theme_override_font_sizes/font_size = 16
 text = "Match Couple"
+icon_alignment = 1
 
 [connection signal="item_selected" from="Background/HBoxContainer/CharacterList" to="." method="_on_character_list_item_selected"]
-[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]
-[connection signal="pressed" from="MatchButton" to="." method="_on_match_button_pressed"]
+[connection signal="pressed" from="Background/ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="Background/MatchButton" to="." method="_on_match_button_pressed"]

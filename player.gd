@@ -25,7 +25,29 @@ var fish_pool = [
 func _ready() -> void:
 	waiting.visible = false
 	randomize()
+	GameEvents.match_made.connect(_on_match_made)
 	
+func _on_match_made(left_id: String, right_id: String):
+	start_match_dialogue(left_id, right_id)
+	
+	
+
+func start_match_dialogue(left_id: String, right_id: String):
+	var balloon_scene = preload("res://dialogue/balloon.tscn").instantiate()
+	var dialogueRes: DialogueResource
+
+	# You can key dialogue off either fish, or the pair
+	var pair_key = left_id + "_" + right_id
+	match pair_key:
+		"Gary_Matt":
+			dialogueRes = preload("res://dialogue/GaryMattMatch.dialogue")
+		"Matt_Gary":
+			dialogueRes = preload("res://dialogue/GaryMattMatch.dialogue")  # Same dialogue, reversed pair
+		_:
+			dialogueRes = preload("res://dialogue/GaryMattMatch.dialogue")  # Fallback
+
+	DialogueManager._start_balloon(balloon_scene, dialogueRes, "start", [])
+
 func get_weighted_random_fish() -> String:
 	var total_weight := 0
 	

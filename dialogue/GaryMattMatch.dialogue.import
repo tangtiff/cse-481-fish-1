@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://c5ub10ladgdc8"
+path="res://.godot/imported/GaryMattMatch.dialogue-73f89a146b5022a708b366a986716f7e.tres"
+
+[deps]
+
+source_file="res://dialogue/GaryMattMatch.dialogue"
+dest_files=["res://.godot/imported/GaryMattMatch.dialogue-73f89a146b5022a708b366a986716f7e.tres"]
+
+[params]
+
+defaults=true
