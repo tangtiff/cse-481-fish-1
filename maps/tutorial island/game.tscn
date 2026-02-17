@@ -1,14 +1,17 @@
-[gd_scene load_steps=8 format=4 uid="uid://dlm8y4wsto1u1"]
+[gd_scene load_steps=10 format=4 uid="uid://dlm8y4wsto1u1"]
 
 [ext_resource type="PackedScene" uid="uid://bwvm04qeof5e1" path="res://player.tscn" id="1_80nbo"]
 [ext_resource type="TileSet" uid="uid://uujoxkx0gdhm" path="res://tileset.tres" id="1_feb5d"]
+[ext_resource type="Script" uid="uid://dhgu7i81nyjl4" path="res://maps/tutorial island/game.gd" id="1_or2b2"]
 [ext_resource type="PackedScene" uid="uid://cjroyptlex6xf" path="res://dialogue/instructionsDialogue.tscn" id="3_feb5d"]
 [ext_resource type="PackedScene" uid="uid://8yb6waskrnr3" path="res://journal/profile_book.tscn" id="3_ryrav"]
 [ext_resource type="PackedScene" uid="uid://cs0kljr87jqpq" path="res://journal/InsideBook.tscn" id="4_eow3j"]
 [ext_resource type="PackedScene" uid="uid://dor71l8q6fpg" path="res://dialogue/balloon.tscn" id="5_7jktm"]
-[ext_resource type="PackedScene" path="res://movement_tutorial.tscn" id="8_vef74"]
+[ext_resource type="PackedScene" uid="uid://u0ko33cvr8ii" path="res://movement_tutorial.tscn" id="8_vef74"]
+[ext_resource type="PackedScene" uid="uid://l27uve72bsub" path="res://pause_menu.tscn" id="9_2n4y8"]
 
 [node name="Game" type="Node2D"]
+script = ExtResource("1_or2b2")
 
 [node name="TileMap" type="Node2D" parent="."]
 
@@ -95,3 +98,17 @@ scale = Vector2(0.5, 0.5)
 
 [node name="ExampleBalloon" parent="." instance=ExtResource("5_7jktm")]
 visible = false
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="UIRoot" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PauseMenu" parent="UI/UIRoot" instance=ExtResource("9_2n4y8")]
+visible = false
+layout_mode = 1

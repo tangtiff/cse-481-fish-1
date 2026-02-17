@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" path="res://assets/Drawings/Pause_Box_.png" id="1_hdmo1"]
 [ext_resource type="Script" path="res://pause_menu.gd" id="1_p81d2"]
+[ext_resource type="Texture2D" uid="uid://bc214p4m24o26" path="res://assets/Drawings/Pause_Box_.png" id="1_hdmo1"]
+[ext_resource type="Script" uid="uid://b1t4ytjnlsbm1" path="res://pause_menu.gd" id="1_p81d2"]
 [ext_resource type="FontFile" uid="uid://b6vj5pj0of2wj" path="res://assets/fonts/at01.ttf" id="3_05uyy"]
 
 [node name="PauseMenu" type="Control"]
