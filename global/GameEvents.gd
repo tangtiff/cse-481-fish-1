@@ -3,6 +3,7 @@ extends Node
 signal fish_caught
 signal fish_unlocked(unlocked_id)
 signal fish_matched(fish_a, fish_b)
+signal match_made(left_id: String, right_id: String)
 
 # Hard-coded fish order (match your .tres file names or IDs)
 var fish_order: Array[String] = [

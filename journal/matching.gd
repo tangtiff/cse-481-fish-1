@@ -44,21 +44,23 @@ func _on_exit_pressed() -> void:
 	exit_requested.emit()  # Signal parent to close
 
 func _on_date_pressed() -> void:
+
 	var left_selected = left_list.get_selected_items()
 	var right_selected = right_list.get_selected_items()
-	
 	if left_selected.is_empty() or right_selected.is_empty():
 		print("Select a fish on both sides.")
 		return
-	
+
 	var left_index = left_selected[0]
 	var right_index = right_selected[0]
 	var left_id = entry_ids[left_index]
 	var right_id = entry_ids[right_index]
-	
+
 	var success = GameEvents.add_match(left_id, right_id)
 	if not success:
 		print("Invalid match (duplicate or same fish).")
 		return
-	
+
 	print("Matched: ", left_id, " + ", right_id)
+	exit_requested.emit()  # Close matching screen first
+	GameEvents.match_made.emit(left_id, right_id)  # Then trigger dialogue

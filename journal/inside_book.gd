@@ -12,6 +12,10 @@ var matching_screen_instance = null  # Track the matching screen
 func _ready():
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	visible = false
+	GameEvents.match_made.connect(_on_match_made)
+
+func _on_match_made(_left_id, _right_id):
+	visible = false
 
 func open_book(): 
 	refresh_book() 
