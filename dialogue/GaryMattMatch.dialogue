@@ -1,5 +1,5 @@
 ~ start
-Matt and Gary meet at a local restaurant. 
+Matt and Gary meet at a local restaurant. (If you paired leona or finn, their dating dialogue is still in the works sorry)
 Matt: Hey, are you Gary? I’m Matt from Reel Love.
 Gary: I am! Nice to meet you. Honestly, I can’t believe you’re real, I just thought the match maker was a little shady given they’re on an abandoned island, no reviews, and got us matched so quickly.
 Matt: Me too! I thought they were going to set me up with sea slug and run away with my pearls. I’m so glad I was wrong
@@ -14,8 +14,11 @@ Matt: I’m a chef at a nearby restaurant, Panda Guppy Express.
 Gary: I love that place! I ordered off the menu by a waiter's recommendation and it was a delicious sea grass stir fry. I never tasted anything like it.
 Matt: I invented that recipe! I’m still tweaking it a little, but I’m glad you like it! Give me your critiques and I can cook a better version for you. 
 Gary: I would love that, thank you!
-
+Matt and Gary enjoyed the rest of their date. 
+Gary: Thanks for introducing us, the date went great and Matt is a lovely guy and an even better cook. I’ll tell my friends about you! 
++5 satisfaction
+Matt: Gary was an amazing guy! We’re going on another date in a few days. I’ll keep you updated, thanks again!
++5 satisfaction 
 - Start again => start
 - End the conversation => END
-
 => END
