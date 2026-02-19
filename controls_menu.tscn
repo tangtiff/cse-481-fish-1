@@ -1,0 +1,120 @@
+[gd_scene load_steps=7 format=3 uid="uid://bs025grb706po"]
+
+[ext_resource type="Texture2D" uid="uid://bc214p4m24o26" path="res://assets/Drawings/Pause_Box_.png" id="1_y0nkq"]
+[ext_resource type="Texture2D" uid="uid://deewk832q0m5u" path="res://assets/Drawings/a_tutorial_button.png" id="2_b038a"]
+[ext_resource type="FontFile" uid="uid://b6vj5pj0of2wj" path="res://assets/fonts/at01.ttf" id="3_veo5k"]
+[ext_resource type="Texture2D" uid="uid://hoi6j5o0mbwc" path="res://assets/Drawings/w_tutorial_button.png" id="4_kucdi"]
+[ext_resource type="Texture2D" uid="uid://bk8r64va45o2s" path="res://assets/Drawings/s_tutorial_button.png" id="5_hynx4"]
+[ext_resource type="Texture2D" uid="uid://c4k4jih23v7f" path="res://assets/Drawings/d_tutorial_button.png" id="6_2g4ts"]
+
+[node name="ControlsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_y0nkq")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="TextureRect"]
+
+[node name="A" type="TextureRect" parent="TextureRect/CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -192.0
+offset_top = 256.0
+offset_right = -151.99994
+offset_bottom = 296.0
+grow_horizontal = 2
+scale = Vector2(1.64, 1.6800001)
+texture = ExtResource("2_b038a")
+
+[node name="MovementText" type="Label" parent="TextureRect/CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -292.0
+offset_right = -446.99994
+offset_bottom = -255.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.9505203, 1.9029787)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_veo5k")
+theme_override_font_sizes/font_size = 46
+text = "Movement"
+
+[node name="W" type="TextureRect" parent="TextureRect/CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -127.99994
+offset_top = -348.0
+offset_right = -87.99994
+offset_bottom = -308.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.6800001, 1.6)
+texture = ExtResource("4_kucdi")
+
+[node name="S" type="TextureRect" parent="TextureRect/CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -127.99994
+offset_top = -284.0
+offset_right = -87.99994
+offset_bottom = -244.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.6800001, 1.6800002)
+texture = ExtResource("5_hynx4")
+
+[node name="D" type="TextureRect" parent="TextureRect/CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -284.0
+offset_right = -24.0
+offset_bottom = -244.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.721, 1.68)
+texture = ExtResource("6_2g4ts")
+
+[node name="Fishing" type="Label" parent="TextureRect/CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -100.0
+offset_right = -446.99988
+offset_bottom = -63.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.9505203, 1.9029787)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_veo5k")
+theme_override_font_sizes/font_size = 46
+text = "Fishing"

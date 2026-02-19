@@ -73,7 +73,6 @@ offset_bottom = -144.98814
 scale = Vector2(2.04752, 2.2400033)
 
 [node name="BookUI" parent="player/UI" instance=ExtResource("4_eow3j")]
-visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_top = -5.9480004
