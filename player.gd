@@ -19,7 +19,7 @@ var fish_pool = [
 	{"id": "Gary", "weight": 50},
 	{"id": "Matt", "weight": 30},
 	{"id": "Finn", "weight": 15},
-	{"id": "Leona", "weight": 5}
+	{"id": "Leona", "weight": 15}
 ]
 
 func _ready() -> void:
@@ -177,7 +177,9 @@ func _on_fish_caught():
 	elif catchFishCount == 2:
 		caught_fish_id = "Matt"
 	elif catchFishCount == 3:
-		caught_fish_id == "Leona"
+		caught_fish_id = "Leona"
+	elif catchFishCount == 3:
+		caught_fish_id = "Finn"
 	else:
 		caught_fish_id = get_weighted_random_fish()
 
@@ -195,6 +197,8 @@ func start_fish_dialogue(fish_id: String):
 			dialogueRes = preload("res://dialogue/MattDialogue.dialogue")
 		"Leona":
 			dialogueRes = preload("res://dialogue/LeonaDialogue.dialogue")
+		"Finn":
+			dialogueRes = preload("res://dialogue/FinnDialogue.dialogue")
 		_:
 			dialogueRes = preload("res://dialogue/LeonaDialogue.dialogue")
 

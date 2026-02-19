@@ -22,4 +22,4 @@ texture_normal = ExtResource("1_pocup")
 script = ExtResource("2_x8pju")
 inside_book_scene = ExtResource("3_jywmf")
 
-[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]

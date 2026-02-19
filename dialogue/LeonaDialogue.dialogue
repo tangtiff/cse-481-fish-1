@@ -1,10 +1,13 @@
 ~ start
-Leona: Well hey there, darlin'. How can someone like me find a nice date for tonight?
-Leona: Get me someone sweet, a nice strong man who can build all my Ikea furniture. 
-- First one
-	Leona: You picked the first one.
-- Second one
-	Leona: You picked the second one.
+Leona: Hello, Darlin’. How can someone like me find a nice date for tonight? All my previous partners have just been darn trash. Sea, I don’t mean for my relationships to sink, they just forget how to swim
+Leona: One minute they’re sayin’ they love my laugh, the way my tail glimmers in the moonlight—but next thing you know, I’m driftin’ away and gaspin’ for air. Baby, I live in the ocean. Space is kinda my thing. 
+- Are you sure you want to be dating if you want space?
+- Sounds like you enjoy time by yourself instead
+Leona: Oh now don’t look so surprised, I’m excited this time. Truly. I even polished my pearls and practiced my smile in a shipwreck mirror, so you know I’m serious. I told myself, This is it. New tide, new love, no more wash-ups.
+Leona: I’m ready to date again. I am. I like the idea of it—someone laughin’ at my jokes, holdin’ my hand, sayin’ things like, “I’ve never met anyone like you,” as if that’s news. I imagine sweet beginnings, easy swims, someone who calls me their lucky catch and means it kindly.
+- Okay, leave your information with me, I’ll find a lucky catch for you
+- Alright, I think I know what you’re looking for
+Leona: Thank you sweetheart, don’t keep me waitin’ too long now!
 - Start again => start
 - End the conversation => END
 => END

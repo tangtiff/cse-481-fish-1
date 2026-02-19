@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=4 uid="uid://c8bns7745jl8d"]
+[gd_scene load_steps=10 format=4 uid="uid://c8bns7745jl8d"]
 
 [ext_resource type="PackedScene" uid="uid://bwvm04qeof5e1" path="res://player.tscn" id="1_80nbo"]
 [ext_resource type="TileSet" uid="uid://uujoxkx0gdhm" path="res://tileset.tres" id="1_feb5d"]
@@ -6,7 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://8yb6waskrnr3" path="res://journal/profile_book.tscn" id="3_ryrav"]
 [ext_resource type="PackedScene" uid="uid://cs0kljr87jqpq" path="res://journal/InsideBook.tscn" id="4_eow3j"]
 [ext_resource type="PackedScene" uid="uid://dor71l8q6fpg" path="res://dialogue/balloon.tscn" id="5_7jktm"]
+[ext_resource type="PackedScene" uid="uid://doilhpfnietn3" path="res://tutorials/interaction_indicator.tscn" id="8_j5wjh"]
 [ext_resource type="PackedScene" path="res://movement_tutorial.tscn" id="8_vef74"]
+[ext_resource type="PackedScene" uid="uid://l27uve72bsub" path="res://pause_menu.tscn" id="9_vef74"]
 
 [node name="Game" type="Node2D"]
 
@@ -95,3 +97,18 @@ scale = Vector2(0.5, 0.5)
 
 [node name="ExampleBalloon" parent="." instance=ExtResource("5_7jktm")]
 visible = false
+
+[node name="InteractionIndicator" parent="." instance=ExtResource("8_j5wjh")]
+position = Vector2(616, 498)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PauseMenu" parent="CanvasLayer/Control" instance=ExtResource("9_vef74")]
+visible = false
+layout_mode = 1
