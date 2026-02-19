@@ -1,7 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cs0kljr87jqpq"]
+[gd_scene load_steps=9 format=3 uid="uid://cs0kljr87jqpq"]
 
 [ext_resource type="Script" uid="uid://cn260c0xleg6q" path="res://journal/inside_book.gd" id="1_oj0dl"]
 [ext_resource type="PackedScene" uid="uid://ce7li7e5i1hqd" path="res://journal/matchingScreen.tscn" id="2_ka0r8"]
+[ext_resource type="PackedScene" uid="uid://c17kab3oakuqd" path="res://journal/satisfaction_bar.tscn" id="3_yv7pt"]
+[ext_resource type="Script" uid="uid://4ots6f36d3im" path="res://journal/satisfaction_bar.gd" id="4_pf8pp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8xuce"]
 bg_color = Color(0.91764706, 0.84705883, 0.69411767, 1)
@@ -80,23 +82,19 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 35
 horizontal_alignment = 1
 
-[node name="Portrait" type="TextureRect" parent="Background/HBoxContainer/EntryPanel"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Background/HBoxContainer/EntryPanel"]
+layout_mode = 2
+
+[node name="Portrait" type="TextureRect" parent="Background/HBoxContainer/EntryPanel/HBoxContainer"]
 custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
+size_flags_vertical = 4
 stretch_mode = 4
 
-[node name="Satisfaction" type="ProgressBar" parent="Background/HBoxContainer/EntryPanel/Portrait"]
-layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 0.6689934
-offset_top = -10.133453
-offset_right = 0.6689453
-offset_bottom = 16.866547
-grow_horizontal = 2
-grow_vertical = 0
+[node name="SatisfactionBar" parent="Background/HBoxContainer/EntryPanel/HBoxContainer" instance=ExtResource("3_yv7pt")]
+layout_mode = 2
+size_flags_vertical = 8
+script = ExtResource("4_pf8pp")
 
 [node name="BioScroll" type="ScrollContainer" parent="Background/HBoxContainer/EntryPanel"]
 custom_minimum_size = Vector2(15, 300)

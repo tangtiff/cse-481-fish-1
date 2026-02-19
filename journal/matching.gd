@@ -57,12 +57,11 @@ func _on_date_pressed() -> void:
 	if not success:
 		print("Invalid match (duplicate or same fish).")
 		return
-	for index in [left_index, right_index]:
-		var id = entry_ids[index]
-		var path = "res://resource/characters/%s.tres" % id
-		var entry = entries[index]
-		entry.satisfaction = 100
-		ResourceSaver.save(entry, path)
+	
+	# increase satisfaction on match
+	GameEvents.set_satisfaction(left_id, 100)
+	GameEvents.set_satisfaction(right_id, 100)
+	
 	print("Matched: ", left_id, " + ", right_id)
 	exit_requested.emit()
 	GameEvents.match_made.emit(left_id, right_id)# Then trigger dialogue

@@ -2,10 +2,10 @@ extends Control
 
 @export var matching_scene: PackedScene
 @onready var character_list = $Background/HBoxContainer/CharacterList
-@onready var portrait = $Background/HBoxContainer/EntryPanel/Portrait
+@onready var portrait = $Background/HBoxContainer/EntryPanel/HBoxContainer/Portrait
 @onready var name_label = $Background/HBoxContainer/EntryPanel/Name
 @onready var bio_text = $Background/HBoxContainer/EntryPanel/BioScroll/BioText
-@onready var satisfaction_bar = $Background/HBoxContainer/EntryPanel/Portrait/Satisfaction
+@onready var satisfaction_bar = $Background/HBoxContainer/EntryPanel/HBoxContainer/SatisfactionBar
 
 var entries = []
 var matching_screen_instance = null  # Track the matching screen
@@ -51,7 +51,8 @@ func display_entry(entry):
 	portrait.texture = entry.portrait
 	name_label.text = entry.display_name
 	bio_text.text = entry.full_bio
-	satisfaction_bar.value = entry.satisfaction
+	satisfaction_bar.visible = true
+	satisfaction_bar._change_satisfaction_value(entry.satisfaction)
 
 func _on_exit_button_pressed() -> void:
 	close_book()

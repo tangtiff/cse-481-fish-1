@@ -19,6 +19,7 @@ var fish_matches: Array = []  # stores pairs of IDs
 
 func _ready():
 	fish_caught.connect(_on_fish_caught)
+	reset_satisfaction()
 
 func _on_fish_caught():
 	if current_index >= fish_order.size():
@@ -49,3 +50,14 @@ func is_pair_existing(a: String, b: String) -> bool:
 		if (pair[0] == a and pair[1] == b) or (pair[0] == b and pair[1] == a):
 			return true
 	return false
+
+func set_satisfaction(id, amt) -> void:
+	var path = "res://resource/characters/%s.tres" % id
+	if ResourceLoader.exists(path):
+		var entry = load(path)
+		entry.satisfaction = amt
+		ResourceSaver.save(entry, path)
+
+func reset_satisfaction() -> void:
+	for fish in fish_order:
+		set_satisfaction(fish, 0)
