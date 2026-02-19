@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://7x7gmf20hnyg"
+path="res://.godot/imported/LeonaFinnMatch.dialogue-bab3d3907d51fc3eb0a1927d76248112.tres"
+
+[deps]
+
+source_file="res://dialogue/LeonaFinnMatch.dialogue"
+dest_files=["res://.godot/imported/LeonaFinnMatch.dialogue-bab3d3907d51fc3eb0a1927d76248112.tres"]
+
+[params]
+
+defaults=true

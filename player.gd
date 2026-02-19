@@ -43,6 +43,10 @@ func start_match_dialogue(left_id: String, right_id: String):
 			dialogueRes = preload("res://dialogue/GaryMattMatch.dialogue")
 		"Matt_Gary":
 			dialogueRes = preload("res://dialogue/GaryMattMatch.dialogue")  # Same dialogue, reversed pair
+		"Leona_Finn":
+			dialogueRes = preload("res://dialogue/LeonaFinnMatch.dialogue")
+		"Finn_Leona":
+			dialogueRes = preload("res://dialogue/LeonaFinnMatch.dialogue")
 		_:
 			dialogueRes = preload("res://dialogue/GaryMattMatch.dialogue")  # Fallback
 
