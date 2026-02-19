@@ -178,7 +178,7 @@ func _on_fish_caught():
 		caught_fish_id = "Matt"
 	elif catchFishCount == 3:
 		caught_fish_id = "Leona"
-	elif catchFishCount == 3:
+	elif catchFishCount == 4:
 		caught_fish_id = "Finn"
 	else:
 		caught_fish_id = get_weighted_random_fish()
