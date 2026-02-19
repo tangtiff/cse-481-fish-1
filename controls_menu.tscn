@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://bs025grb706po"]
+[gd_scene load_steps=8 format=3 uid="uid://bs025grb706po"]
 
+[ext_resource type="Script" uid="uid://cp71wctweud6p" path="res://controls_menu.gd" id="1_b038a"]
 [ext_resource type="Texture2D" uid="uid://bc214p4m24o26" path="res://assets/Drawings/Pause_Box_.png" id="1_y0nkq"]
 [ext_resource type="Texture2D" uid="uid://deewk832q0m5u" path="res://assets/Drawings/a_tutorial_button.png" id="2_b038a"]
 [ext_resource type="FontFile" uid="uid://b6vj5pj0of2wj" path="res://assets/fonts/at01.ttf" id="3_veo5k"]
@@ -14,6 +15,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_b038a")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -118,3 +120,21 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_veo5k")
 theme_override_font_sizes/font_size = 46
 text = "Fishing"
+
+[node name="Exit" type="Button" parent="TextureRect/CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 592.0
+offset_top = -404.0
+offset_right = 610.0
+offset_bottom = -373.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(6.8400025, 3.28)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "X"
+
+[connection signal="pressed" from="TextureRect/CanvasLayer/Exit" to="." method="_on_exit_pressed"]
