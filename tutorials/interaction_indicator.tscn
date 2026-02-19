@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://doilhpfnietn3"]
 
 [ext_resource type="Script" uid="uid://dx4mcjbqhw7do" path="res://tutorials/interaction_indicator.gd" id="1_q5t1b"]
-[ext_resource type="Texture2D" uid="uid://b2axk0xjn4reo" path="res://assests/Drawings/e_tutorial_button.png" id="2_cusql"]
+[ext_resource type="Texture2D" uid="uid://b2axk0xjn4reo" path="res://assets/Drawings/e_tutorial_button.png" id="2_cusql"]
 
 [sub_resource type="Animation" id="Animation_e82rn"]
 length = 0.001
@@ -52,3 +52,7 @@ libraries = {
 &"": SubResource("AnimationLibrary_qs532")
 }
 autoplay = "bobbing"
+
+[node name="E Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="E Timer" to="." method="_on_e_timer_timeout"]
