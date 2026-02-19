@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://c6nh8tvuujbhx"
+path="res://.godot/imported/FinnDialogue.dialogue-db432ba520f207e60a71a6ad6e1d0812.tres"
+
+[deps]
+
+source_file="res://dialogue/FinnDialogue.dialogue"
+dest_files=["res://.godot/imported/FinnDialogue.dialogue-db432ba520f207e60a71a6ad6e1d0812.tres"]
+
+[params]
+
+defaults=true

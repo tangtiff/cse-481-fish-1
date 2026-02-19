@@ -1,16 +1,18 @@
-[gd_scene load_steps=10 format=4 uid="uid://c8bns7745jl8d"]
+[gd_scene load_steps=11 format=4 uid="uid://c8bns7745jl8d"]
 
 [ext_resource type="PackedScene" uid="uid://bwvm04qeof5e1" path="res://player.tscn" id="1_80nbo"]
 [ext_resource type="TileSet" uid="uid://uujoxkx0gdhm" path="res://tileset.tres" id="1_feb5d"]
+[ext_resource type="Script" uid="uid://ypql4kk4jua0" path="res://game.gd" id="1_hve3p"]
 [ext_resource type="PackedScene" uid="uid://cjroyptlex6xf" path="res://dialogue/instructionsDialogue.tscn" id="3_feb5d"]
 [ext_resource type="PackedScene" uid="uid://8yb6waskrnr3" path="res://journal/profile_book.tscn" id="3_ryrav"]
 [ext_resource type="PackedScene" uid="uid://cs0kljr87jqpq" path="res://journal/InsideBook.tscn" id="4_eow3j"]
 [ext_resource type="PackedScene" uid="uid://dor71l8q6fpg" path="res://dialogue/balloon.tscn" id="5_7jktm"]
 [ext_resource type="PackedScene" uid="uid://doilhpfnietn3" path="res://tutorials/interaction_indicator.tscn" id="8_j5wjh"]
-[ext_resource type="PackedScene" path="res://movement_tutorial.tscn" id="8_vef74"]
+[ext_resource type="PackedScene" uid="uid://u0ko33cvr8ii" path="res://movement_tutorial.tscn" id="8_vef74"]
 [ext_resource type="PackedScene" uid="uid://l27uve72bsub" path="res://pause_menu.tscn" id="9_vef74"]
 
 [node name="Game" type="Node2D"]
+script = ExtResource("1_hve3p")
 
 [node name="TileMap" type="Node2D" parent="."]
 
@@ -105,9 +107,12 @@ position = Vector2(616, 498)
 
 [node name="Control" type="Control" parent="CanvasLayer"]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
 
 [node name="PauseMenu" parent="CanvasLayer/Control" instance=ExtResource("9_vef74")]
 visible = false
