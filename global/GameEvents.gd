@@ -17,6 +17,9 @@ var current_index: int = 0
 var unlocked_fish: Array[String] = []
 var fish_matches: Array = []  # stores pairs of IDs
 
+# Version number of this release
+const VERSION: String = "0-1"
+
 func _ready():
 	fish_caught.connect(_on_fish_caught)
 	reset_satisfaction()
@@ -33,7 +36,10 @@ func _on_fish_caught():
 
 func get_unlocked_fish() -> Array[String]:
 	return unlocked_fish
-	
+
+func get_version() -> String:
+	return VERSION
+
 func add_match(a: String, b: String) -> bool:
 	if a == b:
 		return false
