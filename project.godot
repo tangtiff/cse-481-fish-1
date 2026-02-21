@@ -19,6 +19,8 @@ config/icon="res://icon.svg"
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 GameEvents="*res://global/GameEvents.gd"
+FirebaseManager="*res://global/FirebaseManager.gd"
+FirebaseLite="*res://addons/godot_firebase_lite/firebase.tscn"
 
 [dialogue_manager]
 
@@ -33,7 +35,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://addons/godot_firebase_lite/plugin.cfg")
 
 [input]
 
