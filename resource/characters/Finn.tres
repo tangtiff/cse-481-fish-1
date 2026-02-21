@@ -6,7 +6,6 @@
 script = ExtResource("1_wpq7h")
 id = "Finn"
 display_name = "Finn"
-satisfaction = 100
 full_bio = "Bio:
 Hyper-focused, delivery-oriented professional specializing in scalable ocean-grade cloud solutions. Currently operating at the intersection of reliability, efficiency, and enterprise-grade kelp-based compute.
 

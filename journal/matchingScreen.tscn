@@ -10,14 +10,15 @@ bg_color = Color(0.22352941, 0.42745098, 0.54901963, 1)
 
 [node name="Control" type="Control"]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = -33.096558
-offset_bottom = 203.75037
+anchor_right = 2.319
+anchor_bottom = 2.2540002
+offset_right = -2635.8145
+offset_bottom = 375.68042
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.84000057, 0.7999997)
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = ExtResource("1_pjnc6")
 
 [node name="Panel" type="Panel" parent="."]
@@ -26,9 +27,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -5.0000014
-offset_right = 40.279297
-offset_bottom = -0.088134766
+offset_left = 52.38092
+offset_top = 5.0
+offset_right = 453.42578
+offset_bottom = 975.7241
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.0421249, 1.0179335)
@@ -39,10 +41,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -2.3809507
-offset_top = -3.750001
-offset_right = 131.18896
-offset_bottom = 63.750366
+offset_left = 194.04749
+offset_top = 77.50002
+offset_right = 407.14258
+offset_bottom = 906.2505
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_hg0s5")
@@ -50,26 +52,27 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_hg0s5")
 [node name="LeftItemList" type="ItemList" parent="Panel2"]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 1
-anchors_preset = 9
+anchors_preset = -1
+anchor_right = 0.46800002
 anchor_bottom = 1.0
-offset_left = 85.714226
-offset_top = 175.00009
-offset_right = 823.80896
-offset_bottom = -325.0
+offset_left = 138.09514
+offset_top = 168.75005
+offset_right = -16.352417
+offset_bottom = -325.0005
 grow_vertical = 2
 theme_override_font_sizes/font_size = 65
 
 [node name="RightItemList" type="ItemList" parent="Panel2"]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 1
-anchors_preset = 11
-anchor_left = 1.0
+anchors_preset = -1
+anchor_left = 0.559
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -804.99805
+offset_left = 36.05127
 offset_top = 172.50006
 offset_right = -132.14282
-offset_bottom = -330.00043
+offset_bottom = -327.5005
 grow_horizontal = 0
 grow_vertical = 2
 theme_override_font_sizes/font_size = 65
@@ -83,14 +86,14 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -222.61853
-offset_top = -140.0
-offset_right = -30.618408
-offset_bottom = -50.921143
+offset_left = -495.2378
+offset_top = -237.50024
+offset_right = -83.23682
+offset_bottom = -86.517334
 grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(1.1904731, 1.5750171)
-theme_override_font_sizes/font_size = 26
+theme_override_font_sizes/font_size = 40
 text = "Date!"
 
 [node name="Exit" type="Button" parent="Panel2"]
@@ -98,25 +101,11 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -119.523926
-offset_bottom = 96.749985
+offset_left = -207.14258
+offset_bottom = 152.50005
 grow_horizontal = 0
-theme_override_font_sizes/font_size = 25
+theme_override_font_sizes/font_size = 35
 text = "X"
-
-[node name="Panel3" type="Panel" parent="."]
-visible = false
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 192.85701
-offset_top = 1663.7506
-offset_right = 192.85693
-offset_bottom = 1663.7507
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_hg0s5")
 
 [connection signal="item_selected" from="Panel2/LeftItemList" to="." method="_on_item_list_item_selected"]
 [connection signal="item_selected" from="Panel2/RightItemList" to="." method="_on_item_list_2_item_selected"]

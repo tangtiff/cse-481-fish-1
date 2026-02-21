@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cn260c0xleg6q" path="res://journal/inside_book.gd" id="1_oj0dl"]
 [ext_resource type="PackedScene" uid="uid://ce7li7e5i1hqd" path="res://journal/matchingScreen.tscn" id="2_ka0r8"]
 [ext_resource type="PackedScene" uid="uid://c17kab3oakuqd" path="res://journal/satisfaction_bar.tscn" id="3_yv7pt"]
-[ext_resource type="Script" uid="uid://4ots6f36d3im" path="res://journal/satisfaction_bar.gd" id="4_pf8pp"]
+[ext_resource type="Script" path="res://journal/satisfaction_bar.gd" id="4_pf8pp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8xuce"]
 bg_color = Color(0.91764706, 0.84705883, 0.69411767, 1)
@@ -22,13 +22,13 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 343.0
-offset_top = 249.0
-offset_right = 13.418213
-offset_bottom = 1250.7126
+offset_left = 341.0
+offset_top = 355.0
+offset_right = 341.0
+offset_bottom = 307.7583
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.30056542, 0.122003384)
+scale = Vector2(0.2208873, 0.08243323)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 script = ExtResource("1_oj0dl")
@@ -39,10 +39,7 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 1.5276552
-offset_top = -34.69521
-offset_right = -205.37598
-offset_bottom = -1478.9874
+offset_bottom = -68.37109
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.91286093, 3.127696)
@@ -54,10 +51,10 @@ anchors_preset = -1
 anchor_top = 0.082
 anchor_right = 0.9990001
 anchor_bottom = 1.0
-offset_left = -3.2263737
-offset_top = -54.67353
-offset_right = -10.807983
-offset_bottom = 174.65936
+offset_left = -1.5631295
+offset_top = -78.44399
+offset_right = -10.800903
+offset_bottom = 271.51685
 grow_horizontal = 2
 grow_vertical = 2
 rotation = -0.00033729145
@@ -86,7 +83,7 @@ horizontal_alignment = 1
 layout_mode = 2
 
 [node name="Portrait" type="TextureRect" parent="Background/HBoxContainer/EntryPanel/HBoxContainer"]
-custom_minimum_size = Vector2(200, 200)
+custom_minimum_size = Vector2(300, 300)
 layout_mode = 2
 size_flags_vertical = 4
 stretch_mode = 4
@@ -106,24 +103,24 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_oj0dl")
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_font_sizes/normal_font_size = 30
+theme_override_font_sizes/normal_font_size = 60
 
 [node name="ExitButton" type="Button" parent="Background"]
 layout_mode = 0
-offset_left = 1268.4983
-offset_top = 9.508198
-offset_right = 1345.5659
-offset_bottom = 72.508194
-scale = Vector2(1.150863, 1.6183902)
+offset_left = 1720.277
+offset_top = 15.723703
+offset_right = 1797.3446
+offset_bottom = 78.7237
+scale = Vector2(2.1713662, 1.6183902)
 theme_override_font_sizes/font_size = 40
 text = "X"
 
 [node name="MatchButton" type="Button" parent="Background"]
 layout_mode = 0
-offset_left = 851.17566
-offset_top = 634.79987
-offset_right = 993.012
-offset_bottom = 665.79987
+offset_left = 1393.5769
+offset_top = 802.8667
+offset_right = 1535.4133
+offset_bottom = 833.8667
 scale = Vector2(3.7693644, 7.387674)
 theme_override_font_sizes/font_size = 16
 text = "Match Couple"
