@@ -1,11 +1,13 @@
 ~ start
-Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
+Kelp: What's good dawg, name's Kelp. Heard through the ol' kudzu that you might be in the business of matchin' up fish in need?
+Kelp: I've been lookin' into gettin' back into the dating game, this sounds perfect.
+- Any personalities in particular you’re interested in?
+Kelp: To be honest, I'd be down to meet whoever. I get along pretty well with anyone, as long as they're a good time!
+Kelp: And since I always make sure my date is having a good time, I'll take whoever you got!
+Kelp: Except for dolphins... they’re hardcore, even for me...
+- I see...
+- I'll see what I can do!
+Kelp: Anyways, I appreciate what you're doing here, have a good one! Peace!
 - Start again => start
 - End the conversation => END
-Nathan: For more information see the online documentation.
 => END

@@ -40,6 +40,9 @@ func _on_fish_caught():
 func get_unlocked_fish() -> Array[String]:
 	return unlocked_fish
 
+func get_matches() -> Array[String]:
+	return fish_matches
+
 func get_version() -> String:
 	return VERSION
 

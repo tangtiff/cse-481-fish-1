@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://b2q2ryn6slauv"
+path="res://.godot/imported/PearlKelpMatch.dialogue-549e17950b247ff86ed415f98e65f106.tres"
+
+[deps]
+
+source_file="res://dialogue/PearlKelpMatch.dialogue"
+dest_files=["res://.godot/imported/PearlKelpMatch.dialogue-549e17950b247ff86ed415f98e65f106.tres"]
+
+[params]
+
+defaults=true
