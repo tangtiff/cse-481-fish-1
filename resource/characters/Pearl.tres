@@ -6,7 +6,6 @@
 script = ExtResource("1_tsuqa")
 id = "Pearl"
 display_name = "Pearl"
-satisfaction = 100
 full_bio = "Bio:
 I bet you can't beat me at connect 4
 
