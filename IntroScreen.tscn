@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://x03sphafxgy1"]
 
-[ext_resource type="Texture2D" uid="uid://iest7kko2snc" path="res://assests/Drawings/Intro_Message_ (1).png" id="1_5fu17"]
+[ext_resource type="Texture2D" uid="uid://iest7kko2snc" path="res://assets/Drawings/Intro_Message_ (1).png" id="1_5fu17"]
 [ext_resource type="Script" uid="uid://cvm4oecuwuoq2" path="res://intro_screen.gd" id="1_tf6mp"]
-[ext_resource type="FontFile" uid="uid://b6vj5pj0of2wj" path="res://assests/fonts/at01.ttf" id="3_yd5l1"]
-[ext_resource type="Texture2D" uid="uid://kjay4a80yob8" path="res://assests/Drawings/Arrow.png" id="4_uli3x"]
+[ext_resource type="FontFile" uid="uid://b6vj5pj0of2wj" path="res://assets/fonts/at01.ttf" id="3_yd5l1"]
+[ext_resource type="Texture2D" uid="uid://kjay4a80yob8" path="res://assets/Drawings/Arrow.png" id="4_uli3x"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_enixf"]
 
@@ -54,12 +54,12 @@ offset_bottom = 202.0
 grow_horizontal = 2
 scale = Vector2(3, 3)
 theme_override_fonts/font = ExtResource("3_yd5l1")
-text = "“Hey. You’re the new fisherman, right? Cool.
-Do me a favor-go catch a few fish
+text = "\"Hey. You're the new fisherman, right? Cool.
+Do me a favor - go catch a few fish
  so we can get through the day.
- Once you’re back, you’re free
+ Once you're back, you're free
  to do your own thing.
-Just… try not to flounder out there.”"
+Just... try not to flounder out there.\""
 
 [node name="Arrow" type="TextureButton" parent="TextureRect"]
 layout_mode = 0

@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cs0kljr87jqpq" path="res://journal/InsideBook.tscn" id="4_eow3j"]
 [ext_resource type="PackedScene" uid="uid://dor71l8q6fpg" path="res://dialogue/balloon.tscn" id="5_7jktm"]
 [ext_resource type="PackedScene" uid="uid://doilhpfnietn3" path="res://tutorials/interaction_indicator.tscn" id="8_j5wjh"]
-[ext_resource type="PackedScene" path="res://movement_tutorial.tscn" id="8_vef74"]
+[ext_resource type="PackedScene" uid="uid://u0ko33cvr8ii" path="res://movement_tutorial.tscn" id="8_vef74"]
 [ext_resource type="PackedScene" uid="uid://l27uve72bsub" path="res://pause_menu.tscn" id="9_vef74"]
 
 [node name="Game" type="Node2D"]
@@ -39,7 +39,6 @@ tile_map_data = PackedByteArray("AAAaABgAAAAoACEAAAAaABkAAAAoACIAAAAbABgAAAApACE
 tile_set = ExtResource("1_feb5d")
 
 [node name="Fishing Spots" type="TileMapLayer" parent="TileMap"]
-z_index = 1
 z_as_relative = false
 use_parent_material = true
 tile_map_data = PackedByteArray("AAAjAB8AAAAXAAMAAAAiAB4AAAAXAAMAAAAjAB4AAAAUAAMAAAAiAB8AAAAXAAMAAAAiACAAAAAXAAMAAAAjACAAAAAXAAMAAAApAB8AAAAXAAMAAAApAB4AAAAXAAMAAAAqAB4AAAAXAAMAAAAqAB8AAAAXAAMAAAArAB8AAAAXAAMAAAArACAAAAAXAAMAAAAqACAAAAAXAAMAAAAqACEAAAAXAAMAAAApACAAAAAUAAMAAAArAB4AAAAXAAMAAAAjACEAAAAXAAMAAAAiACEAAAAXAAMAAAAhACEAAAAXAAMAAAAhACAAAAAXAAMAAAAhAB8AAAAXAAMAAAAhAB4AAAAUAAMAAAArACEAAAAXAAMAAAApACEAAAAXAAMAAAAgACAAAAAUAAMAAAAgAB8AAAAXAAMAAAAoAB4AAAAXAAMAAAA=")
