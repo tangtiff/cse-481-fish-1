@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://jbxo2kktx8lq"
+path="res://.godot/imported/GaryPearlMatch.dialogue-3263a1cb7f30303c9076be57721ea42e.tres"
+
+[deps]
+
+source_file="res://dialogue/GaryPearlMatch.dialogue"
+dest_files=["res://.godot/imported/GaryPearlMatch.dialogue-3263a1cb7f30303c9076be57721ea42e.tres"]
+
+[params]
+
+defaults=true

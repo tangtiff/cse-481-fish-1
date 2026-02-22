@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CharacterEntry" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resource/character_entries.gd" id="1_tsuqa"]
+
+[resource]
+script = ExtResource("1_tsuqa")
+id = "Pearl"
+display_name = "Pearl"
+satisfaction = 100
+full_bio = "Bio:
+I bet you can't beat me at connect 4
+
+Preferences:
+Unique swimming style
+
+Icks:
+STream lined bodies"
+metadata/_custom_type_script = "uid://djvidkrgsu05j"

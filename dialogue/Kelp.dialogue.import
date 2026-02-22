@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://krg581q0enev"
+path="res://.godot/imported/Kelp.dialogue-9dd33dd5387d96c72a4703bd5dee2464.tres"
+
+[deps]
+
+source_file="res://dialogue/Kelp.dialogue"
+dest_files=["res://.godot/imported/Kelp.dialogue-9dd33dd5387d96c72a4703bd5dee2464.tres"]
+
+[params]
+
+defaults=true

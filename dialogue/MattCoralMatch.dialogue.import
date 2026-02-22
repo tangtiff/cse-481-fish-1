@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bpqhnwd2o44xs"
+path="res://.godot/imported/MattCoralMatch.dialogue-25f598cc70cd121a0da42f7f07c220e3.tres"
+
+[deps]
+
+source_file="res://dialogue/MattCoralMatch.dialogue"
+dest_files=["res://.godot/imported/MattCoralMatch.dialogue-25f598cc70cd121a0da42f7f07c220e3.tres"]
+
+[params]
+
+defaults=true

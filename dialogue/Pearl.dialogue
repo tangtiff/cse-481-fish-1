@@ -1,0 +1,13 @@
+~ start
+Pearl: You must be the matchmaker. I’ll be brief. My name is Pearl. I don't do long introductions. I oversee the largest coral archive in the northern reef. 
+Pearl: I have seventeen staff, two assistants, and zero patience for inefficiency. My water is kept at four degrees because that’s the optimal temperature for focus.
+- Interesting, very interesting
+Pearl: I’m not difficult, I’m precise. I don't need someone who mirrors me. I know that would be exhausting. Two of me would be a disaster, and I’m self-aware enough to admit it. I need someone who is not loud. Well, not aggressively loud. 
+Pearl: Some enthusiasm is fine, and I’ve recently revised that opinion. Someone who doesn’t take it personally when I’m quiet, but also doesn't go quiet themselves. I find it better when there is ambient energy in the room. I don’t need grand gestures, just someone who is present. 
+Pearl: I had a colleague once who brought the entire office fresh eel pastries simply because it was a Tuesday and he thought people might enjoy them. No occasion. No reason. Just because.
+Pearl: I told him it was an inefficient use of his morning.
+Pearl: I ate three of the pastries.
+Pearl: Anyhow, goodbye and find me someone as precisely as I described. 
+- Start again => start
+- End the conversation => END
+=> END

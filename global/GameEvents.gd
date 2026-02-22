@@ -10,7 +10,10 @@ var fish_order: Array[String] = [
 	"Gary",
 	"Matt",
 	"Leona",
-	"Finn"
+	"Finn",
+	"Coral",
+	"Pearl",
+	"Kelp"
 ]
 
 var current_index: int = 0

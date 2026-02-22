@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="CharacterEntry" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resource/character_entries.gd" id="1_vs0v6"]
+
+[resource]
+script = ExtResource("1_vs0v6")
+id = "Kelp"
+display_name = "Kelp"
+full_bio = "Bio:
+I'll fall for you if I don't have my glasses on
+
+Preferences:
+Filter feeders
+
+Icks:
+Venomous fish"
+metadata/_custom_type_script = "uid://djvidkrgsu05j"

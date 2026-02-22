@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://67qbt0ds1jqw"
+path="res://.godot/imported/undone.dialogue-c0c98922e452002cae770dedce833edd.tres"
+
+[deps]
+
+source_file="res://dialogue/undone.dialogue"
+dest_files=["res://.godot/imported/undone.dialogue-c0c98922e452002cae770dedce833edd.tres"]
+
+[params]
+
+defaults=true

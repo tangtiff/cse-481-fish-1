@@ -1,0 +1,15 @@
+~ start
+Coral: Hi! I’m Coral. Oh, the current on the shore is quite something, isn't it? I swam right past your fishing line twice. Twice!
+Coral: Wow, look at all these shells. My son, Marlin, loves to collect them off the ocean floor. He has hundreds of pieces and our whole home is covered in it, and I don't have the heart to tell him to stop.
+- Take some shells home to Marlin!
+	Coral: Thank you for your offer. He'll love these!
+- Tell me more about yourself and Marlin
+Coral: So, I’m a single mother and Merlin is seven. He’s wonderful and the sweetest fish in our reef. He packed my bag this morning and put in a note that said “don’t let the waves crash your day.” I nearly turned around and swam straight home. 
+Coral: My husband, Fisher— he got really sick one day and never made it out of the hospital. Six tides ago now.
+- I'm sorry to hear about Fisher
+- Must have been hard for you and Marlin
+Coral: It’s alright now, Marlin and I figured it out. I haven't tried to meet anyone else since I was young, so here I am. I’m not trying to find another Fisher. I know that’s not how it works.
+Coral: I just want someone kind and patient enough for my seven year old who will absolutely interrogate them about their favorite sea shells within the first five minutes. That’s not too much to ask is it? Don’t answer that…just help me find someone good. Thank you for your time!
+- Start again => start
+- End the conversation => END
+=> END

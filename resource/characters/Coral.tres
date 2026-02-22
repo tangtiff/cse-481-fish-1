@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CharacterEntry" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resource/character_entries.gd" id="1_28nnd"]
+
+[resource]
+script = ExtResource("1_28nnd")
+id = "Coral"
+display_name = "Coral"
+satisfaction = 100
+full_bio = "Bio:
+I'm looking for someone who can help me parallel park
+
+Preferences:
+Strong swimmers
+
+Icks:
+Schooling fish"
+metadata/_custom_type_script = "uid://djvidkrgsu05j"

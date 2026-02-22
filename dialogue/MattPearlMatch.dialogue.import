@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dr64bhjjni5aw"
+path="res://.godot/imported/MattPearlMatch.dialogue-f334ded506800cd1328a1b623368d99b.tres"
+
+[deps]
+
+source_file="res://dialogue/MattPearlMatch.dialogue"
+dest_files=["res://.godot/imported/MattPearlMatch.dialogue-f334ded506800cd1328a1b623368d99b.tres"]
+
+[params]
+
+defaults=true

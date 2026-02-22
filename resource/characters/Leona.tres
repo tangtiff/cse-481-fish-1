@@ -8,6 +8,7 @@ script = ExtResource("1_lpf0k")
 id = "Leona"
 display_name = "Leona"
 portrait = ExtResource("1_gmrua")
+satisfaction = 100
 full_bio = "Bio: 
 We're the same type of weird if you enjoy the smell of sea foam
 

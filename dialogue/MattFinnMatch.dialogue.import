@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://d24jg1xkjqkl"
+path="res://.godot/imported/MattFinnMatch.dialogue-5b9dba75cba77d0ac0c79d515116f347.tres"
+
+[deps]
+
+source_file="res://dialogue/MattFinnMatch.dialogue"
+dest_files=["res://.godot/imported/MattFinnMatch.dialogue-5b9dba75cba77d0ac0c79d515116f347.tres"]
+
+[params]
+
+defaults=true

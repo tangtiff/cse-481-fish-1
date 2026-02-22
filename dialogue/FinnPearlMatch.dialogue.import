@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bukqmdqijr4cr"
+path="res://.godot/imported/FinnPearlMatch.dialogue-91c14f61cb32c0bd02013cc753456528.tres"
+
+[deps]
+
+source_file="res://dialogue/FinnPearlMatch.dialogue"
+dest_files=["res://.godot/imported/FinnPearlMatch.dialogue-91c14f61cb32c0bd02013cc753456528.tres"]
+
+[params]
+
+defaults=true
