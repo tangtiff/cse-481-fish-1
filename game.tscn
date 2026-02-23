@@ -112,5 +112,3 @@ mouse_filter = 2
 [node name="PauseMenu" parent="CanvasLayer/Control" instance=ExtResource("9_vef74")]
 visible = false
 layout_mode = 1
-
-[node name="Music" type="Node" parent="."]
