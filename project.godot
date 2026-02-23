@@ -13,7 +13,7 @@ config_version=5
 config/name="CSE481-fish1"
 run/main_scene="uid://dpd32ndl1y6bv"
 config/features=PackedStringArray("4.5", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://ccpn3ykem5j3v"
 
 [autoload]
 
@@ -21,6 +21,7 @@ DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 GameEvents="*res://global/GameEvents.gd"
 FirebaseManager="*res://global/FirebaseManager.gd"
 FirebaseLite="*res://addons/godot_firebase_lite/firebase.tscn"
+GlobalAudioStreamPlayer="*res://audio_stream_player.gd"
 
 [dialogue_manager]
 

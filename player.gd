@@ -32,8 +32,6 @@ func _ready() -> void:
 	
 func _on_match_made(left_id: String, right_id: String):
 	start_match_dialogue(left_id, right_id)
-	
-	
 
 func start_match_dialogue(left_id: String, right_id: String):
 	var balloon_scene = preload("res://dialogue/balloon.tscn").instantiate()
