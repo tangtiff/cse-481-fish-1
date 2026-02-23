@@ -36,8 +36,10 @@ func _ready() -> void:
 func log_data() -> void:
 	var path: String = "version_" + version + "/" + str(userID)
 	var data = {
-		"date" : Time.get_datetime_string_from_system(true),
-		"playtime" : playtime
+		"timeStamp" : Time.get_datetime_string_from_system(true),
+		"playtime" : playtime,
+		"numFishCaught" : len(GameEvents.get_unlocked_fish()),
+		"numMatches" : len(GameEvents.get_matches())
 	}
 	FirebaseLite.RealtimeDatabase.push(path, data)
 
