@@ -5,7 +5,7 @@ var userID: int = randi() # FIX THIS TO GRAB FROM BROWSER
 var version = GameEvents.get_version()
 var playtime = 0
 
-const ENABLE_LOGGING = true
+const ENABLE_LOGGING = false
 const TIME_BETWEEN_LOGS: int = 120
 
 const firebaseConfig = {
