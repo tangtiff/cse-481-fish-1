@@ -117,10 +117,10 @@ text = "X"
 
 [node name="MatchButton" type="Button" parent="Background"]
 layout_mode = 0
-offset_left = 1393.5769
-offset_top = 802.8667
-offset_right = 1535.4133
-offset_bottom = 833.8667
+offset_left = 1388.6176
+offset_top = 748.5665
+offset_right = 1530.454
+offset_bottom = 779.5665
 scale = Vector2(3.7693644, 7.387674)
 theme_override_font_sizes/font_size = 16
 text = "Match Couple"

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dn3rxifcvmr10"
+path="res://.godot/imported/FinnCoralMatch.dialogue-09b14599bfd0eb41ab3108c2fae71e2a.tres"
+
+[deps]
+
+source_file="res://dialogue/FinnCoralMatch.dialogue"
+dest_files=["res://.godot/imported/FinnCoralMatch.dialogue-09b14599bfd0eb41ab3108c2fae71e2a.tres"]
+
+[params]
+
+defaults=true

@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" path="res://movement_tutorial.tscn" id="8_vef74"]
 [ext_resource type="PackedScene" uid="uid://l27uve72bsub" path="res://pause_menu.tscn" id="9_vef74"]
 
-[node name="Game" type="Node2D"]
+[node name="Node2D" type="Node2D"]
 script = ExtResource("1_hve3p")
 
 [node name="TileMap" type="Node2D" parent="."]

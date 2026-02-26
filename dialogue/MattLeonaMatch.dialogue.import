@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bpy1rmtdlaa14"
+path="res://.godot/imported/MattLeonaMatch.dialogue-2ec3f53cdac9f8d2690acd4d5745e1d8.tres"
+
+[deps]
+
+source_file="res://dialogue/MattLeonaMatch.dialogue"
+dest_files=["res://.godot/imported/MattLeonaMatch.dialogue-2ec3f53cdac9f8d2690acd4d5745e1d8.tres"]
+
+[params]
+
+defaults=true
