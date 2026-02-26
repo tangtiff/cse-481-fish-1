@@ -16,8 +16,8 @@ var maxWaitingTime = 4
 var catchFishCount: int = 0;
 
 var fish_pool = [
-	{"id": "Gary", "weight": 50},
-	{"id": "Matt", "weight": 30},
+	{"id": "Gary", "weight": 30},
+	{"id": "Matt", "weight": 65},
 	{"id": "Finn", "weight": 15},
 	{"id": "Leona", "weight": 15},
 	{"id": "Coral", "weight": 15},
