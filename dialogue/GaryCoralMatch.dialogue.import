@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cet7yjcaoygn7"
+path="res://.godot/imported/GaryCoralMatch.dialogue-3019345d5fcbb5d6743919ae3b1a38a2.tres"
+
+[deps]
+
+source_file="res://dialogue/GaryCoralMatch.dialogue"
+dest_files=["res://.godot/imported/GaryCoralMatch.dialogue-3019345d5fcbb5d6743919ae3b1a38a2.tres"]
+
+[params]
+
+defaults=true

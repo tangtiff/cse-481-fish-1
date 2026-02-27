@@ -1,20 +1,17 @@
 ~ start
-(They meet at a fancy restaurant chosen by Pearl)
+They meet at a fancy restaurant chosen by Pearl
 Pearl: Hello, thank you for meeting me, my name is Pearl.
-Kelp: Nice to meet you love, the name's Kelp. Nice restaurant you chose here!
-Pearl: Yes, they serve an exquisite lobster risotto. Let us get right to the point: I am looking for someone who will provide me company in my daily life, but not get in my way.
-Pearl: I have a lot of responsibilities, so if that scares you, you should just leave now.
-Kelp: Leave? Darling, I only just got here.
-Kelp: And with all those responsibilities, it sounds like what you need is an opportunity to let loose. Happy to say I happen to be an expert in that area.
-Pearl: Let’s briefly entertain the notion that I might benefit from, as you say, "letting loose". What do you have in mind?
-Kelp: Well, there’s an adorable little club just down the street, if you'd like to join me for a dance or two after our meal...
+Kelp: Nice to meet you love, the name’s Kelp. Nice restaurant you chose here :)
+Pearl: Yes, they serve an exquisite lobster risotto. Let us get right to the point: I am looking for someone who will provide me company in my daily life, but not get in my way. I have a lot of responsibilities, so if that scares you, you should just leave now.
+Kelp: Leave? Darling, I only just got here. And with all those responsibilities, it sounds like what you need is an opportunity to let loose. Happy to say I happen to be an expert in that area.
+Pearl: Let’s briefly entertain the notion that I might benefit from, as you say, “letting loose”. What do you have in mind?
+Kelp: Well, there’s an adorable little club just down the street, if you’d like to join me for a dance or two after our meal…
 Pearl: Maybe I shall.
-They chat more over dinner, then dance the night away at the club Kelp mentioned.
-Pearl: They were certainly different than what I am used to, but not in a bad way.
-Pearl: I think occasional breaks to "let loose" might be exactly what I need to continue operating at peak efficiency. Thank you for introducing us.
-+5 satisfaction. Fulfilled
-Kelp: WOW. She was cool, confident, and dances like a pro. I think I'm in love.
-+5 satisfaction. Fulfilled
+After Date
+Pearl: They were certainly different than what I am used to, but not in a bad way. I think occasional breaks to “let loose” might be exactly what I need to continue operating at top efficiency. Thank you for introducing us.
++5 satisfaction
+Kelp: WOW. She was cool, confident, and dances like a pro. I think I’m in love.
++5 satisfaction
 
 - Start again => start
 - End the conversation => END

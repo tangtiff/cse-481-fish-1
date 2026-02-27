@@ -16,8 +16,8 @@ var maxWaitingTime = 4
 var catchFishCount: int = 0;
 
 var fish_pool = [
-	{"id": "Gary", "weight": 50},
-	{"id": "Matt", "weight": 30},
+	{"id": "Gary", "weight": 30},
+	{"id": "Matt", "weight": 65},
 	{"id": "Finn", "weight": 15},
 	{"id": "Leona", "weight": 15},
 	{"id": "Coral", "weight": 15},
@@ -59,6 +59,16 @@ func start_match_dialogue(left_id: String, right_id: String):
 			dialogueRes = preload("res://dialogue/GaryPearlMatch.dialogue")
 		"Pearl_Gary":
 			dialogueRes = preload("res://dialogue/GaryPearlMatch.dialogue")
+			
+		"Gary_Coral":
+			dialogueRes = preload("res://dialogue/GaryCoralMatch.dialogue")
+		"Coral_Gary":
+			dialogueRes = preload("res://dialogue/GaryCoralMatch.dialogue")
+			
+		"Gary_Leona":
+			dialogueRes = preload("res://dialogue/GaryLeonaMatch.dialogue")
+		"Leona_Gary":
+			dialogueRes = preload("res://dialogue/GaryLeonaMatch.dialogue")
 		
 		"Matt_Finn":
 			dialogueRes = preload("res://dialogue/MattFinnMatch.dialogue")  
@@ -73,12 +83,27 @@ func start_match_dialogue(left_id: String, right_id: String):
 		"Matt_Pearl":
 			dialogueRes = preload("res://dialogue/MattPearlMatch.dialogue")  
 		"Pearl_Matt":
-			dialogueRes = preload("res://dialogue/MattPearlMatch.dialogue")	
+			dialogueRes = preload("res://dialogue/MattPearlMatch.dialogue")
+			
+		"Matt_Leona":
+			dialogueRes = preload("res://dialogue/MattLeonaMatch.dialogue")
+		"Leona_Matt":
+			dialogueRes = preload("res://dialogue/MattLeonaMatch.dialogue")
 			
 		"Finn_Pearl":
 			dialogueRes = preload("res://dialogue/FinnPearlMatch.dialogue")
 		"Pearl_Finn":
 			dialogueRes = preload("res://dialogue/FinnPearlMatch.dialogue")
+			
+		"Finn_Coral":
+			dialogueRes = preload("res://dialogue/FinnCoralMatch.dialogue")
+		"Coral_Finn":
+			dialogueRes = preload("res://dialogue/FinnCoralMatch.dialogue")
+			
+		"Pearl_Kelp":
+			dialogueRes = preload("res://dialogue/PearlKelpMatch.dialogue")
+		"Kelp_Pearl":
+			dialogueRes = preload("res://dialogue/PearlKelpMatch.dialogue")
 			
 		_:
 			dialogueRes = preload("res://dialogue/undone.dialogue")  # Fallback
@@ -249,7 +274,7 @@ func start_fish_dialogue(fish_id: String):
 		"Kelp":
 			dialogueRes = preload("res://dialogue/Kelp.dialogue")
 		_:
-			dialogueRes = preload("res://dialogue/LeonaDialogue.dialogue")
+			dialogueRes = preload("res://dialogue/MattDialogue.dialogue")
 
 	DialogueManager._start_balloon(balloon_scene, dialogueRes, "start", [])
 	

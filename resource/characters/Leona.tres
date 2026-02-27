@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource("1_lpf0k")
 id = "Leona"
-display_name = "Leona"
+display_name = "Leona the Lionfish"
 portrait = ExtResource("1_gmrua")
 full_bio = "Bio: 
 We're the same type of weird if you enjoy the smell of sea foam

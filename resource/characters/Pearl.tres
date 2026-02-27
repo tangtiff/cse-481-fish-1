@@ -5,7 +5,7 @@
 [resource]
 script = ExtResource("1_tsuqa")
 id = "Pearl"
-display_name = "Pearl"
+display_name = "Pearl the Stingray"
 full_bio = "Bio:
 I bet you can't beat me at connect 4
 
@@ -13,5 +13,5 @@ Preferences:
 Unique swimming style
 
 Icks:
-STream lined bodies"
+Stream lined bodies"
 metadata/_custom_type_script = "uid://djvidkrgsu05j"

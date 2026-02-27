@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource("1_wpq7h")
 id = "Finn"
-display_name = "Finn"
+display_name = "Finn the Tiger Shark"
 portrait = ExtResource("1_q5wpa")
 full_bio = "Bio:
 Hyper-focused, delivery-oriented professional specializing in scalable reef capital investments.  Currently operating at the intersection of reliability, efficiency, and enterprise-grade reef-based compute.

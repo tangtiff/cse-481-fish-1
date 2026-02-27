@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource("1_1fe1o")
 id = "Gary"
-display_name = "Gary"
+display_name = "Gary the Stonefish"
 portrait = ExtResource("1_30a84")
 full_bio = "Bio:
 My love language are kelp fries

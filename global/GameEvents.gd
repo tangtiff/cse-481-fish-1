@@ -21,7 +21,7 @@ var unlocked_fish: Array[String] = []
 var fish_matches: Array = []  # stores pairs of IDs
 
 # Version number of this release
-const VERSION: String = "0-1"
+const VERSION: String = "0-2"
 
 func _ready():
 	fish_caught.connect(_on_fish_caught)
