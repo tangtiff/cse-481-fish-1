@@ -26,9 +26,8 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_y0nkq")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="TextureRect"]
-
-[node name="A" type="TextureRect" parent="TextureRect/CanvasLayer"]
+[node name="A" type="TextureRect" parent="TextureRect"]
+layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
@@ -40,7 +39,8 @@ grow_horizontal = 2
 scale = Vector2(1.64, 1.6800001)
 texture = ExtResource("2_b038a")
 
-[node name="MovementText" type="Label" parent="TextureRect/CanvasLayer"]
+[node name="MovementText" type="Label" parent="TextureRect"]
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -58,7 +58,8 @@ theme_override_fonts/font = ExtResource("3_veo5k")
 theme_override_font_sizes/font_size = 46
 text = "Movement"
 
-[node name="W" type="TextureRect" parent="TextureRect/CanvasLayer"]
+[node name="W" type="TextureRect" parent="TextureRect"]
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -73,22 +74,8 @@ grow_vertical = 2
 scale = Vector2(1.6800001, 1.6)
 texture = ExtResource("4_kucdi")
 
-[node name="S" type="TextureRect" parent="TextureRect/CanvasLayer"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -127.99994
-offset_top = -284.0
-offset_right = -87.99994
-offset_bottom = -244.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(1.6800001, 1.6800002)
-texture = ExtResource("5_hynx4")
-
-[node name="D" type="TextureRect" parent="TextureRect/CanvasLayer"]
+[node name="D" type="TextureRect" parent="TextureRect"]
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -103,7 +90,24 @@ grow_vertical = 2
 scale = Vector2(1.721, 1.68)
 texture = ExtResource("6_2g4ts")
 
-[node name="Fishing" type="Label" parent="TextureRect/CanvasLayer"]
+[node name="S" type="TextureRect" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -127.99994
+offset_top = -284.0
+offset_right = -87.99994
+offset_bottom = -244.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.6800001, 1.6800002)
+texture = ExtResource("5_hynx4")
+
+[node name="Fishing" type="Label" parent="TextureRect"]
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -121,7 +125,8 @@ theme_override_fonts/font = ExtResource("3_veo5k")
 theme_override_font_sizes/font_size = 46
 text = "Fishing"
 
-[node name="Exit" type="Button" parent="TextureRect/CanvasLayer"]
+[node name="Exit" type="Button" parent="TextureRect"]
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -137,4 +142,4 @@ scale = Vector2(6.8400025, 3.28)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "X"
 
-[connection signal="pressed" from="TextureRect/CanvasLayer/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="TextureRect/Exit" to="." method="_on_exit_pressed"]
