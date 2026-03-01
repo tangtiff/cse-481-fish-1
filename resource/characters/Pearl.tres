@@ -1,11 +1,13 @@
-[gd_resource type="Resource" script_class="CharacterEntry" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CharacterEntry" load_steps=3 format=3 uid="uid://7ucstc4fgrs2"]
 
-[ext_resource type="Script" path="res://resource/character_entries.gd" id="1_tsuqa"]
+[ext_resource type="Texture2D" uid="uid://qnfo4mvb3yo4" path="res://assets/Drawings/Pearl.png" id="1_rx6l0"]
+[ext_resource type="Script" uid="uid://djvidkrgsu05j" path="res://resource/character_entries.gd" id="1_tsuqa"]
 
 [resource]
 script = ExtResource("1_tsuqa")
 id = "Pearl"
 display_name = "Pearl the Stingray"
+portrait = ExtResource("1_rx6l0")
 full_bio = "Bio:
 I bet you can't beat me at connect 4
 
