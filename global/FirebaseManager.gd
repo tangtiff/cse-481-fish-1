@@ -2,15 +2,13 @@ extends Node
 
 var session_timer: Timer = Timer.new()
 var version = GameEvents.get_version()
-# Hacky way to fix weird issue where the first log is always 20-ish seconds
-# of playtime
-var startTime = Time.get_unix_time_from_system()
+var startTime;
 var ipv6 = IP.get_local_addresses()[0]
 var fishCaught = 0
 var matchesAttempted = 0
 var playtime = 0
 
-const ENABLE_LOGGING = false
+const ENABLE_LOGGING = true
 const TIME_BETWEEN_LOGS: int = 60
 
 const firebaseConfig = {
@@ -31,23 +29,28 @@ func _ready() -> void:
 	FirebaseLite.terminate("Authentication")
 	FirebaseLite.terminate("Firestore")
 	FirebaseLite.terminate("Storage")
-	
+
+	# Timing tomfoolery for logging
+	startTime = Time.get_unix_time_from_system()
 	add_child(session_timer)
 	session_timer.timeout.connect(_on_timer_timeout)
+
+	# Used to disable logging during testing
 	if ENABLE_LOGGING:
 		session_timer.start(TIME_BETWEEN_LOGS)
-		log_data(false, false, true)
+		log_data(false, false, true) # initial log
 
 func log_data(fishEvent: bool, matchEvent: bool, timeEvent: bool) -> void:
 	var path: String = "v" + version
 	var data = {
 		"ip" : ipv6,
-		"playtime" : Time.get_unix_time_from_system() - startTime - 15,
+		"playtime" : Time.get_unix_time_from_system() - startTime,
 		"fishCaught" : fishCaught,
 		"matchesAttempted" : matchesAttempted,
 		"fishEvent" : fishEvent,
 		"matchEvent" : matchEvent,
-		"timeEvent" : timeEvent
+		"timeEvent" : timeEvent,
+		"a-b" : GameEvents.ABVERSION
 	}
 	FirebaseLite.RealtimeDatabase.push(path, data)
 

@@ -22,8 +22,12 @@ var fish_matches: Array = []  # stores pairs of IDs
 
 # Version number of this release
 const VERSION: String = "test"
+var ABVERSION: String;
 
 func _ready():
+	# Randomly assignes player to either version A or B
+	ABVERSION = "A" if (randi() % 2 == 0) else "B"
+
 	fish_caught.connect(_on_fish_caught)
 	reset_satisfaction()
 
@@ -49,6 +53,9 @@ func get_matches() -> Array:
 
 func get_version() -> String:
 	return VERSION
+
+func get_abversion() -> String:
+	return ABVERSION
 
 func add_match(a: String, b: String) -> bool:
 	# Logging
