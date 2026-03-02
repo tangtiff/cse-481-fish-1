@@ -1,8 +1,13 @@
 extends Node
 
 var session_timer: Timer = Timer.new()
-var userID: int = randi() # FIX THIS TO GRAB FROM BROWSER
 var version = GameEvents.get_version()
+# Hacky way to fix weird issue where the first log is always 20-ish seconds
+# of playtime
+var startTime = Time.get_unix_time_from_system()
+var ipv6 = IP.get_local_addresses()[0]
+var fishCaught = 0
+var matchesAttempted = 0
 var playtime = 0
 
 const ENABLE_LOGGING = false
@@ -31,19 +36,21 @@ func _ready() -> void:
 	session_timer.timeout.connect(_on_timer_timeout)
 	if ENABLE_LOGGING:
 		session_timer.start(TIME_BETWEEN_LOGS)
-		log_data()
+		log_data(false, false, true)
 
-func log_data() -> void:
-	var path: String = "version_" + version + "/" + str(userID)
+func log_data(fishEvent: bool, matchEvent: bool, timeEvent: bool) -> void:
+	var path: String = "v" + version
 	var data = {
-		"timeStamp" : Time.get_datetime_string_from_system(true),
-		"playtime" : playtime,
-		"numFishCaught" : len(GameEvents.get_unlocked_fish()),
-		"numMatches" : len(GameEvents.get_matches())
+		"ip" : ipv6,
+		"playtime" : Time.get_unix_time_from_system() - startTime - 15,
+		"fishCaught" : fishCaught,
+		"matchesAttempted" : matchesAttempted,
+		"fishEvent" : fishEvent,
+		"matchEvent" : matchEvent,
+		"timeEvent" : timeEvent
 	}
 	FirebaseLite.RealtimeDatabase.push(path, data)
 
 func _on_timer_timeout() -> void:
-	playtime += TIME_BETWEEN_LOGS
-	log_data()
+	log_data(false, false, true)
 	session_timer.start(TIME_BETWEEN_LOGS)
