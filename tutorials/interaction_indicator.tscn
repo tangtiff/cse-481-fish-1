@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" uid="uid://dx4mcjbqhw7do" path="res://tutorials/interaction_indicator.gd" id="1_q5t1b"]
 [ext_resource type="Texture2D" uid="uid://b2axk0xjn4reo" path="res://assets/Drawings/e_tutorial_button.png" id="2_cusql"]
-[ext_resource type="AnimationLibrary" uid="uid://cwthau4o4h4ga" path="res://tutorials/new_animation_library.tres" id="3_cusql"]
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_q5t1b"]
 
 [node name="InteractionIndicator" type="Node2D"]
 script = ExtResource("1_q5t1b")
@@ -13,7 +14,7 @@ texture = ExtResource("2_cusql")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-&"": ExtResource("3_cusql")
+&"": SubResource("AnimationLibrary_q5t1b")
 }
 
 [node name="E Timer" type="Timer" parent="."]
