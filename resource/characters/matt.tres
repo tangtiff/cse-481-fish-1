@@ -8,7 +8,6 @@ script = ExtResource("2_gf170")
 id = "Matt"
 display_name = "Matt the Pufferfish"
 portrait = ExtResource("1_y0k1r")
-satisfaction = 100
 full_bio = "Bio:
 What if I told you that I know where I want to eat
 

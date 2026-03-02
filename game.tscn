@@ -65,10 +65,10 @@ size_flags_vertical = 0
 
 [node name="BookIcon" parent="player/UI" instance=ExtResource("3_ryrav")]
 layout_mode = 0
-offset_left = 276.00003
-offset_top = -181.0
-offset_right = 312.70892
-offset_bottom = -144.98814
+offset_left = 288.00003
+offset_top = -153.00002
+offset_right = 324.70892
+offset_bottom = -116.98816
 scale = Vector2(2.04752, 2.2400033)
 
 [node name="BookUI" parent="player/UI" instance=ExtResource("4_eow3j")]
@@ -105,6 +105,10 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 21.0
+offset_right = 3.0
+offset_bottom = 21.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
