@@ -42,6 +42,7 @@ func _on_fish_caught():
 	var new_fish_id = fish_order[current_index]
 	unlocked_fish.append(new_fish_id)
 	current_index += 1
+	
 
 	fish_unlocked.emit(new_fish_id)
 

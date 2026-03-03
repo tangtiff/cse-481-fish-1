@@ -41,6 +41,11 @@ var dialogue_line: DialogueLine:
 			apply_dialogue_line()
 		else:
 			# The dialogue has finished so close the balloon
+			if GameEvents.ABVERSION == "A":
+				if FirebaseManager.fishCaught == 2:
+					var book = load("uid://cs0kljr87jqpq").instantiate()
+					get_tree().root.add_child(book)
+					book.open_book()
 			if owner == null:
 				queue_free()
 			else:

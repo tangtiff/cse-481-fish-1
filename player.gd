@@ -6,6 +6,8 @@ extends CharacterBody2D
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var waiting_timer: Timer = $WaitingTimer
 
+@onready var insideBook = preload("uid://cn260c0xleg6q")
+
 const SPEED = 70.0
 
 var rng = RandomNumberGenerator.new()
@@ -157,11 +159,7 @@ func _move_state():
 func _fishing_state():
 	velocity = Vector2.ZERO
 
-	if GameEvents.get_abversion() == "A" && fishBitten:
-		_start_mini_game()
-		_stop_fishing()
-	elif GameEvents.get_abversion() == "B" && \
-		 Input.is_action_just_pressed("ui_fish") && fishBitten:
+	if fishBitten:
 		_start_mini_game()
 		_stop_fishing()
 	
@@ -256,7 +254,6 @@ func _on_fish_caught():
 		caught_fish_id = get_weighted_random_fish()
 
 	start_fish_dialogue(caught_fish_id)
-
 	
 func start_fish_dialogue(fish_id: String):
 	var balloon_scene = preload("res://dialogue/balloon.tscn").instantiate()
@@ -281,7 +278,6 @@ func start_fish_dialogue(fish_id: String):
 			dialogueRes = preload("res://dialogue/MattDialogue.dialogue")
 
 	DialogueManager._start_balloon(balloon_scene, dialogueRes, "start", [])
-	
 
 func _on_waiting_timer_timeout() -> void:
 	waiting_timer.stop()

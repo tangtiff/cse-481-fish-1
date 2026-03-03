@@ -21,10 +21,3 @@ func _on_pressed() -> void:
 		var book = inside_book_scene.instantiate()
 		get_tree().root.add_child(book)  # Changed from current_scene to root
 		book.open_book()
-
-func popup() -> void:
-	if GameEvents.get_abversion() == "A":
-		if FirebaseManager.fishCaught == 2:
-			var book = inside_book_scene.instantiate()
-			get_tree().root.add_child(book)  # Changed from current_scene to root
-			book.open_book()
