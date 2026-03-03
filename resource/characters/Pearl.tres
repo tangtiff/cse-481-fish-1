@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="CharacterEntry" load_steps=3 format=3 uid="uid://7ucstc4fgrs2"]
+[gd_resource type="Resource" script_class="CharacterEntry" load_steps=3 format=3]
 
-[ext_resource type="Texture2D" uid="uid://qnfo4mvb3yo4" path="res://assets/Drawings/Pearl.png" id="1_rx6l0"]
-[ext_resource type="Script" uid="uid://djvidkrgsu05j" path="res://resource/character_entries.gd" id="1_tsuqa"]
+[ext_resource type="Texture2D" path="res://assets/Drawings/Pearl.png" id="1_rx6l0"]
+[ext_resource type="Script" path="res://resource/character_entries.gd" id="1_tsuqa"]
 
 [resource]
 script = ExtResource("1_tsuqa")
