@@ -156,8 +156,12 @@ func _move_state():
 
 func _fishing_state():
 	velocity = Vector2.ZERO
-	
-	if Input.is_action_just_pressed("ui_fish") && fishBitten:
+
+	if GameEvents.get_abversion() == "A" && fishBitten:
+		_start_mini_game()
+		_stop_fishing()
+	elif GameEvents.get_abversion() == "B" && \
+		 Input.is_action_just_pressed("ui_fish") && fishBitten:
 		_start_mini_game()
 		_stop_fishing()
 	

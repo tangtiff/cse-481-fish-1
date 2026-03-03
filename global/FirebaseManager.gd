@@ -1,11 +1,14 @@
 extends Node
 
 var session_timer: Timer = Timer.new()
-var userID: int = randi() # FIX THIS TO GRAB FROM BROWSER
 var version = GameEvents.get_version()
+var startTime;
+var ipv6 = IP.get_local_addresses()[0]
+var fishCaught = 0
+var matchesAttempted = 0
 var playtime = 0
 
-const ENABLE_LOGGING = false
+const ENABLE_LOGGING = true
 const TIME_BETWEEN_LOGS: int = 60
 
 const firebaseConfig = {
@@ -26,24 +29,31 @@ func _ready() -> void:
 	FirebaseLite.terminate("Authentication")
 	FirebaseLite.terminate("Firestore")
 	FirebaseLite.terminate("Storage")
-	
+
+	# Timing tomfoolery for logging
+	startTime = Time.get_unix_time_from_system()
 	add_child(session_timer)
 	session_timer.timeout.connect(_on_timer_timeout)
+
+	# Used to disable logging during testing
 	if ENABLE_LOGGING:
 		session_timer.start(TIME_BETWEEN_LOGS)
-		log_data()
+		log_data(false, false, true) # initial log
 
-func log_data() -> void:
-	var path: String = "version_" + version + "/" + str(userID)
+func log_data(fishEvent: bool, matchEvent: bool, timeEvent: bool) -> void:
+	var path: String = "v" + version
 	var data = {
-		"timeStamp" : Time.get_datetime_string_from_system(true),
-		"playtime" : playtime,
-		"numFishCaught" : len(GameEvents.get_unlocked_fish()),
-		"numMatches" : len(GameEvents.get_matches())
+		"ip" : ipv6,
+		"playtime" : Time.get_unix_time_from_system() - startTime,
+		"fishCaught" : fishCaught,
+		"matchesAttempted" : matchesAttempted,
+		"fishEvent" : fishEvent,
+		"matchEvent" : matchEvent,
+		"timeEvent" : timeEvent,
+		"a-b" : GameEvents.ABVERSION
 	}
 	FirebaseLite.RealtimeDatabase.push(path, data)
 
 func _on_timer_timeout() -> void:
-	playtime += TIME_BETWEEN_LOGS
-	log_data()
+	log_data(false, false, true)
 	session_timer.start(TIME_BETWEEN_LOGS)

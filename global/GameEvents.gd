@@ -22,12 +22,20 @@ var fish_matches: Array = []  # stores pairs of IDs
 
 # Version number of this release
 const VERSION: String = "0-2"
+var ABVERSION: String;
 
 func _ready():
+	# Randomly assignes player to either version A or B
+	ABVERSION = "A" if (randi() % 2 == 0) else "B"
+
 	fish_caught.connect(_on_fish_caught)
 	reset_satisfaction()
 
 func _on_fish_caught():
+	# Logging
+	FirebaseManager.fishCaught += 1
+	FirebaseManager.log_data(true, false, false)
+
 	if current_index >= fish_order.size():
 		return  # All fish unlocked
 
@@ -46,7 +54,14 @@ func get_matches() -> Array:
 func get_version() -> String:
 	return VERSION
 
+func get_abversion() -> String:
+	return ABVERSION
+
 func add_match(a: String, b: String) -> bool:
+	# Logging
+	FirebaseManager.matchesAttempted += 1
+	FirebaseManager.log_data(false, true, false)
+
 	if a == b:
 		return false
 

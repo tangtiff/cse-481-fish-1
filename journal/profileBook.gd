@@ -12,7 +12,8 @@ func _ready():
 func _on_first_unlock(_id):
 	visible = true
 	disabled = false
-	animation_player.play("bobbing")
+	if GameEvents.get_abversion() == "B":
+		animation_player.play("bobbing")
 
 func _on_pressed() -> void:
 	animation_player.stop()

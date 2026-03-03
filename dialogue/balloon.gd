@@ -60,8 +60,9 @@ var mutation_cooldown: Timer = Timer.new()
 var portraits = {
 	"Gary": preload("res://assets/Drawings/Gary.png"),
 	"Matt": preload("res://assets/Drawings/Matt_.png"),
-	"Finn": preload ("res://assets/Drawings/Finn.png"),
-	"Leona": preload ("res://assets/Drawings/Leona.png")
+	"Finn": preload("res://assets/Drawings/Finn.png"),
+	"Leona": preload("res://assets/Drawings/Leona.png"),
+	"Pearl": preload("res://assets/Drawings/Pearl.png")
 }
 
 ## The label showing the name of the currently speaking character
