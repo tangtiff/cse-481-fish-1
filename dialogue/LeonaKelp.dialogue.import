@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://1esvhff8x2an"
+path="res://.godot/imported/LeonaKelp.dialogue-30f57ebe9f20bdd858c86556d47378cd.tres"
+
+[deps]
+
+source_file="res://dialogue/LeonaKelp.dialogue"
+dest_files=["res://.godot/imported/LeonaKelp.dialogue-30f57ebe9f20bdd858c86556d47378cd.tres"]
+
+[params]
+
+defaults=true

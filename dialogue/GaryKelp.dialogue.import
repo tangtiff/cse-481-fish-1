@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://ddmp7hdntmigh"
+path="res://.godot/imported/GaryKelp.dialogue-8f36a9458d7bd5132ea990850e52a3b1.tres"
+
+[deps]
+
+source_file="res://dialogue/GaryKelp.dialogue"
+dest_files=["res://.godot/imported/GaryKelp.dialogue-8f36a9458d7bd5132ea990850e52a3b1.tres"]
+
+[params]
+
+defaults=true

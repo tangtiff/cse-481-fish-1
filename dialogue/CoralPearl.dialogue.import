@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://l6v5fl0ibju2"
+path="res://.godot/imported/CoralPearl.dialogue-254d7ec8b3b4f899e185cb92eefff380.tres"
+
+[deps]
+
+source_file="res://dialogue/CoralPearl.dialogue"
+dest_files=["res://.godot/imported/CoralPearl.dialogue-254d7ec8b3b4f899e185cb92eefff380.tres"]
+
+[params]
+
+defaults=true

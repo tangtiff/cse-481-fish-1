@@ -1,11 +1,13 @@
-[gd_resource type="Resource" script_class="CharacterEntry" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CharacterEntry" load_steps=3 format=3]
 
+[ext_resource type="Texture2D" path="res://assets/Drawings/Kelp.png" id="1_6ql64"]
 [ext_resource type="Script" path="res://resource/character_entries.gd" id="1_vs0v6"]
 
 [resource]
 script = ExtResource("1_vs0v6")
 id = "Kelp"
 display_name = "Kelp the Seahorse"
+portrait = ExtResource("1_6ql64")
 full_bio = "Bio:
 I'll fall for you if I don't have my glasses on
 

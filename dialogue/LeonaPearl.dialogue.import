@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cnv8huuwxu7q7"
+path="res://.godot/imported/LeonaPearl.dialogue-739137536e3ff6b44109f46bb31482cf.tres"
+
+[deps]
+
+source_file="res://dialogue/LeonaPearl.dialogue"
+dest_files=["res://.godot/imported/LeonaPearl.dialogue-739137536e3ff6b44109f46bb31482cf.tres"]
+
+[params]
+
+defaults=true

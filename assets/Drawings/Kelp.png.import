@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnr2anrer33qf"
-path="res://.godot/imported/Matt_.png-abc9f77626a92b10b8daf42d1bb4fbeb.ctex"
+uid="uid://cadwyaia5j77u"
+path="res://.godot/imported/Kelp.png-312fa1125e2836c1d2b908c2dd883448.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Drawings/Matt_.png"
-dest_files=["res://.godot/imported/Matt_.png-abc9f77626a92b10b8daf42d1bb4fbeb.ctex"]
+source_file="res://assets/Drawings/Kelp.png"
+dest_files=["res://.godot/imported/Kelp.png-312fa1125e2836c1d2b908c2dd883448.ctex"]
 
 [params]
 

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://c3r7uhwwpy4sl"
+path="res://.godot/imported/LeonaCoral.dialogue-bf462eb207923031acda8462dc188b69.tres"
+
+[deps]
+
+source_file="res://dialogue/LeonaCoral.dialogue"
+dest_files=["res://.godot/imported/LeonaCoral.dialogue-bf462eb207923031acda8462dc188b69.tres"]
+
+[params]
+
+defaults=true

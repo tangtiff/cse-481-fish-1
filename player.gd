@@ -17,6 +17,16 @@ var fishBitten = false
 var maxWaitingTime = 4
 var catchFishCount: int = 0;
 
+var char_order := {
+	"Gary": 0,
+	"Matt": 1,
+	"Leona": 2,
+	"Finn": 3,
+	"Coral": 4,
+	"Pearl": 5,
+	"Kelp": 6
+}
+
 var fish_pool = [
 	{"id": "Gary", "weight": 30},
 	{"id": "Matt", "weight": 65},
@@ -45,68 +55,108 @@ func start_match_dialogue(left_id: String, right_id: String):
 		"Gary_Matt":
 			dialogueRes = preload("res://dialogue/GaryMattMatch.dialogue")
 		"Matt_Gary":
-			dialogueRes = preload("res://dialogue/GaryMattMatch.dialogue") 
-			 
-		"Leona_Finn":
-			dialogueRes = preload("res://dialogue/LeonaFinnMatch.dialogue")
-		"Finn_Leona":
-			dialogueRes = preload("res://dialogue/LeonaFinnMatch.dialogue")
-			
-		"Gary_Finn":
-			dialogueRes = preload("res://dialogue/GaryFinnMatch.dialogue")
-		"Finn_Gary":
-			dialogueRes = preload("res://dialogue/GaryFinnMatch.dialogue") 
-			
-		"Gary_Pearl":
-			dialogueRes = preload("res://dialogue/GaryPearlMatch.dialogue")
-		"Pearl_Gary":
-			dialogueRes = preload("res://dialogue/GaryPearlMatch.dialogue")
-			
-		"Gary_Coral":
-			dialogueRes = preload("res://dialogue/GaryCoralMatch.dialogue")
-		"Coral_Gary":
-			dialogueRes = preload("res://dialogue/GaryCoralMatch.dialogue")
-			
+			dialogueRes = preload("res://dialogue/GaryMattMatch.dialogue")
+
 		"Gary_Leona":
 			dialogueRes = preload("res://dialogue/GaryLeonaMatch.dialogue")
 		"Leona_Gary":
 			dialogueRes = preload("res://dialogue/GaryLeonaMatch.dialogue")
-		
-		"Matt_Finn":
-			dialogueRes = preload("res://dialogue/MattFinnMatch.dialogue")  
-		"Finn_Matt":
-			dialogueRes = preload("res://dialogue/MattFinnMatch.dialogue")
-			
-		"Matt_Coral":
-			dialogueRes = preload("res://dialogue/MattCoralMatch.dialogue")
-		"Coral_Matt":
-			dialogueRes = preload("res://dialogue/MattCoralMatch.dialogue")
-			
-		"Matt_Pearl":
-			dialogueRes = preload("res://dialogue/MattPearlMatch.dialogue")  
-		"Pearl_Matt":
-			dialogueRes = preload("res://dialogue/MattPearlMatch.dialogue")
-			
+
+		"Gary_Finn":
+			dialogueRes = preload("res://dialogue/GaryFinnMatch.dialogue")
+		"Finn_Gary":
+			dialogueRes = preload("res://dialogue/GaryFinnMatch.dialogue")
+
+		"Gary_Coral":
+			dialogueRes = preload("res://dialogue/GaryCoralMatch.dialogue")
+		"Coral_Gary":
+			dialogueRes = preload("res://dialogue/GaryCoralMatch.dialogue")
+
+		"Gary_Pearl":
+			dialogueRes = preload("res://dialogue/GaryPearlMatch.dialogue")
+		"Pearl_Gary":
+			dialogueRes = preload("res://dialogue/GaryPearlMatch.dialogue")
+
+		"Gary_Kelp":
+			dialogueRes = preload("res://dialogue/GaryKelp.dialogue")
+		"Kelp_Gary":
+			dialogueRes = preload("res://dialogue/GaryKelp.dialogue")
+
 		"Matt_Leona":
 			dialogueRes = preload("res://dialogue/MattLeonaMatch.dialogue")
 		"Leona_Matt":
 			dialogueRes = preload("res://dialogue/MattLeonaMatch.dialogue")
-			
-		"Finn_Pearl":
-			dialogueRes = preload("res://dialogue/FinnPearlMatch.dialogue")
-		"Pearl_Finn":
-			dialogueRes = preload("res://dialogue/FinnPearlMatch.dialogue")
-			
+
+		"Matt_Finn":
+			dialogueRes = preload("res://dialogue/MattFinnMatch.dialogue")
+		"Finn_Matt":
+			dialogueRes = preload("res://dialogue/MattFinnMatch.dialogue")
+
+		"Matt_Coral":
+			dialogueRes = preload("res://dialogue/MattCoralMatch.dialogue")
+		"Coral_Matt":
+			dialogueRes = preload("res://dialogue/MattCoralMatch.dialogue")
+
+		"Matt_Pearl":
+			dialogueRes = preload("res://dialogue/MattPearlMatch.dialogue")
+		"Pearl_Matt":
+			dialogueRes = preload("res://dialogue/MattPearlMatch.dialogue")
+
+		"Matt_Kelp":
+			dialogueRes = preload("res://dialogue/MattKelp.dialogue")
+		"Kelp_Matt":
+			dialogueRes = preload("res://dialogue/MattKelp.dialogue")
+
+		"Leona_Finn":
+			dialogueRes = preload("res://dialogue/LeonaFinnMatch.dialogue")
+		"Finn_Leona":
+			dialogueRes = preload("res://dialogue/LeonaFinnMatch.dialogue")
+
+		"Leona_Coral":
+			dialogueRes = preload("res://dialogue/LeonaCoral.dialogue")
+		"Coral_Leona":
+			dialogueRes = preload("res://dialogue/LeonaCoral.dialogue")
+
+		"Leona_Pearl":
+			dialogueRes = preload("res://dialogue/LeonaPearl.dialogue")
+		"Pearl_Leona":
+			dialogueRes = preload("res://dialogue/LeonaPearl.dialogue")
+
+		"Leona_Kelp":
+			dialogueRes = preload("res://dialogue/LeonaKelp.dialogue")
+		"Kelp_Leona":
+			dialogueRes = preload("res://dialogue/LeonaKelp.dialogue")
+
 		"Finn_Coral":
 			dialogueRes = preload("res://dialogue/FinnCoralMatch.dialogue")
 		"Coral_Finn":
 			dialogueRes = preload("res://dialogue/FinnCoralMatch.dialogue")
-			
+
+		"Finn_Pearl":
+			dialogueRes = preload("res://dialogue/FinnPearlMatch.dialogue")
+		"Pearl_Finn":
+			dialogueRes = preload("res://dialogue/FinnPearlMatch.dialogue")
+
+		"Finn_Kelp":
+			dialogueRes = preload("res://dialogue/FinnKelp.dialogue")
+		"Kelp_Finn":
+			dialogueRes = preload("res://dialogue/FinnKelp.dialogue")
+
+		"Coral_Pearl":
+			dialogueRes = preload("res://dialogue/CoralPearl.dialogue")
+		"Pearl_Coral":
+			dialogueRes = preload("res://dialogue/CoralPearl.dialogue")
+
+		"Coral_Kelp":
+			dialogueRes = preload("res://dialogue/CoralKelp.dialogue")
+		"Kelp_Coral":
+			dialogueRes = preload("res://dialogue/CoralKelp.dialogue")
+
 		"Pearl_Kelp":
 			dialogueRes = preload("res://dialogue/PearlKelpMatch.dialogue")
 		"Kelp_Pearl":
-			dialogueRes = preload("res://dialogue/PearlKelpMatch.dialogue")
-			
+			dialogueRes = preload("res://dialogue/PearlKelpMatch.dialogue")	
+	
 		_:
 			dialogueRes = preload("res://dialogue/undone.dialogue")  # Fallback
 

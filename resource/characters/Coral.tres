@@ -1,11 +1,13 @@
-[gd_resource type="Resource" script_class="CharacterEntry" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CharacterEntry" load_steps=3 format=3]
 
 [ext_resource type="Script" path="res://resource/character_entries.gd" id="1_28nnd"]
+[ext_resource type="Texture2D" path="res://assets/Drawings/Coral.png" id="1_bq0nd"]
 
 [resource]
 script = ExtResource("1_28nnd")
 id = "Coral"
 display_name = "Coral the Orca"
+portrait = ExtResource("1_bq0nd")
 full_bio = "Bio:
 I'm looking for someone who can help me parallel park
 

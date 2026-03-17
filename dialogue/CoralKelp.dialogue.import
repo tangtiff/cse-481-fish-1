@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bs03c7quc2jyx"
+path="res://.godot/imported/CoralKelp.dialogue-a2ad2328dc2e551191d2dddbd7cd6fdb.tres"
+
+[deps]
+
+source_file="res://dialogue/CoralKelp.dialogue"
+dest_files=["res://.godot/imported/CoralKelp.dialogue-a2ad2328dc2e551191d2dddbd7cd6fdb.tres"]
+
+[params]
+
+defaults=true
