@@ -52,111 +52,66 @@ func start_match_dialogue(left_id: String, right_id: String):
 	# You can key dialogue off either fish, or the pair
 	var pair_key = left_id + "_" + right_id
 	match pair_key:
-		"Gary_Matt":
-			dialogueRes = preload("res://dialogue/GaryMattMatch.dialogue")
-		"Matt_Gary":
-			dialogueRes = preload("res://dialogue/GaryMattMatch.dialogue")
-
-		"Gary_Leona":
+		"Gary_Matt", "Matt_Gary":
+			if GameEvents.ABVERSION == "B":
+				dialogueRes = preload("res://dialogue/GaryMattB.dialogue")
+			else:
+				dialogueRes = preload("res://dialogue/GaryMattMatch.dialogue")
+		"Gary_Leona", "Leona_Gary":
 			dialogueRes = preload("res://dialogue/GaryLeonaMatch.dialogue")
-		"Leona_Gary":
-			dialogueRes = preload("res://dialogue/GaryLeonaMatch.dialogue")
-
-		"Gary_Finn":
-			dialogueRes = preload("res://dialogue/GaryFinnMatch.dialogue")
-		"Finn_Gary":
-			dialogueRes = preload("res://dialogue/GaryFinnMatch.dialogue")
-
-		"Gary_Coral":
+		"Gary_Finn", "Finn_Gary":
+			if GameEvents.ABVERSION == "B":
+				dialogueRes = preload("res://dialogue/GaryFinnB.dialogue")
+			else:
+				dialogueRes = preload("res://dialogue/GaryFinnMatch.dialogue")
+		"Gary_Coral", "Coral_Gary":
 			dialogueRes = preload("res://dialogue/GaryCoralMatch.dialogue")
-		"Coral_Gary":
-			dialogueRes = preload("res://dialogue/GaryCoralMatch.dialogue")
-
-		"Gary_Pearl":
+		"Gary_Pearl", "Pearl_Gary":
 			dialogueRes = preload("res://dialogue/GaryPearlMatch.dialogue")
-		"Pearl_Gary":
-			dialogueRes = preload("res://dialogue/GaryPearlMatch.dialogue")
-
-		"Gary_Kelp":
+		"Gary_Kelp", "Kelp_Gary":
 			dialogueRes = preload("res://dialogue/GaryKelp.dialogue")
-		"Kelp_Gary":
-			dialogueRes = preload("res://dialogue/GaryKelp.dialogue")
-
-		"Matt_Leona":
+		"Matt_Leona", "Leona_Matt":
 			dialogueRes = preload("res://dialogue/MattLeonaMatch.dialogue")
-		"Leona_Matt":
-			dialogueRes = preload("res://dialogue/MattLeonaMatch.dialogue")
-
-		"Matt_Finn":
+		"Matt_Finn", "Finn_Matt":
 			dialogueRes = preload("res://dialogue/MattFinnMatch.dialogue")
-		"Finn_Matt":
-			dialogueRes = preload("res://dialogue/MattFinnMatch.dialogue")
-
-		"Matt_Coral":
+		"Matt_Coral", "Coral_Matt":
 			dialogueRes = preload("res://dialogue/MattCoralMatch.dialogue")
-		"Coral_Matt":
-			dialogueRes = preload("res://dialogue/MattCoralMatch.dialogue")
-
-		"Matt_Pearl":
-			dialogueRes = preload("res://dialogue/MattPearlMatch.dialogue")
-		"Pearl_Matt":
-			dialogueRes = preload("res://dialogue/MattPearlMatch.dialogue")
-
-		"Matt_Kelp":
-			dialogueRes = preload("res://dialogue/MattKelp.dialogue")
-		"Kelp_Matt":
-			dialogueRes = preload("res://dialogue/MattKelp.dialogue")
-
-		"Leona_Finn":
+		"Matt_Pearl", "Pearl_Matt":
+			if GameEvents.ABVERSION == "B":
+				dialogueRes = preload("res://dialogue/MattPearlB.dialogue")
+			else:
+				dialogueRes = preload("res://dialogue/MattPearlMatch.dialogue")
+		"Matt_Kelp", "Kelp_Matt":
+			if GameEvents.ABVERSION == "B":
+				dialogueRes = preload("res://dialogue/MattKelpB.dialogue")
+			else:
+				dialogueRes = preload("res://dialogue/MattKelp.dialogue")
+		"Leona_Finn", "Finn_Leona":
 			dialogueRes = preload("res://dialogue/LeonaFinnMatch.dialogue")
-		"Finn_Leona":
-			dialogueRes = preload("res://dialogue/LeonaFinnMatch.dialogue")
-
-		"Leona_Coral":
-			dialogueRes = preload("res://dialogue/LeonaCoral.dialogue")
-		"Coral_Leona":
-			dialogueRes = preload("res://dialogue/LeonaCoral.dialogue")
-
-		"Leona_Pearl":
+		"Leona_Coral", "Coral_Leona":
+			if GameEvents.ABVERSION == "B":
+				dialogueRes = preload("res://dialogue/LeonaCoralB.dialogue")
+			else:
+				dialogueRes = preload("res://dialogue/LeonaCoral.dialogue")
+		"Leona_Pearl", "Pearl_Leona":
 			dialogueRes = preload("res://dialogue/LeonaPearl.dialogue")
-		"Pearl_Leona":
-			dialogueRes = preload("res://dialogue/LeonaPearl.dialogue")
-
-		"Leona_Kelp":
+		"Leona_Kelp", "Kelp_Leona":
 			dialogueRes = preload("res://dialogue/LeonaKelp.dialogue")
-		"Kelp_Leona":
-			dialogueRes = preload("res://dialogue/LeonaKelp.dialogue")
-
-		"Finn_Coral":
+		"Finn_Coral", "Coral_Finn":
 			dialogueRes = preload("res://dialogue/FinnCoralMatch.dialogue")
-		"Coral_Finn":
-			dialogueRes = preload("res://dialogue/FinnCoralMatch.dialogue")
-
-		"Finn_Pearl":
+		"Finn_Pearl", "Pearl_Finn":
 			dialogueRes = preload("res://dialogue/FinnPearlMatch.dialogue")
-		"Pearl_Finn":
-			dialogueRes = preload("res://dialogue/FinnPearlMatch.dialogue")
-
-		"Finn_Kelp":
-			dialogueRes = preload("res://dialogue/FinnKelp.dialogue")
-		"Kelp_Finn":
-			dialogueRes = preload("res://dialogue/FinnKelp.dialogue")
-
-		"Coral_Pearl":
+		"Finn_Kelp", "Kelp_Finn":
+			if GameEvents.ABVERSION == "B":
+				dialogueRes = preload("res://dialogue/FinnKelpB.dialogue")
+			else:
+				dialogueRes = preload("res://dialogue/FinnKelp.dialogue")
+		"Coral_Pearl", "Pearl_Coral":
 			dialogueRes = preload("res://dialogue/CoralPearl.dialogue")
-		"Pearl_Coral":
-			dialogueRes = preload("res://dialogue/CoralPearl.dialogue")
-
-		"Coral_Kelp":
+		"Coral_Kelp", "Kelp_Coral":
 			dialogueRes = preload("res://dialogue/CoralKelp.dialogue")
-		"Kelp_Coral":
-			dialogueRes = preload("res://dialogue/CoralKelp.dialogue")
-
-		"Pearl_Kelp":
+		"Pearl_Kelp", "Kelp_Pearl":
 			dialogueRes = preload("res://dialogue/PearlKelpMatch.dialogue")
-		"Kelp_Pearl":
-			dialogueRes = preload("res://dialogue/PearlKelpMatch.dialogue")	
-	
 		_:
 			dialogueRes = preload("res://dialogue/undone.dialogue")  # Fallback
 

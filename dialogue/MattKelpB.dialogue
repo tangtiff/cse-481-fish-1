@@ -14,6 +14,8 @@
 	+0 satisfaction. Neither heartbroken, nor fulfilled
 	Kelp: Matt showed me this goated food combo. I tried making it at home, but it didn't hit the same…
 	+0 satisfaction. Neither heartbroken, nor fulfilled
+	- Start again => start
+	- End the conversation => END
 - Meet at an arcade
 	Matt and Kelp meet at an arcade, Squid Games
 	Kelp: Hey man, you must be Matt. This place is awesome bro!
@@ -29,7 +31,7 @@
 	+0 satisfaction. Neither heartbroken, nor fulfilled
 	Kelp: Matt showed me this goated food combo. I tried making it at home, but it didn't hit the same…
 	+0 satisfaction. Neither heartbroken, nor fulfilled
-- Start again => start
-- End the conversation => END
+	- Start again => start
+	- End the conversation => END
 
 => END

@@ -11,6 +11,8 @@
 	+0 satisfaction. Neither heartbroken, neither fulfilled 
 	Kelp: I don’t think he appreciated my jokes. But check out what I got at the gift shop, it’s a magnet of a manatee riding a whale shark, HAHA!
 	+0 satisfaction. Neither heartbroken, neither fulfilled
+	- Start again => start
+	- End the conversation => END
 - Meet at a science museum
 	Finn and Kelp meet at Sea Exploratorium
 	Kelp: Yo! I’m Kelp from Reel Love. Love the suit, dawg. What is that? Polyester blend?
@@ -22,6 +24,6 @@
 	+0 satisfaction. Neither heartbroken, neither fulfilled 
 	Kelp: I don’t think he appreciated my jokes. But check out what I got at the gift shop, it’s a sick fossil necklace! 
 	+0 satisfaction. Neither heartbroken, neither fulfilled 
-- Start again => start
-- End the conversation => END
+	- Start again => start
+	- End the conversation => END
 => END

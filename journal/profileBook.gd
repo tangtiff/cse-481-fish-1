@@ -9,14 +9,13 @@ func _ready():
 	visible = false
 	disabled = true
 	GameEvents.fish_unlocked.connect(_on_first_unlock)
-	GameEvents.book_closed.connect(_on_book_closed)  # <-- add this
+	GameEvents.book_closed.connect(_on_book_closed)  
 	pressed.connect(_on_pressed)
 
 func _on_first_unlock(_id):
 	visible = true
 	disabled = false
-	if GameEvents.get_abversion() == "B":
-		animation_player.play("bobbing")
+	animation_player.play("bobbing")
 
 func _on_pressed() -> void:
 	disabled = true

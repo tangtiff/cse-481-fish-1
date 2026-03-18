@@ -16,6 +16,8 @@
 	+0 satisfaction. Neither heartbroken, neither fulfilled 
 	Leona: Coral is such a sweetheart and is invitin’ me out for ice cream again with Marlin. Being single is nice, but having a community is still important, you know. Just cause I’m choosin’ myself doesn’t mean I can’t be makin’ friends, darlin’!
 	+5 satisfaction. Fulfilled  
+	- Start again => start
+	- End the conversation => END
 - Meet at a smoothie shop
 	Leona and Coral meet at Sailor’s Smoothies
 	Leona: Hello Darlin’. You must be Coral, nice to meet you.
@@ -33,7 +35,7 @@
 	+0 satisfaction. Neither heartbroken, neither fulfilled 
 	Leona: Coral is such a sweetheart and is invitin’ me out for ice cream again with Marlin. Being single is nice, but having a community is still important, you know. Just cause I’m choosin’ myself doesn’t mean I can’t be makin’ friends, darlin’!
 	+5 satisfaction. Fulfilled  
-- Start again => start
-- End the conversation => END
+	- Start again => start
+	- End the conversation => END
 
 => END

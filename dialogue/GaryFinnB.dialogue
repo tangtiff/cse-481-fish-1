@@ -9,6 +9,8 @@
 	+0 satisfaction. Neither heartbroken, nor fulfilled
 	Gary: He said he was busy? Plus no courtesy to even reach out himself? Glad we never met, sounds like a nightmare. Find me someone else please. 
 	+0 satisfaction. Neither heartbroken, nor fulfilled
+	- Start again => start
+	- End the conversation => END
 - Meet at Updrift rock climbing
 	Gary and Finn agreed to meet at Updrift rock climbing
 	Gary: Where is the guy? The matchmaker said 3pm and it’s already 3:30. I even practiced a little yesterday so I wouldn’t look like a total newbie in front of the guy.
@@ -19,7 +21,7 @@
 	+0 satisfaction. Neither heartbroken, nor fulfilled
 	Gary: He said he was busy? Plus no courtesy to even reach out himself? Glad we never met, sounds like a nightmare. Find me someone else please. 
 	+0 satisfaction. Neither heartbroken, nor fulfilled
-- Start again => start
-- End the conversation => END
+	- Start again => start
+	- End the conversation => END
 
 => END
