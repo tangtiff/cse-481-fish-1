@@ -180,12 +180,24 @@ func get_weighted_random_fish() -> String:
 
 
 func _physics_process(_delta):
+	if GameEvents.dialogue_active:
+		velocity = Vector2.ZERO
+		animated_sprite_2d.play("idle")
+		move_and_slide()
+		return
+		
 	if startFishing: _fishing_state()
 	else: _move_state()
 	
 	move_and_slide()
 
 func _move_state():
+	if Input.is_action_just_pressed("ui_fish"):
+		if _is_dialogue_active():
+			return  # Block fishing while dialogue is open
+		_start_fishing()
+		return
+	# ... rest of the function stays the same
 	if Input.is_action_just_pressed("ui_fish"):
 		_start_fishing()
 		return
@@ -280,6 +292,13 @@ func _on_fish_caught():
 		fishingGame = null
 
 	get_tree().paused = false
+	fishBitten = false
+	waitForFish = false
+	startFishing = false          
+	animation_player.stop()
+	animated_sprite_2d.visible = true
+	waiting.visible = false
+	
 	animated_sprite_2d.play("fishing_end")
 
 	catchFishCount += 1
@@ -334,3 +353,6 @@ func _on_waiting_timer_timeout() -> void:
 	animation_player.stop()
 	fishBitten = true
 	waitForFish = false
+	
+func _is_dialogue_active() -> bool:
+	return get_tree().get_nodes_in_group("dialogue_balloon").size() > 0

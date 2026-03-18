@@ -5,6 +5,8 @@ signal fish_unlocked(unlocked_id)
 signal fish_matched(fish_a, fish_b)
 signal match_made(left_id: String, right_id: String)
 
+signal book_closed
+
 # Hard-coded fish order (match your .tres file names or IDs)
 var fish_order: Array[String] = [
 	"Gary",
@@ -19,6 +21,8 @@ var fish_order: Array[String] = [
 var current_index: int = 0
 var unlocked_fish: Array[String] = []
 var fish_matches: Array = []  # stores pairs of IDs
+
+var dialogue_active: bool = false
 
 # Version number of this release
 const VERSION: String = "0-2"

@@ -41,6 +41,7 @@ var dialogue_line: DialogueLine:
 			apply_dialogue_line()
 		else:
 			# The dialogue has finished so close the balloon
+			GameEvents.dialogue_active = false
 			if GameEvents.ABVERSION == "A":
 				if FirebaseManager.fishCaught == 2:
 					var book = load("uid://cs0kljr87jqpq").instantiate()
@@ -123,6 +124,7 @@ func _notification(what: int) -> void:
 
 ## Start some dialogue
 func start(with_dialogue_resource: DialogueResource = null, title: String = "", extra_game_states: Array = []) -> void:
+	GameEvents.dialogue_active = true
 	temporary_game_states = [self] + extra_game_states
 	is_waiting_for_input = false
 	if is_instance_valid(with_dialogue_resource):

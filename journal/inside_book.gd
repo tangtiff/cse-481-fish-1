@@ -10,24 +10,38 @@ extends Control
 var entries = []
 var matching_screen_instance = null  # Track the matching screen
 
+var _on_closed_callback: Callable
+
 func _ready():
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	visible = false
 	GameEvents.match_made.connect(_on_match_made)
 
 func _on_match_made(_left_id, _right_id):
-	visible = false
+	if is_instance_valid(matching_screen_instance):
+		matching_screen_instance.queue_free()
+		matching_screen_instance = null
+	GameEvents.book_closed.emit()
+	queue_free()
 
-func open_book(): 
-	refresh_book() 
+
+func open_book(on_closed: Callable = Callable()):
+	_on_closed_callback = on_closed
+	refresh_book()
 	visible = true
 
 func close_book():
-	# Close matching screen if it's open
-	if matching_screen_instance:
+	if is_instance_valid(matching_screen_instance):
 		matching_screen_instance.queue_free()
 		matching_screen_instance = null
-	visible = false
+	GameEvents.book_closed.emit()
+	queue_free()
+	
+func _notify_closed():
+	if not _on_closed_callback.is_null() and _on_closed_callback.is_valid():
+		_on_closed_callback.call()
+		_on_closed_callback = Callable()	
+	
 
 func refresh_book():
 	entries.clear()
@@ -58,6 +72,9 @@ func _on_exit_button_pressed() -> void:
 	close_book()
 
 func _on_match_button_pressed() -> void:
+	if is_instance_valid(matching_screen_instance):
+		return
+			
 	if matching_scene:
 		# Hide the book content
 		$Background.visible = false  # Hides all the book UI
