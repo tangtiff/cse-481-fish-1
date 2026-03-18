@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://wfi7ntqfjrln"
+path="res://.godot/imported/GaryFinnB.dialogue-038fcc88d965b6abe45c7ade21412331.tres"
+
+[deps]
+
+source_file="res://dialogue/GaryFinnB.dialogue"
+dest_files=["res://.godot/imported/GaryFinnB.dialogue-038fcc88d965b6abe45c7ade21412331.tres"]
+
+[params]
+
+defaults=true

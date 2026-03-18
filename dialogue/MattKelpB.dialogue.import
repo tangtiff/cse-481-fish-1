@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://0ov4hwquiqrq"
+path="res://.godot/imported/MattKelpB.dialogue-2c50f46bd4e7c63d3ff1741f36ee7f55.tres"
+
+[deps]
+
+source_file="res://dialogue/MattKelpB.dialogue"
+dest_files=["res://.godot/imported/MattKelpB.dialogue-2c50f46bd4e7c63d3ff1741f36ee7f55.tres"]
+
+[params]
+
+defaults=true

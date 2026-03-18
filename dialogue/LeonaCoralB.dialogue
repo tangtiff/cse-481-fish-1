@@ -1,0 +1,39 @@
+~ start
+- Meet at an ice cream shop
+	Leona and Coral meet at Seabreeze Sundaes 
+	Leona: Hello Darlin’. You must be Coral, nice to meet you.
+	Coral: Yes, that’s me! Thank you for meeting me today. Have you decided on a flavor for your sundae? My little one, Marlin, loves sea salt. 
+	Leona: I like that one, too. Marlin knows what he’s talkin’ about! But honey, what’s your favorite? I’m not datin’ Marlin now.
+	Coral: I don’t really know, to be honest. I usually just finish whatever Marlin can’t. Guess mine would be sea salt, too.
+	Leona: Oh sweetheart, you have to live for yourself sometimes, too. It’s obvious you care deeply for Marlin, but don’t lose yourself in the process. 
+	Coral: You’re right, my whole life revolves around Marlin. I've forgotten how to live for myself sometimes.
+	Leona: Let’s get samples of every flavor. We will find your favorite flavor today darlin’. 
+	Leona charms the ice cream scooper to allow herself and Coral to taste every flavor at Seabreeze Sundaes.
+	Coral: Beach day is definitely the best, the graham cracker sand is the perfect topping. Thank you for reminding myself to live my own life.
+	Leona: That’s what I do best. I’m actually choosing myself from here on out, too. I want to enjoy the breeze in my hair freely, and eat at Seabreeze Sundaes whenever I want. Thank you for reminding me how fun it can be to choose yourself. 
+	After date
+	Coral: Leona reminded me not to lose myself while raising Marlin and it was such an important lesson. Of course Marlin will always be a great part of my world, but not my whole world. 
+	+0 satisfaction. Neither heartbroken, neither fulfilled 
+	Leona: Coral is such a sweetheart and is invitin’ me out for ice cream again with Marlin. Being single is nice, but having a community is still important, you know. Just cause I’m choosin’ myself doesn’t mean I can’t be makin’ friends, darlin’!
+	+5 satisfaction. Fulfilled  
+- Meet at a smoothie shop
+	Leona and Coral meet at Sailor’s Smoothies
+	Leona: Hello Darlin’. You must be Coral, nice to meet you.
+	Coral: Yes, that’s me! Thank you for meeting me today. Have you decided on a flavor for your drink? My little one, Marlin, loves the blue lagoon. 
+	Leona: I like that one, too. Marlin knows what he’s talkin’ about! But honey, what’s your favorite? I’m not datin’ Marlin now.
+	Coral: I don’t really know, to be honest. I usually just finish whatever Marlin can’t. Guess mine would be blue lagoon, too.
+	Leona: Oh sweetheart, you have to live for yourself sometimes, too. It’s obvious you care deeply for Marlin, but don’t lose yourself in the process. 
+	Coral: You’re right, my whole life revolves around Marlin. I've forgotten how to live for myself sometimes.
+	Leona: Let’s get samples of every flavor. We will find your favorite flavor today darlin’. 
+	Leona charms the smoothie employee to allow herself and Coral to taste every flavor at Sailor’s Smoothies
+	Coral: Sea moss tropical is the best, the sea grapes are the perfect topping. Thank you for reminding myself to live my own life.
+	Leona: That’s what I do best. I’m actually choosing myself from here on out, too. I want to enjoy the breeze in my hair freely, and order a smoothie here whenever I want. Thank you for reminding me how fun it can be to choose yourself. 
+	After date
+	Coral: Leona reminded me not to lose myself while raising Marlin and it was such an important lesson. Of course Marlin will always be a great part of my world, but not my whole world. 
+	+0 satisfaction. Neither heartbroken, neither fulfilled 
+	Leona: Coral is such a sweetheart and is invitin’ me out for ice cream again with Marlin. Being single is nice, but having a community is still important, you know. Just cause I’m choosin’ myself doesn’t mean I can’t be makin’ friends, darlin’!
+	+5 satisfaction. Fulfilled  
+- Start again => start
+- End the conversation => END
+
+=> END

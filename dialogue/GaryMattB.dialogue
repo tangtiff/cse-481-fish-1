@@ -1,0 +1,43 @@
+~ start
+- Meet at a local restaurant
+	Matt: Hey, are you Gary? I’m Matt from Reel Love.
+	Gary: I am! Nice to meet you. Honestly, I can’t believe you’re real, I just thought the match maker was a little shady given they’re on an abandoned island, no reviews, and got us matched so quickly.
+	Matt: Me too! I thought they were going to set me up with sea slug and run away with my pearls. I’m so glad I was wrong
+	Gary: I'm definitely not a sea slug, just a stone fish. That doesn't bother you?
+	Matt: Not at all. Spikey poisonous fish like us get a bad rep. I know what it's like to be judged before I can even get a greeting in, although it has gotten a lot better.
+	Matt: I know it’s difficult, especially for stone fish—sorry, it must have been hard in the dating pool.
+	Gary: Thank you for understanding, I’m just glad someone gets it. How are you liking your food?
+	Matt: It's good! The noodles are bouncy and the sauce compliments the sea prunes well. It’s rich without being heavy, bright without being sharp. 
+	Matt: Every note lands cleanly, salt, acid, sweetness—none overpowering. 
+	Gary: Wow, you must be a food critic! I would just describe it as “tasty.” 
+	Matt: I’m a chef at a nearby restaurant, Panda Guppy Express. 
+	Gary: I love that place! I ordered off the menu by a waiter's recommendation and it was a delicious sea grass stir fry. I never tasted anything like it.
+	Matt: I invented that recipe! I’m still tweaking it a little, but I’m glad you like it! Give me your critiques and I can cook a better version for you. 
+	Gary: I would love that, thank you!
+	Matt and Gary enjoy the rest of their date
+	Gary: Thanks for introducing us, the date went great and Matt is a lovely guy and an even better cook. I’ll tell my friends about you! 
+	+5 satisfaction. Fulfilled
+	Matt: Gary was an amazing guy! We’re going on another date in a few days. I’ll keep you updated, thanks again!
+	+5 satisfaction. Fulfilled
+- Meet at a street food market
+	Matt: Hey, are you Gary? I’m Matt from Reel Love.
+	Gary: I am! Nice to meet you. Honestly, I can’t believe you’re real, I just thought the match maker was a little shady given they’re on an abandoned island, no reviews, and got us matched so quickly.
+	Matt: Me too! I thought they were going to set me up with sea slug and run away with my pearls. I’m so glad I was wrong!
+	Gary: I'm definitely not a sea slug, just a stone fish. That doesn't bother you?
+	Matt: Not at all. Spikey poisonous fish like us get a bad rep. I know what it's like to be judged before I can even get a greeting in, although it has gotten a lot better. I know it’s difficult, especially for stone fish—sorry, it must have been hard in the dating pool.
+	Gary:Thank you for understanding, I’m just glad someone gets it. How are you liking your food? The options seem endless, I mean who knew there were so many ways you could eat a taco. And how many variations of cups can there be? Baby bottles to light bulbs is a crazy range.
+	Matt: The craziest ones I saw tonight were from what looked like a mini traffic cone. But my food is good! The skewers are tender and the sauce compliments the sea prune shavings well. It’s rich without being heavy, bright without being sharp. Every note lands cleanly, salt, acid, sweetness—none overpowering. 
+	Gary: Wow, you must be a food critic! I would just describe it as “delicious.” “Exquisite” if I were to be fancy.
+	Matt: I’m a chef at a nearby restaurant, Panda Guppy Express. 
+	Gary: I love that place! I ordered off the menu by a waiter's recommendation and it was a delicious sea grass stir fry. I never tasted anything like it.
+	Matt: I invented that recipe! I’m still tweaking it a little, but I’m glad you like it! Give me your critiques and I can cook a better version for you. 
+	Gary: I would love that, thank you!
+	Matt and Gary enjoy the rest of their date
+	Gary: Thanks for introducing us, the date went great and Matt is a lovely guy and an even better cook. I’ll tell my friends about you! 
+	+5 satisfaction. Fulfilled
+	Matt: Gary was an amazing guy! We’re going on another date in a few days. I’ll keep you updated, thanks again!
+	+5 satisfaction. Fulfilled
+- Start again => start
+- End the conversation => END
+
+=> END

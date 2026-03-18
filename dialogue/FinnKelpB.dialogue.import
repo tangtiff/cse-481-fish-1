@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bjh6vr3o1us32"
+path="res://.godot/imported/FinnKelpB.dialogue-dd3e6de253b53338135cf74d44771a1f.tres"
+
+[deps]
+
+source_file="res://dialogue/FinnKelpB.dialogue"
+dest_files=["res://.godot/imported/FinnKelpB.dialogue-dd3e6de253b53338135cf74d44771a1f.tres"]
+
+[params]
+
+defaults=true

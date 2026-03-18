@@ -1,0 +1,25 @@
+~ start
+- Neet at Sea Grass Gardens
+	Gary and Finn agreed to meet at the Sea Grass Gardens
+	Gary: Where is the guy? The matchmaker said 3pm and it’s already 3:30. 
+	Another 15 minutes have passed without any sign of Finn.
+	Gary: No way I got stood up from a guy whose description reads, “Tiger shark with glasses and business suit.” What a jerk and doofus.
+	Gary leaves a bit annoyed. 
+	Finn: I told my assistant to reschedule, I had a very important meeting to attend that day. Well, I guess ex-assistant now.
+	+0 satisfaction. Neither heartbroken, nor fulfilled
+	Gary: He said he was busy? Plus no courtesy to even reach out himself? Glad we never met, sounds like a nightmare. Find me someone else please. 
+	+0 satisfaction. Neither heartbroken, nor fulfilled
+- Meet at Updrift rock climbing
+	Gary and Finn agreed to meet at Updrift rock climbing
+	Gary: Where is the guy? The matchmaker said 3pm and it’s already 3:30. I even practiced a little yesterday so I wouldn’t look like a total newbie in front of the guy.
+	Another 15 minutes have passed without any sign of Finn.
+	Gary: No way I got stood up from a guy whose description reads, “Tiger shark with glasses and business suit.” What a jerk and doofus, I bet he couldn’t even complete a V0 if there were such a thing. 
+	Gary is a bit annoyed but was able to enjoy rock climbing by himself.
+	Finn: I told my assistant to reschedule, I had a very important meeting to attend that day. Well, I guess ex-assistant now.
+	+0 satisfaction. Neither heartbroken, nor fulfilled
+	Gary: He said he was busy? Plus no courtesy to even reach out himself? Glad we never met, sounds like a nightmare. Find me someone else please. 
+	+0 satisfaction. Neither heartbroken, nor fulfilled
+- Start again => start
+- End the conversation => END
+
+=> END

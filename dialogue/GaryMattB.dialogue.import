@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dnsix34u7n4il"
+path="res://.godot/imported/GaryMattB.dialogue-c6460dfab3d38477045cd615908dc901.tres"
+
+[deps]
+
+source_file="res://dialogue/GaryMattB.dialogue"
+dest_files=["res://.godot/imported/GaryMattB.dialogue-c6460dfab3d38477045cd615908dc901.tres"]
+
+[params]
+
+defaults=true
