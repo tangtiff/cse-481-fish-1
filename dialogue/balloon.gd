@@ -33,6 +33,7 @@ var locals: Dictionary = {}
 
 var _locale: String = TranslationServer.get_locale()
 
+
 ## The current line
 var dialogue_line: DialogueLine:
 	set(value):
@@ -42,11 +43,8 @@ var dialogue_line: DialogueLine:
 		else:
 			# The dialogue has finished so close the balloon
 			GameEvents.dialogue_active = false
-			if GameEvents.ABVERSION == "A":
-				if FirebaseManager.fishCaught == 2:
-					var book = load("uid://cs0kljr87jqpq").instantiate()
-					get_tree().root.add_child(book)
-					book.open_book()
+			if GameEvents.ABVERSION == "N":
+				GameEvents.determine_version()
 			if owner == null:
 				queue_free()
 			else:

@@ -241,6 +241,9 @@ func _stop_fishing():
 	animated_sprite_2d.visible = true
 	waiting.visible = false
 	animated_sprite_2d.play("fishing_end")
+	
+	if GameEvents.ABVERSION == "N":
+		GameEvents.fishStartTime = Time.get_unix_time_from_system()
 
 func _wait_for_fish():
 	animated_sprite_2d.visible = false

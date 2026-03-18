@@ -50,7 +50,7 @@ func log_data(fishEvent: bool, matchEvent: bool, timeEvent: bool) -> void:
 		"fishEvent" : fishEvent,
 		"matchEvent" : matchEvent,
 		"timeEvent" : timeEvent,
-		"a-b" : GameEvents.ABVERSION
+		"version" : GameEvents.ABVERSION
 	}
 	FirebaseLite.RealtimeDatabase.push(path, data)
 

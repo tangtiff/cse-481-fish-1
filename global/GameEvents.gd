@@ -24,14 +24,13 @@ var fish_matches: Array = []  # stores pairs of IDs
 
 var dialogue_active: bool = false
 
+var fishStartTime;
+
 # Version number of this release
-const VERSION: String = "0-2"
-var ABVERSION: String;
+const VERSION: String = "0-3"
+var ABVERSION: String = "N";
 
 func _ready():
-	# Randomly assignes player to either version A or B
-	ABVERSION = "A" if (randi() % 2 == 0) else "B"
-
 	fish_caught.connect(_on_fish_caught)
 	reset_satisfaction()
 
@@ -93,3 +92,10 @@ func set_satisfaction(id, amt) -> void:
 func reset_satisfaction() -> void:
 	for fish in fish_order:
 		set_satisfaction(fish, 0)
+
+func determine_version() -> void:
+	var dialogue_time = Time.get_unix_time_from_system() - fishStartTime
+	if dialogue_time < 10:
+		ABVERSION = "A"
+	else:
+		ABVERSION = "B"

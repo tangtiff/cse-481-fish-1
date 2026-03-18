@@ -17,6 +17,8 @@ func _physics_process(_delta):
 	catch_bar.value = catchingValue
 
 func _game_end() -> void:
+	if GameEvents.ABVERSION == "A":
+		catchSpeed = 0.25
 	GameEvents.fish_caught.emit()
 	get_tree().paused = false
 	queue_free()
